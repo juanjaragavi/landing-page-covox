@@ -18,10 +18,10 @@ export function CallToAction() {
             about your specific needs.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="text-md text-gray-900">
+            <Button variant="primary" asChild className="text-md text-gray-900">
               <Link href="#">Start now</Link>
             </Button>
-            <Button asChild className="text-md" variant="secondary">
+            <Button asChild className="text-md" variant="light">
               <Link href="#">Find nearest dealer</Link>
             </Button>
           </div>

@@ -80,7 +80,7 @@ const Footer = () => {
                 y1="0"
                 x2="0"
                 y2="100%"
-                className="stroke-gray-300"
+                className="stroke-gray-400"
                 strokeWidth="2"
                 strokeDasharray="3 3"
               />
@@ -100,7 +100,7 @@ const Footer = () => {
                 y1="0"
                 x2="0"
                 y2="100%"
-                className="stroke-gray-300"
+                className="stroke-gray-400"
                 strokeWidth="2"
                 strokeDasharray="3 3"
               />
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
         <svg
-          className="mb-10 h-20 w-full border-y border-dashed border-gray-300 stroke-gray-300"
+          className="mb-10 h-20 w-full border-y border-dashed border-gray-400 stroke-gray-400"
           // style={{
           //   maskImage:
           //     "linear-gradient(transparent, white 10rem, white calc(100% - 10rem), transparent)",
@@ -139,6 +139,7 @@ const Footer = () => {
             width="100%"
             height="100%"
             fill="url(#diagonal-footer-pattern)"
+            opacity={0.5}
           />
         </svg>
         <div className="mr-auto flex w-full justify-between lg:w-fit lg:flex-col">

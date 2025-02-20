@@ -13,7 +13,7 @@ const GameOfLife = () => {
     if (!ctx) return
 
     let animationFrameId: number
-    const cellSize = 6
+    const cellSize = 4
     const cols = Math.floor(canvas.width / cellSize)
     const rows = Math.floor(canvas.height / cellSize)
     const transitionSpeed = 0.2 // Controls fade speed
@@ -99,7 +99,7 @@ const GameOfLife = () => {
 
   return (
     <div className="mask pointer-events-none overflow-hidden select-none">
-      <canvas ref={canvasRef} width={1500} height={600} />
+      <canvas ref={canvasRef} width={1000} height={400} />
     </div>
   )
 }

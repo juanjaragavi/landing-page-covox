@@ -52,7 +52,7 @@ export function NavBar() {
           </nav>
           <Button
             variant="secondary"
-            className="hidden h-10 font-semibold sm:block"
+            className="text-md hidden h-10 bg-[#77FF00] font-semibold sm:block"
           >
             Get a quote
           </Button>
