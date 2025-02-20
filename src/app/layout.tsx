@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   creator: "yourname",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "es_ES",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${GeistSans.className} min-h-screen overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-orange-100 selection:text-orange-600 dark:bg-gray-900`}
+        className={`${GeistSans.className} min-h-screen overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-[#77FF00] selection:text-gray-800 dark:bg-gray-900`}
       >
         <NavBar />
         {children}
