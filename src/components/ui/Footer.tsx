@@ -144,7 +144,7 @@ const Footer = () => {
         <div className="mr-auto flex w-full justify-between lg:w-fit lg:flex-col">
           <Link
             href="/"
-            className="flex items-center font-medium text-gray-700 select-none sm:text-sm"
+            className="flex items-center font-medium text-white select-none sm:text-sm"
           >
             <SolarLogo className="ml-2 w-20" />
 
@@ -158,36 +158,36 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm p-2 text-gray-700 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-900"
+                className="rounded-sm p-2 text-white transition-colors duration-200 hover:bg-gray-200 hover:text-white"
               >
-                <RiTwitterXFill className="size-5" />
+                <RiTwitterXFill className="size-5 fill-[#77FF00]" />
               </Link>
               <Link
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm p-2 text-gray-700 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-900"
+                className="rounded-sm p-2 text-white transition-colors duration-200 hover:bg-gray-200 hover:text-white"
               >
-                <RiYoutubeFill className="size-5" />
+                <RiYoutubeFill className="size-5 fill-[#77FF00]" />
               </Link>
               <Link
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm p-2 text-gray-700 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-900"
+                className="rounded-sm p-2 text-white transition-colors duration-200 hover:bg-gray-200 hover:text-white"
               >
-                <RiGithubFill className="size-5" />
+                <RiGithubFill className="size-5 fill-[#77FF00]" />
               </Link>
               <Link
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-sm p-2 text-gray-700 transition-colors duration-200 hover:bg-gray-200 hover:text-gray-900"
+                className="rounded-sm p-2 text-white transition-colors duration-200 hover:bg-gray-200 hover:text-white"
               >
-                <RiSlackFill className="size-5" />
+                <RiSlackFill className="size-5 fill-[#77FF00]" />
               </Link>
             </div>
-            <div className="ml-2 hidden text-sm text-gray-700 lg:inline">
+            <div className="ml-2 hidden text-sm text-white lg:inline">
               &copy; {CURRENT_YEAR} Solar Technologies, Inc.
             </div>
           </div>
@@ -196,7 +196,7 @@ const Footer = () => {
         {/* Footer Sections */}
         {Object.entries(sections).map(([key, section]) => (
           <div key={key} className="mt-10 min-w-44 pl-2 lg:mt-0 lg:pl-0">
-            <h3 className="mb-4 font-medium text-gray-900 sm:text-sm">
+            <h3 className="mb-4 font-medium text-[#77FF00] sm:text-sm">
               {section.title}
             </h3>
             <ul className="space-y-4">
@@ -204,7 +204,7 @@ const Footer = () => {
                 <li key={item.label} className="text-sm">
                   <Link
                     href={item.href}
-                    className="text-gray-600 transition-colors duration-200 hover:text-gray-900"
+                    className="text-gray-400 transition-colors duration-200 hover:text-white"
                   >
                     {item.label}
                   </Link>

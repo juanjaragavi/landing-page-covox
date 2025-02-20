@@ -9,16 +9,16 @@ export function CallToAction() {
         <div className="sm:col-span-2">
           <h2
             id="cta-title"
-            className="scroll-my-60 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl"
+            className="scroll-my-60 text-3xl font-semibold tracking-tighter text-balance text-white md:text-4xl"
           >
             Ready to get started?
           </h2>
-          <p className="mt-3 mb-8 text-lg text-gray-600">
+          <p className="mt-3 mb-8 text-lg text-white">
             Begin your smart farming journey today or talk to our agronomists
             about your specific needs.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="text-md">
+            <Button asChild className="text-md text-gray-900">
               <Link href="#">Start now</Link>
             </Button>
             <Button asChild className="text-md" variant="secondary">
