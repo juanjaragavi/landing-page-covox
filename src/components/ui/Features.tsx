@@ -38,7 +38,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300"
+              className="stroke-gray-300 dark:stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -59,7 +59,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300"
+              className="stroke-gray-300 dark:stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -79,7 +79,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300"
+              className="stroke-gray-300 dark:stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -99,7 +99,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300"
+              className="stroke-gray-300 dark:stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -119,7 +119,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300"
+              className="stroke-gray-300 dark:stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -133,10 +133,10 @@ export default function Features() {
             Smart Farming Solutions
             <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
           </h2>
-          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
+          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl dark:text-gray-100">
             A network of autonomous systems for complete farm monitoring
           </p>
-          <p className="mt-4 text-balance text-gray-700">
+          <p className="mt-4 text-balance text-gray-700 dark:text-gray-300">
             Deploy intelligent monitoring and automated response systems across
             your fields, irrigation networks, and aerial operations with our
             integrated platform.
@@ -163,7 +163,7 @@ export default function Features() {
                     <path
                       key={i}
                       d={`M${-106 + offset} 110L${22 + offset} -18`}
-                      className="stroke-gray-200/70"
+                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
                       strokeWidth="1"
                     />
                   )
@@ -187,14 +187,14 @@ export default function Features() {
                     key="obj1"
                     className="relative flex items-center justify-center"
                   >
-                    <RiTruckFill className="z-10 size-5 text-gray-900" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <RiTruckFill className="z-10 size-5 text-gray-900 dark:text-gray-100" />
+                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="flex items-center justify-center rounded-l-full bg-red-500 p-1 text-xs ring-1 ring-gray-200">
                           <RiCircleLine className="size-3 shrink-0 text-white" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200">
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200 dark:bg-gray-800/50 dark:ring-gray-700">
                           Drivetrain Error
                         </div>
                       </div>
@@ -211,14 +211,14 @@ export default function Features() {
                     key="obj2"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900 dark:text-gray-100" />
+                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="flex items-center justify-center rounded-l-full bg-gray-500 p-1 text-xs ring-1 ring-gray-200">
                           <RiLoaderFill className="size-3 shrink-0 animate-spin text-white" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200 dark:bg-gray-800/50 dark:ring-gray-700">
                           Charging
                         </div>
                       </div>
@@ -235,8 +235,8 @@ export default function Features() {
                     key="obj3"
                     className="relative flex items-center justify-center"
                   >
-                    <RiCarFill className="z-10 size-5 text-gray-900" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <RiCarFill className="z-10 size-5 text-gray-900 dark:text-gray-100" />
+                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div
                       style={{
                         animationDelay: "2s",
@@ -248,14 +248,14 @@ export default function Features() {
                     key="obj4"
                     className="relative flex items-center justify-center"
                   >
-                    <Icons.QuadCopter className="z-10 size-5 rotate-90 text-gray-900" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <Icons.QuadCopter className="z-10 size-5 rotate-90 text-gray-900 dark:text-gray-100" />
+                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
                           <RiCheckLine className="size-3 shrink-0 text-white" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200 dark:bg-gray-800/50 dark:ring-gray-700">
                           Farming
                         </div>
                       </div>
@@ -272,8 +272,8 @@ export default function Features() {
                     key="obj5"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900 dark:text-gray-100" />
+                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div
                       style={{
                         animationDelay: "3s",
@@ -285,7 +285,7 @@ export default function Features() {
               >
                 <div className="relative flex h-48 w-48 items-center justify-center">
                   <div className="rounded-full p-1 ring-1 ring-black/10">
-                    <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-white ring-1 shadow-[inset_0px_-15px_20px_rgba(0,0,0,0.1),0_7px_10px_0_rgba(0,0,0,0.15)] ring-black/20">
+                    <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-white ring-1 shadow-[inset_0px_-15px_20px_rgba(0,0,0,0.1),0_7px_10px_0_rgba(0,0,0,0.15)] ring-black/20 dark:bg-gray-800">
                       <SolarMark className="size-10" />
                     </div>
                     <div className="absolute inset-12 animate-[spin_8s_linear_infinite] rounded-full bg-linear-to-t from-transparent via-orange-400 to-transparent blur-lg" />
@@ -301,10 +301,10 @@ export default function Features() {
             Precision Agriculture
             <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
           </h2>
-          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
+          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl dark:text-gray-100">
             Turn every acre into a data-driven powerhouse
           </p>
-          <p className="mt-4 text-balance text-gray-700">
+          <p className="mt-4 text-balance text-gray-700 dark:text-gray-300">
             Revolutionize your farming operation with edge-computing AI that
             transforms raw field data into actionable insights in real-time.
             Make informed decisions faster, reduce resource waste, and maximize
@@ -326,7 +326,7 @@ export default function Features() {
                     <path
                       key={i}
                       d={`M${-106 + offset} 110L${22 + offset} -18`}
-                      className="stroke-gray-200/70"
+                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
                       strokeWidth="1"
                     />
                   )
@@ -347,22 +347,22 @@ export default function Features() {
               className="mask absolute size-[432px]"
             >
               <path
-                className="stroke-gray-300"
+                className="stroke-gray-300 dark:stroke-gray-700"
                 d="M48 0v432M96 0v432M144 0v432M192 0v432M240 0v432M288 0v432M336 0v432M384 0v432M0 48h432M0 96h432M0 144h432M0 192h432M0 240h432M0 288h432M0 336h432M0 384h432"
               />
             </svg>
 
             <div className="pointer-events-none relative h-full select-none">
               <div className="absolute top-[192px] left-[191.8px]">
-                <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
+                <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
                   <SolarMark className="h-8 w-8" />
                 </div>
               </div>
               <div className="absolute top-[144px] left-[48px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
-                    <span className="text-sm font-medium text-gray-500">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                       14°C
                     </span>
                   </div>
@@ -371,9 +371,9 @@ export default function Features() {
 
               <div className="absolute top-[48px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
-                    <span className="text-sm font-medium text-gray-500">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                       18°C
                     </span>
                   </div>
@@ -382,9 +382,9 @@ export default function Features() {
 
               <div className="absolute top-[96px] left-[240px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
-                    <span className="text-sm font-medium text-gray-500">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                       17°C
                     </span>
                   </div>
@@ -393,9 +393,9 @@ export default function Features() {
 
               <div className="absolute top-[240px] left-[385px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
-                    <span className="text-sm font-medium text-gray-500">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                       14°C
                     </span>
                   </div>
@@ -404,9 +404,9 @@ export default function Features() {
 
               <div className="absolute top-[337px] left-[336px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
-                    <span className="text-sm font-medium text-gray-500">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                       12°C
                     </span>
                   </div>
@@ -415,9 +415,9 @@ export default function Features() {
 
               <div className="absolute top-[288px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px]"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15">
-                    <span className="text-sm font-medium text-gray-500">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
                       17°C
                     </span>
                   </div>
@@ -431,10 +431,10 @@ export default function Features() {
             Easy Expansion
             <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-orange-500" />
           </h2>
-          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl">
+          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl dark:text-gray-100">
             Scale your smart farm with plug-and-play simplicity
           </p>
-          <p className="mt-4 text-balance text-gray-700">
+          <p className="mt-4 text-balance text-gray-700 dark:text-gray-300">
             Add new sensors and capabilities to your farm network with zero
             setup required. Our systems automatically connect and coordinate
             with each other.
@@ -461,7 +461,7 @@ export default function Features() {
                     <path
                       key={i}
                       d={`M${-106 + offset} 110L${22 + offset} -18`}
-                      className="stroke-gray-200/70"
+                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
                       strokeWidth="1"
                     />
                   )
@@ -478,39 +478,39 @@ export default function Features() {
             <div className="relative">
               <div className="absolute top-[6rem] left-[6rem] z-20">
                 <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset">
+                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                     <RiNotification2Line
-                      className="size-5 text-gray-900"
+                      className="size-5 text-gray-900 dark:text-gray-100"
                       aria-hidden="true"
                     />
                   </div>
                 </div>
               </div>
               <div className="absolute top-[6rem] right-[6rem] z-20">
-                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset">
+                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                     <RiContrast2Line
-                      className="size-5 text-gray-900"
+                      className="size-5 text-gray-900 dark:text-gray-100"
                       aria-hidden="true"
                     />
                   </div>
                 </div>
               </div>
               <div className="absolute right-[6rem] bottom-[6rem] z-20">
-                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset">
+                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                     <RiCodepenLine
-                      className="size-5 text-gray-900"
+                      className="size-5 text-gray-900 dark:text-gray-100"
                       aria-hidden="true"
                     />
                   </div>
                 </div>
               </div>
               <div className="absolute bottom-[6rem] left-[6rem] z-20">
-                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset">
+                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                     <RiFullscreenFill
-                      className="size-5 text-gray-900"
+                      className="size-5 text-gray-900 dark:text-gray-100"
                       aria-hidden="true"
                     />
                   </div>
@@ -525,7 +525,7 @@ export default function Features() {
                   style={{ transform: `rotate(${rotation}deg)` }}
                 >
                   <div className="relative">
-                    <div className="h-0.5 w-60 bg-linear-to-r from-gray-300 to-transparent" />
+                    <div className="h-0.5 w-60 bg-linear-to-r from-gray-300 to-transparent dark:from-gray-700" />
                     <div
                       className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-orange-300 to-transparent"
                       style={{

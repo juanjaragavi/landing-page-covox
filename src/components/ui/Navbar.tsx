@@ -18,8 +18,8 @@ export function NavBar() {
       className={cx(
         "fixed inset-x-4 top-4 z-50 mx-auto flex max-w-6xl justify-center rounded-lg border border-transparent px-3 py-3 transition duration-300",
         scrolled || open
-          ? "border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm"
-          : "bg-white/0",
+          ? "border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm dark:bg-gray-900/80"
+          : "bg-white/0 dark:bg-gray-900/0",
       )}
     >
       <div className="w-full md:my-auto">
@@ -30,13 +30,22 @@ export function NavBar() {
           </Link>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">
-              <Link className="px-2 py-1 text-gray-900" href="#solutions">
+              <Link
+                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                href="#solutions"
+              >
                 Solutions
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#farm-management">
+              <Link
+                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                href="#farm-management"
+              >
                 Farm Management
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#solar-analytics">
+              <Link
+                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                href="#solar-analytics"
+              >
                 Analytics
               </Link>
             </div>
@@ -55,12 +64,12 @@ export function NavBar() {
           >
             {!open ? (
               <RiMenuFill
-                className="size-6 shrink-0 text-gray-900"
+                className="size-6 shrink-0 text-gray-900 dark:text-gray-100"
                 aria-hidden
               />
             ) : (
               <RiCloseFill
-                className="size-6 shrink-0 text-gray-900"
+                className="size-6 shrink-0 text-gray-900 dark:text-gray-100"
                 aria-hidden
               />
             )}
@@ -72,7 +81,7 @@ export function NavBar() {
             open ? "" : "hidden",
           )}
         >
-          <ul className="space-y-4 font-medium">
+          <ul className="space-y-4 font-medium text-gray-900 dark:text-gray-100">
             <li onClick={() => setOpen(false)}>
               <Link href="#solutions">Solutions</Link>
             </li>
