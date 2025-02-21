@@ -16,12 +16,10 @@ const item = {
   hidden: {
     opacity: 0,
     scale: 0.8,
-    filter: "blur(4px)",
   },
   show: {
     opacity: 1,
     scale: 1,
-    filter: "blur(0px)",
     transition: {
       type: "spring",
       stiffness: 150,

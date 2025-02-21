@@ -265,7 +265,7 @@ export const SVGMap = (props: SVGProps<SVGSVGElement>) => {
       {/* Irrigating */}
 
       <path
-        d="M133 87.5L145 95L"
+        d="M133 87.5L145 95"
         className="stroke-zinc-800"
         strokeWidth="0.5"
         strokeLinecap="round"

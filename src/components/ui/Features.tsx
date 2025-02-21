@@ -172,7 +172,7 @@ export default function Features() {
                   return (
                     <path
                       key={i}
-                      d={`M${-106 + offset} 110L${22 + offset} -18`}
+                      d={`M${-106 + offset},110 L${22 + offset},-18`}
                       className="stroke-gray-200/70 dark:stroke-gray-700/70"
                       strokeWidth="1"
                     />
@@ -326,7 +326,7 @@ export default function Features() {
                   return (
                     <path
                       key={i}
-                      d={`M${-106 + offset} 110L${22 + offset} -18`}
+                      d={`M${-106 + offset},110 L${22 + offset},-18`}
                       className="stroke-gray-200/70 dark:stroke-gray-700/70"
                       strokeWidth="1"
                     />
@@ -489,7 +489,7 @@ export default function Features() {
                 return (
                   <path
                     key={i}
-                    d={`M${-106 + offset} 110L${22 + offset} -18`}
+                    d={`M${-106 + offset},110 L${22 + offset},-18`}
                     className="stroke-gray-200/70 dark:stroke-gray-700/70"
                     strokeWidth="1"
                   />
