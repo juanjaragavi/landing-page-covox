@@ -11,6 +11,7 @@ import {
   RiTruckFill,
 } from "@remixicon/react"
 import { SolarMark } from "../../../public/SolarMark"
+import { FadeDiv } from "../Fade"
 import { Icons } from "../Icons"
 import { Orbit } from "../Orbit"
 import ChipViz from "./ChipViz"
@@ -458,7 +459,7 @@ export default function Features() {
           </div>
         </div>
 
-        <div className="col-span-2 my-auto px-2">
+        {/*<div className="col-span-2 my-auto px-2">
           <h2 className="relative text-lg font-semibold tracking-tight text-[#77FF00]">
             Easy Expansion
             <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
@@ -471,107 +472,115 @@ export default function Features() {
             setup required. Our systems automatically connect and coordinate
             with each other.
           </p>
-        </div>
+        </div>*/}
+      </div>
 
-        <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
-          <svg
-            className="absolute size-full [mask-image:linear-gradient(white_10rem,transparent)]"
-            // style={{
-            //   maskImage:
-            //     "linear-gradient(transparent, white 20rem, white calc(100% - 20rem), transparent)",
-            // }}
+      <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
+        <FadeDiv className="absolute left-1/2 z-50 flex -translate-x-1/2 items-center justify-center">
+          <a
+            className="inline-flex cursor-pointer flex-row items-center justify-center gap-1 rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-6 py-4 text-lg leading-4 font-semibold tracking-wide whitespace-nowrap text-black shadow-[0_0_0_2px_rgba(0,0,0,0.04),0_0_10px_0_rgba(255,255,255,0.15)] transition-all duration-200 ease-in-out hover:bg-white hover:shadow-white/50 sm:text-xl"
+            href="#"
           >
-            <defs>
-              <pattern
-                id="diagonal-feature-pattern"
-                patternUnits="userSpaceOnUse"
-                width="64"
-                height="64"
-              >
-                {Array.from({ length: 17 }, (_, i) => {
-                  const offset = i * 8
-                  return (
-                    <path
-                      key={i}
-                      d={`M${-106 + offset} 110L${22 + offset} -18`}
-                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
-                      strokeWidth="1"
-                    />
-                  )
-                })}
-              </pattern>
-            </defs>
-            <rect
-              width="100%"
-              height="100%"
-              fill="url(#diagonal-feature-pattern)"
-            />
-          </svg>
-          <div className="pointer-events-none relative flex size-full h-[26rem] items-center justify-center p-10 select-none">
-            <div className="relative">
-              <div className="absolute top-[6rem] left-[6rem] z-20">
-                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                    <RiNotification2Line
-                      className="size-5 text-gray-900 dark:text-gray-100"
-                      aria-hidden="true"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="absolute top-[6rem] right-[6rem] z-20">
-                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                    <RiContrast2Line
-                      className="size-5 text-gray-900 dark:text-gray-100"
-                      aria-hidden="true"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="absolute right-[6rem] bottom-[6rem] z-20">
-                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                    <RiCodepenLine
-                      className="size-5 text-gray-900 dark:text-gray-100"
-                      aria-hidden="true"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="absolute bottom-[6rem] left-[6rem] z-20">
-                <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
-                  <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                    <RiFullscreenFill
-                      className="size-5 text-gray-900 dark:text-gray-100"
-                      aria-hidden="true"
-                    />
-                  </div>
+            Empieza ahora con COVOX AI 🚀
+          </a>
+        </FadeDiv>
+        <svg
+          className="absolute size-full [mask-image:linear-gradient(white_10rem,transparent)]"
+          // style={{
+          //   maskImage:
+          //     "linear-gradient(transparent, white 20rem, white calc(100% - 20rem), transparent)",
+          // }}
+        >
+          <defs>
+            <pattern
+              id="diagonal-feature-pattern"
+              patternUnits="userSpaceOnUse"
+              width="64"
+              height="64"
+            >
+              {Array.from({ length: 17 }, (_, i) => {
+                const offset = i * 8
+                return (
+                  <path
+                    key={i}
+                    d={`M${-106 + offset} 110L${22 + offset} -18`}
+                    className="stroke-gray-200/70 dark:stroke-gray-700/70"
+                    strokeWidth="1"
+                  />
+                )
+              })}
+            </pattern>
+          </defs>
+          <rect
+            width="100%"
+            height="100%"
+            fill="url(#diagonal-feature-pattern)"
+          />
+        </svg>
+        <div className="pointer-events-none relative flex size-full h-[26rem] items-center justify-center p-10 select-none">
+          <div className="relative">
+            <div className="absolute top-[6rem] left-[6rem] z-20">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
+                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+                  <RiNotification2Line
+                    className="size-5 text-gray-900 dark:text-gray-100"
+                    aria-hidden="true"
+                  />
                 </div>
               </div>
             </div>
-            <div className="relative">
-              {[0, 45, 135, 180, 225, 315, 360].map((rotation, index) => (
-                <div
-                  key={rotation}
-                  className="absolute origin-left overflow-hidden"
-                  style={{ transform: `rotate(${rotation}deg)` }}
-                >
-                  <div className="relative">
-                    <div className="h-0.5 w-60 bg-linear-to-r from-gray-300 to-transparent dark:from-gray-700" />
-                    <div
-                      className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-[#77FF00] to-transparent"
-                      style={{
-                        animation: `gridMovingLine 5s linear infinite ${index * 1.2}s`,
-                        animationFillMode: "backwards",
-                      }}
-                    />
-                  </div>
+            <div className="absolute top-[6rem] right-[6rem] z-20">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+                  <RiContrast2Line
+                    className="size-5 text-gray-900 dark:text-gray-100"
+                    aria-hidden="true"
+                  />
                 </div>
-              ))}
-              <div className="absolute -translate-x-1/2 -translate-y-1/2">
-                <ChipViz />
               </div>
+            </div>
+            <div className="absolute right-[6rem] bottom-[6rem] z-20">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+                  <RiCodepenLine
+                    className="size-5 text-gray-900 dark:text-gray-100"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="absolute bottom-[6rem] left-[6rem] z-20">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+                  <RiFullscreenFill
+                    className="size-5 text-gray-900 dark:text-gray-100"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative">
+            {[0, 45, 135, 180, 225, 315, 360].map((rotation, index) => (
+              <div
+                key={rotation}
+                className="absolute origin-left overflow-hidden"
+                style={{ transform: `rotate(${rotation}deg)` }}
+              >
+                <div className="relative">
+                  <div className="h-0.5 w-60 bg-linear-to-r from-gray-300 to-transparent dark:from-gray-700" />
+                  <div
+                    className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-[#77FF00] to-transparent"
+                    style={{
+                      animation: `gridMovingLine 5s linear infinite ${index * 1.2}s`,
+                      animationFillMode: "backwards",
+                    }}
+                  />
+                </div>
+              </div>
+            ))}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <ChipViz />
             </div>
           </div>
         </div>

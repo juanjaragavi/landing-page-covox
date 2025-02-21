@@ -62,7 +62,7 @@ export function NavBar() {
             variant="secondary"
             className="text-md hidden h-10 bg-[#77FF00] font-semibold sm:block"
           >
-            🔹 Solicita una demo gratuita
+            🔹 Solicita una Demo Gratuita
           </Button>
           <Button
             onClick={() => setOpen(!open)}
@@ -101,7 +101,7 @@ export function NavBar() {
             </li>
           </ul>
           <Button variant="secondary" className="text-lg">
-            🔹 Solicita una demo gratuita
+            🔹 Solicita una Demo Gratuita
           </Button>
         </nav>
       </div>
