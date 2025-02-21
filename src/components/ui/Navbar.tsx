@@ -4,9 +4,9 @@ import { siteConfig } from "@/app/siteConfig"
 import useScroll from "@/lib/useScroll"
 import { cx } from "@/lib/utils"
 import { RiCloseFill, RiMenuFill } from "@remixicon/react"
+import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import { SolarLogo } from "../../../public/SolarLogo"
 import { Button } from "../Button"
 
 export function NavBar() {
@@ -26,7 +26,15 @@ export function NavBar() {
         <div className="relative flex items-center justify-between">
           <Link href={siteConfig.baseLinks.home} aria-label="Home">
             <span className="sr-only">Solar Tech Logo</span>
-            <SolarLogo className="w-22" />
+            <Image
+              src="/images/logo-header.webp"
+              priority
+              loading="eager"
+              quality={90}
+              alt="Covox Logo"
+              width={150}
+              height={40}
+            />
           </Link>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">

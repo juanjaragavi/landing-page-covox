@@ -4,8 +4,8 @@ import {
   RiTwitterXFill,
   RiYoutubeFill,
 } from "@remixicon/react"
+import Image from "next/image"
 import Link from "next/link"
-import { SolarLogo } from "../../../public/SolarLogo"
 const CURRENT_YEAR = new Date().getFullYear()
 
 const Footer = () => {
@@ -142,12 +142,20 @@ const Footer = () => {
             opacity={0.5}
           />
         </svg>
-        <div className="mr-auto flex w-full justify-between lg:w-fit lg:flex-col">
+        <div className="mr-auto ml-2 flex w-full justify-between lg:w-fit lg:flex-col">
           <Link
             href="/"
             className="flex items-center font-medium text-white select-none sm:text-sm"
           >
-            <SolarLogo className="ml-2 w-20" />
+            <Image
+              src="/images/logo-header.webp"
+              priority
+              loading="eager"
+              quality={90}
+              alt="Covox Logo"
+              width={150}
+              height={40}
+            />
 
             <span className="sr-only">Solar Logo (go home)</span>
           </Link>
