@@ -20,7 +20,7 @@ import ChipViz from "./ChipViz"
 export default function Features() {
   return (
     <section
-      aria-label="Solar Technologies Features for Farms"
+      aria-label="COVOX AI | Agentes Conversacionales Features for Farms"
       id="solutions"
       className="relative mx-auto max-w-6xl scroll-my-24"
     >
@@ -202,7 +202,7 @@ export default function Features() {
             <div className="pointer-events-none relative h-full select-none">
               <div className="absolute top-[192px] left-[191.8px]">
                 <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                  <SolarMark />
+                  <SolarMark className="p-1" />
                 </div>
               </div>
               <div className="absolute top-[144px] left-[48px]">

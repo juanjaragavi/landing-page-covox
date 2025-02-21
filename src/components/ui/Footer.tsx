@@ -197,7 +197,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="ml-2 hidden text-sm text-white lg:inline">
-              &copy; {CURRENT_YEAR} Solar Technologies, Inc.
+              &copy; {CURRENT_YEAR} COVOX AI | Agentes Conversacionales, Inc.
             </div>
           </div>
         </div>
