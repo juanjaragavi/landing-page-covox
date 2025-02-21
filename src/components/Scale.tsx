@@ -7,7 +7,7 @@ const container = {
   show: {
     transition: {
       staggerChildren: 0.05,
-      delayChildren: 0.1,
+      delayChildren: 0.2,
     },
   },
 }
