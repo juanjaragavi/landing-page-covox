@@ -383,9 +383,9 @@ export default function Features() {
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="flex items-center justify-center rounded-l-full bg-gray-600 p-1 text-xs ring-1 ring-gray-200">
-                          <RiCircleLine className="size-3 shrink-0 text-white" />
+                          <RiCircleLine className="size-3 shrink-0 text-[#77FF00]" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-200">
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs font-semibold whitespace-nowrap text-gray-900 ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-200">
                           24/7
                         </div>
                       </div>
@@ -407,9 +407,9 @@ export default function Features() {
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="bg-bg-gray-600 flex items-center justify-center rounded-l-full p-1 text-xs ring-1 ring-gray-200">
-                          <RiLoaderFill className="size-3 shrink-0 animate-spin text-white" />
+                          <RiLoaderFill className="size-3 shrink-0 animate-spin text-[#77FF00]" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-200">
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs font-semibold whitespace-nowrap text-gray-900 ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-200">
                           100%
                         </div>
                       </div>
