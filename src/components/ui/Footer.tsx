@@ -142,7 +142,7 @@ const Footer = () => {
             opacity={0.5}
           />
         </svg>
-        <div className="mr-auto ml-2 flex w-full justify-between lg:w-fit lg:flex-col">
+        <div className="mr-auto ml-8 flex w-full justify-between lg:w-fit lg:flex-col">
           <Link
             href="/"
             className="flex items-center font-medium text-white select-none sm:text-sm"
