@@ -209,8 +209,8 @@ export default function Features() {
               </div>
               <div className="absolute top-[144px] left-[48px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                  <div className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"></div>
+                  <div className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
                     <MissedCallsIcon />
                   </div>
                 </div>
@@ -218,8 +218,14 @@ export default function Features() {
 
               <div className="absolute top-[48px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                  <div
+                    className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
+                    style={{ animationDelay: "0.5s" }}
+                  ></div>
+                  <div
+                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    style={{ animationDelay: "1s" }}
+                  >
                     <LeadTimeIcon />
                   </div>
                 </div>
@@ -227,8 +233,14 @@ export default function Features() {
 
               <div className="absolute top-[96px] left-[240px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                  <div
+                    className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
+                    style={{ animationDelay: "1s" }}
+                  ></div>
+                  <div
+                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    style={{ animationDelay: "2s" }}
+                  >
                     <LeadTimeIcon />
                   </div>
                 </div>
@@ -236,8 +248,14 @@ export default function Features() {
 
               <div className="absolute top-[240px] left-[385px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                  <div
+                    className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
+                    style={{ animationDelay: "1.5s" }}
+                  ></div>
+                  <div
+                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    style={{ animationDelay: "3s" }}
+                  >
                     <MissedCallsIcon />
                   </div>
                 </div>
@@ -245,8 +263,14 @@ export default function Features() {
 
               <div className="absolute top-[337px] left-[336px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-green-900/50"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                  <div
+                    className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
+                    style={{ animationDelay: "2s" }}
+                  ></div>
+                  <div
+                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    style={{ animationDelay: "4s" }}
+                  >
                     <HighCostsIcon />
                   </div>
                 </div>
@@ -254,8 +278,14 @@ export default function Features() {
 
               <div className="absolute top-[288px] left-[144px]">
                 <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                  <div
+                    className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
+                    style={{ animationDelay: "2.5s" }}
+                  ></div>
+                  <div
+                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    style={{ animationDelay: "5s" }}
+                  >
                     <HighCostsIcon />
                   </div>
                 </div>
@@ -368,7 +398,7 @@ export default function Features() {
                       style={{
                         animationDelay: "1s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                      className="absolute size-10 animate-[float_4s_ease-in-out_infinite] rounded-full ring-1 ring-[#77FF00]/50"
                     ></div>
                   </div>,
 
