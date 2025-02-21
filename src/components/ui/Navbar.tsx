@@ -42,13 +42,13 @@ export function NavBar() {
                 className="px-2 py-1 text-gray-900 dark:text-gray-100"
                 href="#solutions"
               >
-                Solutions
+                La Solución
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-100"
                 href="#farm-management"
               >
-                Farm Management
+                ¿Cómo Funciona?
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-100"
@@ -91,10 +91,10 @@ export function NavBar() {
         >
           <ul className="space-y-4 font-medium text-gray-900 dark:text-gray-100">
             <li onClick={() => setOpen(false)}>
-              <Link href="#solutions">Solutions</Link>
+              <Link href="#solutions">La Solución</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#farm-management">Farm Management</Link>
+              <Link href="#farm-management">¿Cómo Funciona?</Link>
             </li>
             <li onClick={() => setOpen(false)}>
               <Link href="#solar-analytics">Analytics</Link>

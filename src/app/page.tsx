@@ -16,11 +16,11 @@ export default function Home() {
         <Features />
       </div>
       <div className="mt-32 px-4 xl:px-0">
-        <Testimonial />
+        <Map />
       </div>
       <FeatureDivider className="my-16 max-w-6xl" />
       <div className="px-4 xl:px-0">
-        <Map />
+        <Testimonial />
       </div>
       <FeatureDivider className="my-16 max-w-6xl" />
       <div className="mt-12 mb-40 px-4 xl:px-0">

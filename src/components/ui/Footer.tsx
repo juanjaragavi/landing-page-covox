@@ -11,7 +11,7 @@ const CURRENT_YEAR = new Date().getFullYear()
 const Footer = () => {
   const sections = {
     solutions: {
-      title: "Solutions",
+      title: "La Solución",
       items: [
         { label: "Crop Monitoring", href: "#" },
         { label: "Irrigation Control", href: "#" },
@@ -197,7 +197,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="ml-2 hidden text-sm text-white lg:inline">
-              &copy; {CURRENT_YEAR} COVOX AI | Agentes Conversacionales, Inc.
+              &copy; {CURRENT_YEAR} COVOX AI | Agentes Conversacionales
             </div>
           </div>
         </div>
