@@ -39,7 +39,6 @@ export function Hero() {
             </a>
           </FadeDiv>
           <h1 className="mt-4 text-center text-2xl font-semibold tracking-tighter text-gray-900 sm:mt-24 sm:text-5xl sm:leading-[1em] dark:text-gray-900">
-            <FadeSpan>🚀</FadeSpan>{" "}
             <FadeSpan>Agentes Conversacionales de IA</FadeSpan>
             <br />
             <FadeSpan>Hiper Realistas</FadeSpan>{" "}
