@@ -10,6 +10,7 @@ import {
   RiPlaneFill,
   RiTruckFill,
 } from "@remixicon/react"
+import { CovoxFavicon } from "../../../public/CovoxFavicon"
 import { SolarMark } from "../../../public/SolarMark"
 import { FadeDiv } from "../Fade"
 import { Icons } from "../Icons"
@@ -201,7 +202,7 @@ export default function Features() {
             <div className="pointer-events-none relative h-full select-none">
               <div className="absolute top-[192px] left-[191.8px]">
                 <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                  <SolarMark className="h-8 w-8" />
+                  <SolarMark />
                 </div>
               </div>
               <div className="absolute top-[144px] left-[48px]">
@@ -449,7 +450,7 @@ export default function Features() {
                 <div className="relative flex h-48 w-48 items-center justify-center">
                   <div className="rounded-full p-1 ring-1 ring-black/10">
                     <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-white ring-1 shadow-[inset_0px_-15px_20px_rgba(0,0,0,0.1),0_7px_10px_0_rgba(0,0,0,0.15)] ring-black/20 dark:bg-gray-800">
-                      <SolarMark className="size-10" />
+                      <CovoxFavicon />
                     </div>
                     <div className="absolute inset-12 animate-[spin_8s_linear_infinite] rounded-full bg-linear-to-t from-transparent via-[#77FF00] to-transparent blur-lg" />
                   </div>
@@ -458,21 +459,6 @@ export default function Features() {
             </div>
           </div>
         </div>
-
-        {/*<div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-[#77FF00]">
-            Easy Expansion
-            <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
-          </h2>
-          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl dark:text-gray-100">
-            Scale your smart farm with plug-and-play simplicity
-          </p>
-          <p className="mt-4 text-balance text-gray-700 dark:text-gray-300">
-            Add new sensors and capabilities to your farm network with zero
-            setup required. Our systems automatically connect and coordinate
-            with each other.
-          </p>
-        </div>*/}
       </div>
 
       <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
