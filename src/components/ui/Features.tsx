@@ -291,7 +291,7 @@ export default function Features() {
         </div>
 
         <div className="col-span-2 my-auto px-2">
-          <FadeDiv className="relative flex flex-row gap-x-3">
+          <FadeDiv className="relative flex flex-row gap-x-1">
             <h2 className="animate-fadeIn relative mt-2 text-4xl font-semibold tracking-tight text-[#77FF00]">
               Solución
               <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-[#77FF00]" />
