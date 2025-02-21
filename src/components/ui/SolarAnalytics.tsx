@@ -18,7 +18,7 @@ export function SolarAnalytics() {
       <div>
         <h2
           id="solar-analytics"
-          className="relative scroll-my-24 text-lg font-semibold tracking-tight text-[#77FF00]"
+          className="relative scroll-my-14 text-lg font-semibold tracking-tight text-[#77FF00]"
         >
           Verticales y Casos de Uso
           <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
