@@ -7,6 +7,31 @@ export const Map = () => {
       aria-labelledby="management-title"
       className="relative flex w-full max-w-6xl scroll-my-24 flex-col items-center justify-center overflow-hidden rounded-2xl bg-gray-950 px-10 shadow-2xl shadow-black/50 sm:px-16 md:px-28 lg:mx-auto"
     >
+      <div className="absolute inset-0 z-0">
+        <svg className="h-full w-full">
+          <defs>
+            <pattern
+              id="diagonal-pattern"
+              patternUnits="userSpaceOnUse"
+              width="64"
+              height="64"
+            >
+              {Array.from({ length: 17 }, (_, i) => {
+                const offset = i * 8
+                return (
+                  <path
+                    key={i}
+                    d={`M${-106 + offset} 110L${22 + offset} -18`}
+                    className="stroke-zinc-800/50"
+                    strokeWidth="1"
+                  />
+                )
+              })}
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#diagonal-pattern)" />
+        </svg>
+      </div>
       <div className="absolute left-0 z-10 h-full backdrop-blur-[2px]">
         <svg
           className="h-full w-8 border-r border-zinc-900 stroke-zinc-800 sm:w-20"
@@ -68,12 +93,12 @@ export const Map = () => {
         </svg>
       </div>
 
-      <div className="pt-12 text-base font-semibold tracking-tight text-[#77FF00] sm:pt-20 sm:text-lg">
+      <div className="z-50 pt-12 text-base font-semibold tracking-tight text-[#77FF00] sm:pt-20 sm:text-lg">
         ¿Cómo Funciona?
       </div>
       <h2
         id="management-title"
-        className="max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white md:text-5xl"
+        className="z-50 max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white md:text-5xl"
       >
         Totalmente personalizable, fácil e intuitivo.
       </h2>
@@ -107,7 +132,9 @@ export const Map = () => {
           </div>
 
           {/* Connector Line */}
-          <div className="relative h-px w-1/4 animate-pulse bg-gradient-to-r from-gray-900 via-[#77FF00] to-gray-900"></div>
+          <div className="relative h-px w-1/4 overflow-hidden bg-gradient-to-r from-gray-900 via-[#77FF00] to-gray-900">
+            <div className="animate-slide absolute inset-0 bg-gradient-to-r from-transparent via-[#77FF00] to-transparent"></div>
+          </div>
 
           {/* Step 2 */}
           <div className="relative flex flex-col items-center">
@@ -137,7 +164,9 @@ export const Map = () => {
           </div>
 
           {/* Connector Line */}
-          <div className="relative h-px w-1/4 animate-pulse bg-gradient-to-r from-gray-900 via-[#77FF00] to-gray-900"></div>
+          <div className="relative h-px w-1/4 overflow-hidden bg-gradient-to-r from-gray-900 via-[#77FF00] to-gray-900">
+            <div className="animate-slide absolute inset-0 bg-gradient-to-r from-transparent via-[#77FF00] to-transparent"></div>
+          </div>
 
           {/* Step 3 */}
           <div className="relative flex flex-col items-center">
