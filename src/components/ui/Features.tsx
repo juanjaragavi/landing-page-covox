@@ -1,23 +1,19 @@
 import {
-  RiCarFill,
-  RiCheckLine,
   RiCircleLine,
   RiCodepenLine,
   RiContrast2Line,
   RiFullscreenFill,
   RiLoaderFill,
   RiNotification2Line,
-  RiPlaneFill,
-  RiTruckFill,
 } from "@remixicon/react"
 import Image from "next/image"
 import { CovoxFavicon } from "../../../public/CovoxFavicon"
 import { SolarMark } from "../../../public/SolarMark"
 import { FadeDiv } from "../Fade"
-import { Icons } from "../Icons"
 import { Orbit } from "../Orbit"
 import ChipViz from "./ChipViz"
 import { HighCostsIcon, LeadTimeIcon, MissedCallsIcon } from "./ProblemIcons"
+import { AutoResponseIcon, ConversionIcon, LeadsIcon } from "./SolutionIcons"
 
 export default function Features() {
   return (
@@ -382,15 +378,15 @@ export default function Features() {
                     key="obj1"
                     className="relative flex items-center justify-center"
                   >
-                    <RiTruckFill className="z-10 size-5 text-gray-900 dark:text-gray-100" />
+                    <AutoResponseIcon className="z-10 size-5" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
-                        <div className="flex items-center justify-center rounded-l-full bg-red-500 p-1 text-xs ring-1 ring-gray-200">
+                        <div className="flex items-center justify-center rounded-l-full bg-[#77FF00] p-1 text-xs ring-1 ring-gray-200">
                           <RiCircleLine className="size-3 shrink-0 text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-700">
-                          Drivetrain Error
+                          24/7
                         </div>
                       </div>
                     </div>
@@ -406,15 +402,15 @@ export default function Features() {
                     key="obj2"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900 dark:text-gray-100" />
+                    <LeadsIcon className="z-10 size-5" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
-                        <div className="flex items-center justify-center rounded-l-full bg-gray-500 p-1 text-xs ring-1 ring-gray-200">
+                        <div className="flex items-center justify-center rounded-l-full bg-[#77FF00] p-1 text-xs ring-1 ring-gray-200">
                           <RiLoaderFill className="size-3 shrink-0 animate-spin text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-700">
-                          Charging
+                          100%
                         </div>
                       </div>
                     </div>
@@ -430,48 +426,11 @@ export default function Features() {
                     key="obj3"
                     className="relative flex items-center justify-center"
                   >
-                    <RiCarFill className="z-10 size-5 text-gray-900 dark:text-gray-100" />
+                    <ConversionIcon className="z-10 size-5" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div
                       style={{
                         animationDelay: "2s",
-                      }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
-                    ></div>
-                  </div>,
-                  <div
-                    key="obj4"
-                    className="relative flex items-center justify-center"
-                  >
-                    <Icons.QuadCopter className="z-10 size-5 rotate-90 text-gray-900 dark:text-gray-100" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
-                    <div className="absolute -top-5 left-4">
-                      <div className="flex gap-1">
-                        <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
-                          <RiCheckLine className="size-3 shrink-0 text-white" />
-                        </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-700">
-                          Farming
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      style={{
-                        animationDelay: "6s",
-                      }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
-                    ></div>
-                  </div>,
-                  <div
-                    key="obj5"
-                    className="relative flex items-center justify-center"
-                  >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900 dark:text-gray-100" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
-                    <div
-                      style={{
-                        animationDelay: "3s",
                       }}
                       className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
                     ></div>
