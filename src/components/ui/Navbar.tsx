@@ -62,7 +62,7 @@ export function NavBar() {
             variant="secondary"
             className="text-md hidden h-10 bg-[#77FF00] font-semibold sm:block"
           >
-            Get a quote
+            🔹 Solicita una demo gratuita
           </Button>
           <Button
             onClick={() => setOpen(!open)}
@@ -101,7 +101,7 @@ export function NavBar() {
             </li>
           </ul>
           <Button variant="secondary" className="text-lg">
-            Get a quote
+            🔹 Solicita una demo gratuita
           </Button>
         </nav>
       </div>
