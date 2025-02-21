@@ -20,10 +20,14 @@ export const StickerCard = ({
       <div>
         <div className="relative flex items-center gap-2">
           <div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
-          <Icon className="size-5 shrink-0 text-[#77FF00]" />
-          <h3 className="font-medium text-gray-900">{title}</h3>
+          <Icon className="size-8 shrink-0 text-[#77FF00]" />
+          <h3 className="font-medium text-gray-900 sm:text-lg sm:leading-tight">
+            {title}
+          </h3>
         </div>
-        <p className="mt-2 text-gray-600 sm:text-sm">{description}</p>
+        <p className="sm:text-md mt-2 text-gray-600 sm:leading-tight">
+          {description}
+        </p>
       </div>
     </a>
   </div>
