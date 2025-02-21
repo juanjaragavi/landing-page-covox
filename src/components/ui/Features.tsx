@@ -128,20 +128,182 @@ export default function Features() {
       </div>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-0">
         {/* Content */}
+
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-[#77FF00]">
-            Smart Farming Solutions
-            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
+          <h2 className="relative mb-3 text-4xl font-semibold tracking-tight text-red-500">
+            Problema
+            <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-red-500" />
           </h2>
-          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl dark:text-gray-100">
-            A network of autonomous systems for complete farm monitoring
-          </p>
-          <p className="mt-4 text-balance text-gray-700 dark:text-gray-300">
-            Deploy intelligent monitoring and automated response systems across
-            your fields, irrigation networks, and aerial operations with our
-            integrated platform.
-          </p>
+          <div className="flex flex-col gap-y-2">
+            <div className="flex items-start gap-x-3">
+              <div className="text-xl">❌</div>
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+                Tu equipo pierde tiempo en llamadas repetitivas
+              </p>
+            </div>
+            <div className="flex items-start gap-x-3">
+              <div className="text-xl">❌</div>
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+                No logras atender todos los leads a tiempo
+              </p>
+            </div>
+            <div className="flex items-start gap-x-3">
+              <div className="text-xl">❌</div>
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+                Los costos operativos son altos y los cierres bajos
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
+          <svg className="absolute size-full [mask-image:linear-gradient(transparent,white_10rem)]">
+            <defs>
+              <pattern
+                id="diagonal-feature-pattern"
+                patternUnits="userSpaceOnUse"
+                width="64"
+                height="64"
+              >
+                {Array.from({ length: 17 }, (_, i) => {
+                  const offset = i * 8
+                  return (
+                    <path
+                      key={i}
+                      d={`M${-106 + offset} 110L${22 + offset} -18`}
+                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
+                      strokeWidth="1"
+                    />
+                  )
+                })}
+              </pattern>
+            </defs>
+            <rect
+              width="100%"
+              height="100%"
+              fill="url(#diagonal-feature-pattern)"
+            />
+          </svg>
+          <div className="relative h-[432px] w-[432px]">
+            <svg
+              id="grid"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              className="mask absolute size-[432px]"
+            >
+              <path
+                className="stroke-gray-300 dark:stroke-gray-700"
+                d="M48 0v432M96 0v432M144 0v432M192 0v432M240 0v432M288 0v432M336 0v432M384 0v432M0 48h432M0 96h432M0 144h432M0 192h432M0 240h432M0 288h432M0 336h432M0 384h432"
+              />
+            </svg>
+
+            <div className="pointer-events-none relative h-full select-none">
+              <div className="absolute top-[192px] left-[191.8px]">
+                <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                  <SolarMark className="h-8 w-8" />
+                </div>
+              </div>
+              <div className="absolute top-[144px] left-[48px]">
+                <div className="relative">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      14°C
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute top-[48px] left-[144px]">
+                <div className="relative">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      18°C
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute top-[96px] left-[240px]">
+                <div className="relative">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      17°C
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute top-[240px] left-[385px]">
+                <div className="relative">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      14°C
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute top-[337px] left-[336px]">
+                <div className="relative">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-green-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      12°C
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute top-[288px] left-[144px]">
+                <div className="relative">
+                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
+                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                      17°C
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-span-2 my-auto px-2">
+          <h2 className="relative mb-3 text-4xl font-semibold tracking-tight text-[#77FF00]">
+            Solución
+            <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-[#77FF00]" />
+          </h2>
+          <div className="mt-2 flex flex-col gap-y-2">
+            <div className="flex items-start gap-x-3">
+              <div className="text-xl">✅</div>
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+                Responde y agenda{" "}
+                <span className="text-[#77FF00]">automáticamente</span> 24/7
+              </p>
+            </div>
+            <div className="flex items-start gap-x-3">
+              <div className="text-xl">✅</div>
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+                Atiende{" "}
+                <span className="text-[#77FF00]">100% de tus leads</span> sin
+                perder oportunidades
+              </p>
+            </div>
+            <div className="flex items-start gap-x-3">
+              <div className="text-xl">✅</div>
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+                Reduce costos y{" "}
+                <span className="text-[#77FF00]">aumenta las conversiones</span>{" "}
+                sin contratar más personal
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
           <svg
             className="absolute size-full [mask-image:linear-gradient(transparent,white_10rem)]"
@@ -298,136 +460,6 @@ export default function Features() {
 
         <div className="col-span-2 my-auto px-2">
           <h2 className="relative text-lg font-semibold tracking-tight text-[#77FF00]">
-            Precision Agriculture
-            <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
-          </h2>
-          <p className="mt-2 text-3xl font-semibold tracking-tighter text-balance text-gray-900 md:text-4xl dark:text-gray-100">
-            Turn every acre into a data-driven powerhouse
-          </p>
-          <p className="mt-4 text-balance text-gray-700 dark:text-gray-300">
-            Revolutionize your farming operation with edge-computing AI that
-            transforms raw field data into actionable insights in real-time.
-            Make informed decisions faster, reduce resource waste, and maximize
-            yields.
-          </p>
-        </div>
-        <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
-          <svg className="absolute size-full">
-            <defs>
-              <pattern
-                id="diagonal-feature-pattern"
-                patternUnits="userSpaceOnUse"
-                width="64"
-                height="64"
-              >
-                {Array.from({ length: 17 }, (_, i) => {
-                  const offset = i * 8
-                  return (
-                    <path
-                      key={i}
-                      d={`M${-106 + offset} 110L${22 + offset} -18`}
-                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
-                      strokeWidth="1"
-                    />
-                  )
-                })}
-              </pattern>
-            </defs>
-            <rect
-              width="100%"
-              height="100%"
-              fill="url(#diagonal-feature-pattern)"
-            />
-          </svg>
-          <div className="relative h-[432px] w-[432px]">
-            <svg
-              id="grid"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              className="mask absolute size-[432px]"
-            >
-              <path
-                className="stroke-gray-300 dark:stroke-gray-700"
-                d="M48 0v432M96 0v432M144 0v432M192 0v432M240 0v432M288 0v432M336 0v432M384 0v432M0 48h432M0 96h432M0 144h432M0 192h432M0 240h432M0 288h432M0 336h432M0 384h432"
-              />
-            </svg>
-
-            <div className="pointer-events-none relative h-full select-none">
-              <div className="absolute top-[192px] left-[191.8px]">
-                <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                  <SolarMark className="h-8 w-8" />
-                </div>
-              </div>
-              <div className="absolute top-[144px] left-[48px]">
-                <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      14°C
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-[48px] left-[144px]">
-                <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      18°C
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-[96px] left-[240px]">
-                <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      17°C
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-[240px] left-[385px]">
-                <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      14°C
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-[337px] left-[336px]">
-                <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-green-900/50"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      12°C
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-[288px] left-[144px]">
-                <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
-                  <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      17°C
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-span-2 my-auto px-2">
-          <h2 className="relative text-lg font-semibold tracking-tight text-[#77FF00]">
             Easy Expansion
             <div className="absolute top-1 -left-[7px] h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
           </h2>
@@ -440,6 +472,7 @@ export default function Features() {
             with each other.
           </p>
         </div>
+
         <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
           <svg
             className="absolute size-full [mask-image:linear-gradient(white_10rem,transparent)]"
