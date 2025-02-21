@@ -1,10 +1,10 @@
 import {
+  RiBarChartBoxLine,
   RiCircleLine,
-  RiCodepenLine,
-  RiContrast2Line,
-  RiFullscreenFill,
+  RiCustomerService2Line,
   RiLoaderFill,
-  RiNotification2Line,
+  RiRobot2Line,
+  RiTimeLine,
 } from "@remixicon/react"
 import Image from "next/image"
 import { CovoxFavicon } from "../../../public/CovoxFavicon"
@@ -203,15 +203,6 @@ export default function Features() {
                   <SolarMark className="p-1" />
                 </div>
               </div>
-              <div className="absolute top-[144px] left-[48px]">
-                <div className="relative">
-                  <div className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"></div>
-                  <div className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <MissedCallsIcon />
-                  </div>
-                </div>
-              </div>
-
               <div className="absolute top-[48px] left-[144px]">
                 <div className="relative">
                   <div
@@ -221,21 +212,6 @@ export default function Features() {
                   <div
                     className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
                     style={{ animationDelay: "1s" }}
-                  >
-                    <LeadTimeIcon />
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-[96px] left-[240px]">
-                <div className="relative">
-                  <div
-                    className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
-                    style={{ animationDelay: "1s" }}
-                  ></div>
-                  <div
-                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
-                    style={{ animationDelay: "2s" }}
                   >
                     <LeadTimeIcon />
                   </div>
@@ -266,21 +242,6 @@ export default function Features() {
                   <div
                     className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
                     style={{ animationDelay: "4s" }}
-                  >
-                    <HighCostsIcon />
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute top-[288px] left-[144px]">
-                <div className="relative">
-                  <div
-                    className="absolute inset-0 size-12 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
-                    style={{ animationDelay: "2.5s" }}
-                  ></div>
-                  <div
-                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
-                    style={{ animationDelay: "5s" }}
                   >
                     <HighCostsIcon />
                   </div>
@@ -496,40 +457,40 @@ export default function Features() {
         <div className="pointer-events-none relative flex size-full h-[26rem] items-center justify-center p-10 select-none">
           <div className="relative">
             <div className="absolute top-[6rem] left-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                  <RiNotification2Line
-                    className="size-5 text-gray-900 dark:text-gray-100"
+                  <RiCustomerService2Line
+                    className="size-[5.5] text-white"
                     aria-hidden="true"
                   />
                 </div>
               </div>
             </div>
             <div className="absolute top-[6rem] right-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                  <RiContrast2Line
-                    className="size-5 text-gray-900 dark:text-gray-100"
+                  <RiBarChartBoxLine
+                    className="size-[5.5] text-white"
                     aria-hidden="true"
                   />
                 </div>
               </div>
             </div>
             <div className="absolute right-[6rem] bottom-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                  <RiCodepenLine
-                    className="size-5 text-gray-900 dark:text-gray-100"
+                  <RiRobot2Line
+                    className="size-[5.5] text-white"
                     aria-hidden="true"
                   />
                 </div>
               </div>
             </div>
             <div className="absolute bottom-[6rem] left-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-black/10 dark:bg-gray-800">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
-                  <RiFullscreenFill
-                    className="size-5 text-gray-900 dark:text-gray-100"
+                  <RiTimeLine
+                    className="size-[5.5] text-white"
                     aria-hidden="true"
                   />
                 </div>
