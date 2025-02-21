@@ -10,12 +10,14 @@ import {
   RiPlaneFill,
   RiTruckFill,
 } from "@remixicon/react"
+import Image from "next/image"
 import { CovoxFavicon } from "../../../public/CovoxFavicon"
 import { SolarMark } from "../../../public/SolarMark"
 import { FadeDiv } from "../Fade"
 import { Icons } from "../Icons"
 import { Orbit } from "../Orbit"
 import ChipViz from "./ChipViz"
+import { HighCostsIcon, LeadTimeIcon, MissedCallsIcon } from "./ProblemIcons"
 
 export default function Features() {
   return (
@@ -209,9 +211,7 @@ export default function Features() {
                 <div className="relative">
                   <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      14°C
-                    </span>
+                    <MissedCallsIcon />
                   </div>
                 </div>
               </div>
@@ -220,9 +220,7 @@ export default function Features() {
                 <div className="relative">
                   <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      18°C
-                    </span>
+                    <LeadTimeIcon />
                   </div>
                 </div>
               </div>
@@ -231,9 +229,7 @@ export default function Features() {
                 <div className="relative">
                   <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      17°C
-                    </span>
+                    <LeadTimeIcon />
                   </div>
                 </div>
               </div>
@@ -242,9 +238,7 @@ export default function Features() {
                 <div className="relative">
                   <div className="absolute inset-0 size-12 animate-pulse bg-[#77FF00]/20 blur-[3px] dark:bg-[#77FF00]/10"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      14°C
-                    </span>
+                    <MissedCallsIcon />
                   </div>
                 </div>
               </div>
@@ -253,9 +247,7 @@ export default function Features() {
                 <div className="relative">
                   <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-green-900/50"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      12°C
-                    </span>
+                    <HighCostsIcon />
                   </div>
                 </div>
               </div>
@@ -264,9 +256,7 @@ export default function Features() {
                 <div className="relative">
                   <div className="absolute inset-0 size-12 animate-pulse bg-orange-200 blur-[3px] dark:bg-orange-900/50"></div>
                   <div className="relative flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                    <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      17°C
-                    </span>
+                    <HighCostsIcon />
                   </div>
                 </div>
               </div>
@@ -275,10 +265,21 @@ export default function Features() {
         </div>
 
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative mb-3 text-4xl font-semibold tracking-tight text-[#77FF00]">
-            Solución
-            <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-[#77FF00]" />
-          </h2>
+          <FadeDiv className="relative flex flex-row gap-x-3">
+            <h2 className="animate-fadeIn relative mt-2 text-4xl font-semibold tracking-tight text-[#77FF00]">
+              Solución
+              <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-[#77FF00]" />
+            </h2>
+            <Image
+              src="/images/logo-header.webp"
+              priority
+              loading="eager"
+              quality={90}
+              alt="Covox Logo"
+              width={190}
+              height={40}
+            />
+          </FadeDiv>
           <div className="mt-2 flex flex-col gap-y-2">
             <div className="flex items-start gap-x-3">
               <div className="text-xl">✅</div>
