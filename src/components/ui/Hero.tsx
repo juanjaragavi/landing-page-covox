@@ -1,6 +1,6 @@
 import { RiPlayFill } from "@remixicon/react"
 import { FadeContainer, FadeDiv, FadeSpan } from "../Fade"
-import { ScaleDiv } from "../Scale"
+import { ScaleContainer, ScaleDiv } from "../Scale"
 import GameOfLife from "./HeroBackground"
 
 export function Hero() {
@@ -9,9 +9,11 @@ export function Hero() {
       <div className="relative">
         <div className="absolute inset-0 -z-10">
           <div className="bg-gradient-radial absolute inset-0 from-transparent via-transparent to-gray-950/80 dark:to-gray-950"></div>
-          <ScaleDiv className="flex items-center justify-center">
-            <GameOfLife />
-          </ScaleDiv>
+          <ScaleContainer>
+            <ScaleDiv className="flex items-center justify-center">
+              <GameOfLife />
+            </ScaleDiv>
+          </ScaleContainer>
         </div>
         <FadeContainer className="flex flex-col items-center justify-center">
           <FadeDiv className="mx-auto">
