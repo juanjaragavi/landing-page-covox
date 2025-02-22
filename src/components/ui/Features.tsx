@@ -339,7 +339,7 @@ export default function Features() {
                     key="obj1"
                     className="relative flex items-center justify-center"
                   >
-                    <AutoResponseIcon className="z-10 size-6 text-white" />
+                    <AutoResponseIcon className="z-10 size-12 text-white" />
                     <div className="absolute size-12 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
@@ -355,7 +355,7 @@ export default function Features() {
                       style={{
                         animationDelay: "1s",
                       }}
-                      className="absolute size-10 animate-[float_4s_ease-in-out_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                      className="absolute size-12 animate-[float_4s_ease-in-out_infinite] rounded-full ring-1 ring-[#77FF00]/50"
                     ></div>
                   </div>,
 
@@ -363,7 +363,7 @@ export default function Features() {
                     key="obj2"
                     className="relative flex items-center justify-center"
                   >
-                    <LeadsIcon className="z-10 size-6 text-white" />
+                    <LeadsIcon className="z-10 size-12 text-white" />
                     <div className="absolute size-12 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
@@ -379,7 +379,7 @@ export default function Features() {
                       style={{
                         animationDelay: "4s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                      className="absolute size-12 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
                     ></div>
                   </div>,
 
@@ -387,13 +387,13 @@ export default function Features() {
                     key="obj3"
                     className="relative flex items-center justify-center"
                   >
-                    <ConversionIcon className="z-10 size-6 text-white" />
+                    <ConversionIcon className="z-10 size-12 text-white" />
                     <div className="absolute size-12 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div
                       style={{
                         animationDelay: "2s",
                       }}
-                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                      className="absolute size-12 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
                     ></div>
                   </div>,
                 ]}
