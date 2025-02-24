@@ -9,7 +9,7 @@ export default function Testimonial() {
       <div className="absolute inset-0 object-cover">
         <Image
           alt="clouds background"
-          src="/images/field.png"
+          src="/images/delta-oil.webp"
           fill
           className="object-cover"
         />

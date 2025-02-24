@@ -6,7 +6,6 @@ import {
   RiUserStarFill,
 } from "@remixicon/react"
 import { Divider } from "../Divider"
-import AnalyticsIllustration from "./AnalyticsIllustration"
 import { StickerCard } from "./StickerCard"
 
 export function SolarAnalytics() {
@@ -15,7 +14,7 @@ export function SolarAnalytics() {
       aria-labelledby="casos-de-uso"
       className="relative mx-auto w-full max-w-6xl overflow-hidden"
     >
-      <div>
+      <div className="mb-6">
         <h2
           id="casos-de-uso"
           className="relative scroll-my-14 text-lg font-semibold tracking-tight text-[#77FF00]"
@@ -29,10 +28,6 @@ export function SolarAnalytics() {
           potencia tu negocio
         </p>
       </div>
-      <div className="*:pointer-events-none">
-        <AnalyticsIllustration />
-      </div>
-      <Divider className="mt-0"></Divider>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-10 md:items-stretch">
         <div className="flex flex-col md:col-span-2">
           <StickerCard
@@ -78,6 +73,7 @@ export function SolarAnalytics() {
           </a>
         </div>
       </div>
+      <Divider className="mt-10"></Divider>
     </section>
   )
 }

@@ -127,7 +127,8 @@ export const Map = () => {
               Paso 1
             </h3>
             <div className="text-md relative mt-2 max-w-[20rem] text-center leading-tight text-white">
-              Crea tu agente en minutos, sin conocimientos técnicos.
+              Selecciona objetivo del agente, configura el prompt, y personaliza
+              la voz.
             </div>
           </div>
 
@@ -159,7 +160,7 @@ export const Map = () => {
               Paso 2
             </h3>
             <div className="text-md relative mt-2 max-w-[20rem] text-center leading-tight text-white">
-              Configura respuestas y objetivos según tu industria.
+              Selecciona la base de datos de tus leads y clientes.
             </div>
           </div>
 
@@ -191,7 +192,7 @@ export const Map = () => {
               Paso 3
             </h3>
             <div className="text-md relative mt-2 max-w-[20rem] text-center leading-tight text-white">
-              Activa tu agente y empieza a recibir conversiones.
+              Programa día y hora de las llamadas.
             </div>
           </div>
         </div>

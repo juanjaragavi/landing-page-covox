@@ -35,9 +35,9 @@ Automatiza conversaciones, agenda citas y cierra más ventas con nuestra platafo
 
 ### **3\. ¿Cómo Funciona? (Sección interactiva o visual)**
 
-🔹 **Paso 1:** Crea tu agente en minutos, sin conocimientos técnicos.  
-🔹 **Paso 2:** Configura respuestas y objetivos según tu industria.  
-🔹 **Paso 3:** Activa tu agente y empieza a recibir conversiones.
+🔹 **Paso 1:** Selecciona objetivo del agente, configura el prompt, y personaliza la voz.  
+🔹 **Paso 2:** Selecciona la base de datos de tus leads y clientes.  
+🔹 **Paso 3:** Programa día y hora de las llamadas.
 
 👉 **Totalmente personalizable, fácil e intuitivo.**
 
