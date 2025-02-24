@@ -8,7 +8,7 @@ import {
 import { Divider } from "../Divider"
 import { StickerCard } from "./StickerCard"
 
-export function SolarAnalytics() {
+export function CovoxAIAnalytics() {
   return (
     <section
       aria-labelledby="casos-de-uso"

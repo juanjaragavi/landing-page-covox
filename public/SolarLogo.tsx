@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export const SolarLogo = () => (
+export const CovoxAILogo = () => (
   <Image
     src="/images/logo-header.webp"
     priority

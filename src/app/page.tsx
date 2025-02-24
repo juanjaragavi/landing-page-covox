@@ -1,9 +1,9 @@
 import { CallToAction } from "@/components/ui/CallToAction"
+import { CovoxAIAnalytics } from "@/components/ui/CovoxAIAnalytics"
 import FeatureDivider from "@/components/ui/FeatureDivider"
 import Features from "@/components/ui/Features"
 import { Hero } from "@/components/ui/Hero"
 import { Map } from "@/components/ui/Map/Map"
-import { SolarAnalytics } from "@/components/ui/SolarAnalytics"
 import Testimonial from "@/components/ui/Testimonial"
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
       <FeatureDivider className="my-16 max-w-6xl" />
       <div className="mb-12 px-4 xl:px-0">
-        <SolarAnalytics />
+        <CovoxAIAnalytics />
       </div>
       <div className="px-4 xl:px-0">
         <Testimonial />

@@ -25,7 +25,7 @@ export function NavBar() {
       <div className="w-full md:my-auto">
         <div className="relative flex items-center justify-between">
           <Link href={siteConfig.baseLinks.home} aria-label="Home">
-            <span className="sr-only">Solar Tech Logo</span>
+            <span className="sr-only">CovoxAI Tech Logo</span>
             <Image
               src="/images/logo-header.webp"
               priority

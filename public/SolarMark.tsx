@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-export const SolarMark = (props: SVGProps<SVGSVGElement>) => (
+export const CovoxAIMark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     fill="#ef4444"
     viewBox="0 0 16 16"
