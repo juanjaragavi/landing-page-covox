@@ -11,7 +11,7 @@ export default function Testimonial() {
           className="object-cover"
         />
       </div>
-      <div className="absolute top-[19rem] -right-4 w-[19rem] sm:top-[12rem] sm:right-24 sm:w-[23rem] md:top-[12rem] md:right-0 md:w-[25rem] lg:-right-44 lg:bottom-0 lg:w-[34rem]">
+      <div className="absolute top-[19rem] -right-4 w-[19rem] sm:top-[12rem] sm:right-24 sm:w-[23rem] md:top-[12rem] md:right-0 md:w-[25rem] lg:-right-28 lg:bottom-0 lg:w-[34rem]">
         <Image
           alt="clouds background"
           src="/images/delta-oil-logo.webp"
@@ -20,8 +20,8 @@ export default function Testimonial() {
         />
       </div>
       <div className="relative z-20 my-6 p-8 sm:p-14 lg:px-24">
-        <div className="w-10/12v">
-          <blockquote className="relative max-w-2xl text-xl leading-relaxed tracking-tight text-white md:text-2xl lg:text-3xl">
+        <div>
+          <blockquote className="relative max-w-xl text-xl leading-relaxed tracking-tight text-white md:text-2xl lg:text-3xl">
             <p className="leading-tight before:absolute before:top-0 before:right-full before:content-['“'] after:text-white after:content-['”']">
               <strong className="font-semibold">
                 COVOX AI ha revolucionado nuestra eficiencia operativa.
