@@ -26,7 +26,7 @@ export default function Home() {
         <Testimonial />
       </div>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mt-10 mb-16 px-4 xl:px-0">
+      <div className="mt-4 mb-16 px-4 xl:px-0">
         <CallToAction />
       </div>
     </main>
