@@ -5,33 +5,21 @@ interface IconProps {
 export function AutoResponseIcon({ className = "" }: IconProps) {
   return (
     <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
+      fill="#ffffff"
+      viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
       className={`text-[#77FF00] ${className}`}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.5 20.5L5.3994 19.8229C5.78386 19.72 6.19121 19.7791 6.54753 19.9565C7.88837 20.6244 9.40034 21 11 21H12Z"
-        fill="currentColor"
-      />
-      <path
-        d="M12 8V12L15 15"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M8 13H8.01M12 13H12.01M16 13H16.01"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"></path>
+      </g>
     </svg>
   )
 }
@@ -79,33 +67,35 @@ export function LeadsIcon({ className = "" }: IconProps) {
 export function ConversionIcon({ className = "" }: IconProps) {
   return (
     <svg
-      width="32"
-      height="32"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
       className={`text-[#77FF00] ${className}`}
     >
-      <path
-        d="M2 12L7 17L12 12L17 17L22 12"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M2 7L7 12L12 7L17 12L22 7"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M13 5H15M14 4V6"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M4 5V19C4 19.5523 4.44772 20 5 20H19"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+        <path
+          d="M18 9L13 13.9999L10.5 11.4998L7 14.9998"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+      </g>
     </svg>
   )
 }

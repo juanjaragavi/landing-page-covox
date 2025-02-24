@@ -339,7 +339,7 @@ export default function Features() {
                     key="obj1"
                     className="relative flex items-center justify-center"
                   >
-                    <AutoResponseIcon className="z-10 size-10 text-white" />
+                    <AutoResponseIcon className="z-10 size-6 text-white" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
@@ -363,7 +363,7 @@ export default function Features() {
                     key="obj2"
                     className="relative flex items-center justify-center"
                   >
-                    <LeadsIcon className="z-10 size-10 text-white" />
+                    <LeadsIcon className="z-10 size-8 text-white" />
                     <div className="absolute size-10 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
@@ -387,7 +387,7 @@ export default function Features() {
                     key="obj3"
                     className="relative flex items-center justify-center"
                   >
-                    <ConversionIcon className="z-10 size-10 text-white" />
+                    <ConversionIcon className="z-10 size-8 text-white" />
                     <div className="absolute size-10 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
                     <div
                       style={{
