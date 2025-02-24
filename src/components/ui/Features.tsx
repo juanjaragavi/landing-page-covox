@@ -225,7 +225,7 @@ export default function Features() {
                     style={{ animationDelay: "1.5s" }}
                   ></div>
                   <div
-                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    className="relative flex size-11 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white p-2 ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
                     style={{ animationDelay: "3s" }}
                   >
                     <MissedCallsIcon />
@@ -240,7 +240,7 @@ export default function Features() {
                     style={{ animationDelay: "2s" }}
                   ></div>
                   <div
-                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    className="relative flex size-11 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white p-1 ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
                     style={{ animationDelay: "4s" }}
                   >
                     <HighCostsIcon />

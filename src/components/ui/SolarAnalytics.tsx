@@ -58,14 +58,14 @@ export function SolarAnalytics() {
         <div className="flex flex-col md:col-span-2">
           <StickerCard
             Icon={RiMoneyDollarCircleFill}
-            title="Cobranzas"
+            title="Automatización de Cobranzas"
             description="Llama a clientes y automatiza gestiones de cobro."
           />
         </div>
         <div className="flex flex-col md:col-span-2">
           <StickerCard
             Icon={RiUserStarFill}
-            title="Agente Comercial Multiindustria"
+            title="Agente Comercial"
             description="Impacta más leads, haz seguimiento y aumenta cierres."
           />
         </div>
