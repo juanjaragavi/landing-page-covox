@@ -37,7 +37,7 @@ export function NavBar() {
             />
           </Link>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-            <div className="flex items-center gap-10 font-medium">
+            <div className="flex items-center gap-10 text-sm font-medium">
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-100"
                 href="#solucion"
@@ -55,6 +55,12 @@ export function NavBar() {
                 href="#casos-de-uso"
               >
                 Casos de Uso
+              </Link>
+              <Link
+                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                href="#testimoniales"
+              >
+                Testimoniales
               </Link>
             </div>
           </nav>

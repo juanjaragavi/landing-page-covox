@@ -10,21 +10,35 @@ const CURRENT_YEAR = new Date().getFullYear()
 
 const Footer = () => {
   const sections = {
-    solutions: {
-      title: "",
-      items: [{ label: "La Solución", href: "#solucion" }],
-    },
-    company: {
-      title: "",
-      items: [{ label: "¿Cómo Funciona?", href: "#como-funciona" }],
+    product: {
+      title: "Producto",
+      items: [
+        { label: "La Solución", href: "#solucion" },
+        { label: "¿Cómo Funciona?", href: "#como-funciona" },
+        { label: "Casos de Uso", href: "#casos-de-uso", external: true },
+      ],
     },
     resources: {
-      title: "",
-      items: [{ label: "Casos de Uso", href: "#casos-de-uso", external: true }],
+      title: "Recursos",
+      items: [
+        { label: "Blog", href: "#" },
+        { label: "Testimoniales", href: "#testimoniales" },
+      ],
     },
-    partners: {
-      title: "",
-      items: [{ label: "Blog", href: "#", external: true }],
+    company: {
+      title: "Compañía",
+      items: [
+        { label: "Sobre Nosotros", href: "#" },
+        { label: "Carreras", href: "#" },
+        { label: "Contacto", href: "#" },
+      ],
+    },
+    legal: {
+      title: "Legal",
+      items: [
+        { label: "Términos de Servicio", href: "#" },
+        { label: "Política de Privacidad", href: "#" },
+      ],
     },
   }
 
@@ -173,16 +187,16 @@ const Footer = () => {
 
         {/* Footer Sections */}
         {Object.entries(sections).map(([key, section]) => (
-          <div key={key} className="mt-10 min-w-44 pl-2 lg:mt-0 lg:pl-0">
+          <div key={key} className="mt-6 min-w-44 pl-2 lg:mt-0 lg:pl-0">
             <h3 className="mb-4 font-medium text-[#77FF00] sm:text-sm">
               {section.title}
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-2">
               {section.items.map((item) => (
-                <li key={item.label} className="text-sm">
+                <li key={item.label} className="text-sm leading-tight">
                   <Link
                     href={item.href}
-                    className="mb-4 font-medium text-[#77FF00] sm:text-sm"
+                    className="leading-tight font-normal text-white sm:text-sm"
                   >
                     {item.label}
                   </Link>

@@ -2,7 +2,10 @@ import Image from "next/image"
 
 export default function Testimonial() {
   return (
-    <section className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-xl shadow-2xl shadow-[#366A79]/70">
+    <section
+      id="testimoniales"
+      className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-xl shadow-2xl shadow-[#366A79]/70"
+    >
       <div className="absolute inset-0 object-cover">
         <Image
           alt="clouds background"
