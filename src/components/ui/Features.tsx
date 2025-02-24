@@ -11,7 +11,9 @@ import { CovoxFavicon } from "../../../public/CovoxFavicon"
 import { SolarMark } from "../../../public/SolarMark"
 import { FadeDiv } from "../Fade"
 import { Orbit } from "../Orbit"
+import CheckCircleIcon from "./CheckCircleIcon"
 import ChipViz from "./ChipViz"
+import ErrorCircleIcon from "./ErrorCircleIcon"
 import { HighCostsIcon, LeadTimeIcon, MissedCallsIcon } from "./ProblemIcons"
 import { AutoResponseIcon, ConversionIcon, LeadsIcon } from "./SolutionIcons"
 
@@ -135,20 +137,26 @@ export default function Features() {
             <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-red-500" />
           </h2>
           <div className="flex flex-col gap-y-2">
-            <div className="flex items-start gap-x-3">
-              <div className="text-xl">❌</div>
+            <div className="flex items-start gap-x-2">
+              <div className="text-xl">
+                <ErrorCircleIcon className="size-8" />
+              </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 Tu equipo pierde tiempo en llamadas repetitivas
               </p>
             </div>
-            <div className="flex items-start gap-x-3">
-              <div className="text-xl">❌</div>
+            <div className="flex items-start gap-x-2">
+              <div className="text-xl">
+                <ErrorCircleIcon className="size-8" />
+              </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 No logras atender todos los leads a tiempo
               </p>
             </div>
-            <div className="flex items-start gap-x-3">
-              <div className="text-xl">❌</div>
+            <div className="flex items-start gap-x-2">
+              <div className="text-xl">
+                <ErrorCircleIcon className="size-8" />
+              </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 Los costos operativos son altos y los cierres bajos
               </p>
@@ -268,23 +276,29 @@ export default function Features() {
             />
           </FadeDiv>
           <div className="mt-2 flex flex-col gap-y-2">
-            <div className="flex items-start gap-x-3">
-              <div className="text-xl">✅</div>
+            <div className="flex items-start gap-x-2">
+              <div className="text-xl">
+                <CheckCircleIcon className="size-8" />
+              </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 Responde y agenda{" "}
                 <span className="text-[#77FF00]">automáticamente</span> 24/7
               </p>
             </div>
-            <div className="flex items-start gap-x-3">
-              <div className="text-xl">✅</div>
+            <div className="flex items-start gap-x-2">
+              <div className="text-xl">
+                <CheckCircleIcon className="size-8" />
+              </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 Atiende{" "}
                 <span className="text-[#77FF00]">100% de tus leads</span> sin
                 perder oportunidades
               </p>
             </div>
-            <div className="flex items-start gap-x-3">
-              <div className="text-xl">✅</div>
+            <div className="flex items-start gap-x-2">
+              <div className="text-xl">
+                <CheckCircleIcon className="size-8" />
+              </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 Reduce costos y{" "}
                 <span className="text-[#77FF00]">aumenta las conversiones</span>{" "}

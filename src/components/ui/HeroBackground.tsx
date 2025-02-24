@@ -16,7 +16,7 @@ const GameOfLife = () => {
     const cellSize = 4
     const cols = Math.floor(canvas.width / cellSize)
     const rows = Math.floor(canvas.height / cellSize)
-    const transitionSpeed = 0.2 // Controls fade speed
+    const transitionSpeed = 0.3 // Controls fade speed
 
     let grid: Grid = Array(rows)
       .fill(null)
@@ -60,11 +60,11 @@ const GameOfLife = () => {
             ctx.fillStyle = `rgba(128, 128, 0, ${cell.opacity})`
             ctx.beginPath()
             ctx.arc(
-              j * cellSize + cellSize / 1.5,
-              i * cellSize + cellSize / 1.5,
+              j * cellSize + cellSize / 2,
+              i * cellSize + cellSize / 2,
               1,
               0,
-              Math.PI * 1.5,
+              Math.PI * 2,
             )
             ctx.fill()
           }
