@@ -11,26 +11,27 @@ export default function Testimonial() {
           className="object-cover"
         />
       </div>
-      <div className="absolute top-[19rem] -right-14 w-[19rem] sm:top-[12rem] sm:right-3 sm:w-[23rem] md:top-[12rem] md:right-0 md:w-[25rem] lg:top-[16rem] lg:right-12 lg:w-[34rem]">
+      <div className="absolute top-[19rem] -right-4 w-[19rem] sm:top-[12rem] sm:right-24 sm:w-[23rem] md:top-[12rem] md:right-0 md:w-[25rem] lg:-right-44 lg:bottom-0 lg:w-[34rem]">
         <Image
           alt="clouds background"
-          src="/images/drone.png"
-          width={1583}
-          height={554}
-          className="animate-hover"
+          src="/images/delta-oil-logo.webp"
+          width={340}
+          height={147}
         />
       </div>
-      <div className="relative z-20 mb-20 p-8 sm:p-14 lg:p-24">
-        <div className="">
-          <blockquote className="relative max-w-2xl text-xl leading-relaxed tracking-tight text-gray-900 md:text-2xl lg:text-3xl">
-            <p className="before:absolute before:top-0 before:right-full before:content-['“'] after:text-gray-900/70 after:content-['”']">
+      <div className="relative z-20 my-6 p-8 sm:p-14 lg:px-24">
+        <div className="w-10/12v">
+          <blockquote className="relative max-w-2xl text-xl leading-relaxed tracking-tight text-white md:text-2xl lg:text-3xl">
+            <p className="leading-tight before:absolute before:top-0 before:right-full before:content-['“'] after:text-white after:content-['”']">
               <strong className="font-semibold">
-                Solar transformed our environmental monitoring capabilities.
+                COVOX AI ha revolucionado nuestra eficiencia operativa.
               </strong>{" "}
-              <span className="text-gray-900/70">
-                Their autonomous network provides real-time data on forest
-                health, wildlife patterns, and ecosystem changes with
-                unprecedented precision and efficiency.
+              <span className="text-white">
+                Como Directora de Ventas en{" "}
+                <strong className="font-semibold">Delta Oil</strong>, he visto
+                cómo esta solución nos ha permitido ahorrar tiempo valioso en
+                atención al cliente, optimizando la satisfacción de nuestros
+                clientes de manera significativa.
               </span>
             </p>
           </blockquote>
@@ -38,7 +39,7 @@ export default function Testimonial() {
         <div className="mt-14 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
           <div className="relative shrink-0 rounded-full bg-white/15 p-0.5 ring-1 ring-white/20">
             <Image
-              alt="Dr. Sarah Miller"
+              alt="Andrea Hernández"
               src="/images/smiller.jpeg"
               width={56}
               height={56}
@@ -46,11 +47,11 @@ export default function Testimonial() {
             />
           </div>
           <div>
-            <div className="text-base font-medium text-gray-900">
-              Dr. Sarah Miller
+            <div className="text-md font-semibold text-white">
+              Andrea Hernández
             </div>
-            <div className="text-sm text-[#C33621]/80">
-              Director of Conservation Technologies
+            <div className="text-sm text-yellow-400">
+              Directora Comercial y de Ventas
             </div>
           </div>
         </div>
