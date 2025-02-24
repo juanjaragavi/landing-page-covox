@@ -3,7 +3,7 @@ import { RiPlayLine, RiSettings3Line, RiUserAddLine } from "@remixicon/react"
 export const Map = () => {
   return (
     <section
-      id="farm-management"
+      id="como-funciona"
       aria-labelledby="management-title"
       className="relative flex w-full max-w-6xl scroll-my-24 flex-col items-center justify-center overflow-hidden rounded-2xl bg-gray-950 px-10 shadow-2xl shadow-black/50 sm:px-16 md:px-28 lg:mx-auto"
     >

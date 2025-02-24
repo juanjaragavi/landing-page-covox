@@ -12,12 +12,12 @@ import { StickerCard } from "./StickerCard"
 export function SolarAnalytics() {
   return (
     <section
-      aria-labelledby="solar-analytics"
+      aria-labelledby="casos-de-uso"
       className="relative mx-auto w-full max-w-6xl overflow-hidden"
     >
       <div>
         <h2
-          id="solar-analytics"
+          id="casos-de-uso"
           className="relative scroll-my-14 text-lg font-semibold tracking-tight text-[#77FF00]"
         >
           Verticales y Casos de Uso

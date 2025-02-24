@@ -40,21 +40,21 @@ export function NavBar() {
             <div className="flex items-center gap-10 font-medium">
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-100"
-                href="#solutions"
+                href="#solucion"
               >
                 La Solución
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-100"
-                href="#farm-management"
+                href="#como-funciona"
               >
                 ¿Cómo Funciona?
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-100"
-                href="#solar-analytics"
+                href="#casos-de-uso"
               >
-                Analytics
+                Casos de Uso
               </Link>
             </div>
           </nav>
@@ -91,13 +91,13 @@ export function NavBar() {
         >
           <ul className="space-y-4 font-medium text-gray-900 dark:text-gray-100">
             <li onClick={() => setOpen(false)}>
-              <Link href="#solutions">La Solución</Link>
+              <Link href="#solucion">La Solución</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#farm-management">¿Cómo Funciona?</Link>
+              <Link href="#como-funciona">¿Cómo Funciona?</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#solar-analytics">Analytics</Link>
+              <Link href="#casos-de-uso">Analytics</Link>
             </li>
           </ul>
           <Button variant="secondary" className="text-lg">

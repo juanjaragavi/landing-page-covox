@@ -11,51 +11,20 @@ const CURRENT_YEAR = new Date().getFullYear()
 const Footer = () => {
   const sections = {
     solutions: {
-      title: "La Solución",
-      items: [
-        { label: "Crop Monitoring", href: "#" },
-        { label: "Irrigation Control", href: "#" },
-        { label: "Soil Analytics", href: "#" },
-        { label: "Weather Integration", href: "#" },
-        { label: "Documentation", href: "#" },
-        { label: "Smart Farming Guide", href: "#" },
-        { label: "Equipment", href: "#" },
-      ],
+      title: "",
+      items: [{ label: "La Solución", href: "#solucion" }],
     },
     company: {
-      title: "Company",
-      items: [
-        { label: "About us", href: "#" },
-        { label: "Blog", href: "#" },
-        { label: "Careers", href: "#" },
-        { label: "Success Stories", href: "#" },
-        { label: "Sustainability", href: "#" },
-      ],
+      title: "",
+      items: [{ label: "¿Cómo Funciona?", href: "#como-funciona" }],
     },
     resources: {
-      title: "Resources",
-      items: [
-        { label: "Farmer Network", href: "#" },
-        {
-          label: "Community",
-          href: "#",
-          external: true,
-        },
-        { label: "Contact", href: "#" },
-        { label: "Support", href: "#" },
-        { label: "Privacy Policy", href: "#" },
-        { label: "Terms of Service", href: "#" },
-        { label: "Report an Issue", href: "#" },
-      ],
+      title: "",
+      items: [{ label: "Casos de Uso", href: "#casos-de-uso", external: true }],
     },
     partners: {
-      title: "Partners",
-      items: [
-        { label: "Dealer Network", href: "#", external: true },
-        { label: "System Status", href: "#", external: true },
-        { label: "Research Partners", href: "#", external: true },
-        { label: "Integration Guide", href: "#" },
-      ],
+      title: "",
+      items: [{ label: "Blog", href: "#", external: true }],
     },
   }
 
@@ -157,7 +126,7 @@ const Footer = () => {
               height={40}
             />
 
-            <span className="sr-only">Solar Logo (go home)</span>
+            <span className="sr-only">COVOX AI (go home)</span>
           </Link>
 
           <div>
@@ -213,7 +182,7 @@ const Footer = () => {
                 <li key={item.label} className="text-sm">
                   <Link
                     href={item.href}
-                    className="text-gray-400 transition-colors duration-200 hover:text-white"
+                    className="mb-4 font-medium text-[#77FF00] sm:text-sm"
                   >
                     {item.label}
                   </Link>
