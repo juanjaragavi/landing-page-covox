@@ -27,14 +27,14 @@ export default function Testimonial() {
           <blockquote className="relative max-w-xl text-xl leading-relaxed tracking-tight text-white md:text-2xl lg:text-3xl">
             <p className="leading-tight before:absolute before:top-0 before:right-full before:content-['“'] after:text-white after:content-['”']">
               <strong className="font-semibold">
-                COVOX AI ha revolucionado nuestra eficiencia operativa.
+                He visto cómo esta solución nos ha permitido optimizar la
+                gestión de nuestras interacciones comerciales
               </strong>{" "}
               <span className="text-white">
-                Como Directora de Ventas en{" "}
-                <strong className="font-semibold">Delta Oil</strong>, he visto
-                cómo esta solución nos ha permitido ahorrar tiempo valioso en
-                atención al cliente, optimizando la satisfacción de nuestros
-                clientes de manera significativa.
+                mejorando la eficiencia en la atención al cliente y la
+                prospección en la realización de llamadas en frío mediante
+                tecnología de{" "}
+                <strong className="font-semibold">IA avanzada.</strong>
               </span>
             </p>
           </blockquote>
@@ -42,19 +42,19 @@ export default function Testimonial() {
         <div className="mt-14 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
           <div className="relative shrink-0 rounded-full bg-white/15 p-0.5 ring-1 ring-white/20">
             <Image
-              alt="Andrea Hernández"
-              src="/images/smiller.jpeg"
-              width={56}
-              height={56}
+              alt="Robinson Martinez, Gerente Nacional de Ventas de DeltaOil"
+              src="/images/robinson-martinez.webp"
+              width={65}
+              height={65}
               className="rounded-full border object-contain"
             />
           </div>
           <div>
-            <div className="text-md font-semibold text-white">
-              Andrea Hernández
+            <div className="text-lg leading-tight font-semibold text-white">
+              Robinson Martinez
             </div>
-            <div className="text-sm text-yellow-400">
-              Directora Comercial y de Ventas
+            <div className="text-md leading-tight text-yellow-400">
+              Gerente Nacional de Ventas
             </div>
           </div>
         </div>
