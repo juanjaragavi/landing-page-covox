@@ -43,7 +43,7 @@ const GameOfLife = () => {
     }
 
     const draw = () => {
-      ctx.fillStyle = "#FDFDFD"
+      ctx.fillStyle = "#141525"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       // Update opacities
@@ -51,7 +51,7 @@ const GameOfLife = () => {
         for (let j = 0; j < cols; j++) {
           const cell = grid[i][j]
           if (cell.alive && cell.opacity < 1) {
-            cell.opacity = Math.min(cell.opacity + transitionSpeed, 0.5)
+            cell.opacity = Math.min(cell.opacity + transitionSpeed, 1)
           } else if (!cell.alive && cell.opacity > 0) {
             cell.opacity = Math.max(cell.opacity - transitionSpeed, 0)
           }
@@ -60,11 +60,11 @@ const GameOfLife = () => {
             ctx.fillStyle = `rgba(128, 128, 0, ${cell.opacity})`
             ctx.beginPath()
             ctx.arc(
-              j * cellSize + cellSize / 2,
-              i * cellSize + cellSize / 2,
+              j * cellSize + cellSize / 1.5,
+              i * cellSize + cellSize / 1.5,
               1,
               0,
-              Math.PI * 2,
+              Math.PI * 1.5,
             )
             ctx.fill()
           }
@@ -99,7 +99,7 @@ const GameOfLife = () => {
 
   return (
     <div className="mask pointer-events-none overflow-hidden select-none">
-      <canvas ref={canvasRef} width={1300} height={460} />
+      <canvas ref={canvasRef} width={1300} height={500} />
     </div>
   )
 }

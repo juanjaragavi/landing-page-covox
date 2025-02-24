@@ -38,7 +38,7 @@ export function Hero() {
               </div>
             </a>
           </FadeDiv>
-          <h1 className="mt-4 text-center text-2xl font-semibold tracking-tighter text-gray-900 sm:mt-24 sm:text-5xl sm:leading-[1em] dark:text-gray-900">
+          <h1 className="mt-4 text-center text-2xl font-semibold tracking-tighter text-gray-900 sm:mt-24 sm:text-5xl sm:leading-[1em] dark:text-white">
             <FadeSpan>Agentes Conversacionales de IA</FadeSpan>
             <br />
             <FadeSpan>Hiper Realistas</FadeSpan>{" "}
@@ -46,7 +46,7 @@ export function Hero() {
             <br />
             <FadeSpan>en Minutos</FadeSpan> <FadeSpan>🚀</FadeSpan>
           </h1>
-          <p className="mt-4 max-w-xl text-center text-base leading-tight font-medium text-balance text-gray-700 sm:mt-2 sm:text-xl dark:text-gray-900">
+          <p className="mt-4 max-w-xl text-center text-base leading-tight font-medium text-balance text-gray-700 sm:mt-2 sm:text-xl dark:text-white">
             <FadeSpan>Automatiza conversaciones,</FadeSpan>{" "}
             <FadeSpan>agenda citas</FadeSpan>{" "}
             <FadeSpan>y cierra más ventas</FadeSpan>{" "}
