@@ -19,14 +19,14 @@ export default function Home() {
         <Map />
       </div>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mt-12 mb-40 px-4 xl:px-0">
+      <div className="mt-12 mb-16 px-4 xl:px-0">
         <SolarAnalytics />
       </div>
       <div className="px-4 xl:px-0">
         <Testimonial />
       </div>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mt-10 mb-40 px-4 xl:px-0">
+      <div className="mt-10 mb-16 px-4 xl:px-0">
         <CallToAction />
       </div>
     </main>
