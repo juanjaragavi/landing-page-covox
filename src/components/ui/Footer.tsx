@@ -6,7 +6,6 @@ import {
 } from "@remixicon/react"
 import Image from "next/image"
 import Link from "next/link"
-const CURRENT_YEAR = new Date().getFullYear()
 
 const Footer = () => {
   const sections = {
@@ -179,8 +178,10 @@ const Footer = () => {
                 <RiSlackFill className="size-5 fill-[#77FF00]" />
               </Link>
             </div>
-            <div className="ml-2 hidden text-sm text-white lg:inline">
-              &copy; {CURRENT_YEAR} COVOX AI | Agentes Conversacionales
+            <div className="ml-0 hidden text-sm text-white lg:inline">
+              TRADEBOG LLC: 16192 COASTAL HIGHWAY
+              <br />
+              LEWES, DELAWARE.
             </div>
           </div>
         </div>
