@@ -1,10 +1,12 @@
 export default function Post() {
   return (
     <div className="container mx-auto max-w-4xl px-4 py-16">
-      <h1 className="mb-4 text-4xl font-bold">Getting Started with Covox AI</h1>
-      <p className="mb-8 text-gray-500">February 24, 2025</p>
+      <h1 className="mb-4 text-4xl font-bold text-white">
+        Getting Started with Covox AI
+      </h1>
+      <p className="mb-8 text-gray-400">February 24, 2025</p>
 
-      <div className="prose prose-lg max-w-none">
+      <div className="prose prose-lg prose-invert max-w-none">
         <p>
           Covox AI is a powerful platform that helps agricultural businesses
           analyze drone imagery to identify crop health issues, optimize
@@ -47,7 +49,7 @@ export default function Post() {
           </li>
         </ol>
 
-        <pre className="overflow-x-auto rounded bg-gray-100 p-4">
+        <pre className="overflow-x-auto rounded bg-gray-800 p-4 text-gray-200">
           <code>
             {`// Example API upload using fetch
 const response = await fetch('https://api.covox.io/v1/upload', {
