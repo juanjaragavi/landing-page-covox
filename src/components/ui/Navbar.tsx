@@ -78,9 +78,7 @@ export function NavBar() {
               variant="secondary"
               className="text-md h-10 bg-[#77FF00] font-semibold"
             >
-              <Link href="https://admin.covox.io/login">
-                Solicita una Demo Gratuita
-              </Link>
+              Solicita una Demo Gratuita
             </Button>
           </div>
           <Button
@@ -130,9 +128,7 @@ export function NavBar() {
               Login
             </Button>
             <Button variant="secondary" className="text-lg">
-              <Link href="https://admin.covox.io/login">
-                Solicita una Demo Gratuita
-              </Link>
+              Solicita una Demo Gratuita
             </Button>
           </div>
         </nav>
