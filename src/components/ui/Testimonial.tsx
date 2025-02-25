@@ -8,15 +8,15 @@ export default function Testimonial() {
     >
       <div className="absolute inset-0 object-cover">
         <Image
-          alt="clouds background"
+          alt="Delta Oil Logo"
           src="/images/delta-oil.webp"
           fill
           className="object-cover"
         />
       </div>
-      <div className="absolute top-[19rem] -right-4 w-[19rem] sm:top-[12rem] sm:right-24 sm:w-[23rem] md:top-[12rem] md:right-0 md:w-[25rem] lg:-right-28 lg:bottom-0 lg:w-[34rem]">
+      <div className="absolute top-[18.3rem] right-6 w-8/12 sm:top-[12rem] sm:right-24 sm:w-[23rem] md:top-[12rem] md:right-0 md:w-[25rem] lg:-right-28 lg:bottom-0 lg:w-[34rem]">
         <Image
-          alt="clouds background"
+          alt="Delta Oil Logo"
           src="/images/delta-oil-logo.webp"
           width={340}
           height={147}

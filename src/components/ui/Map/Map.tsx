@@ -5,7 +5,7 @@ export const Map = () => {
     <section
       id="como-funciona"
       aria-labelledby="management-title"
-      className="relative flex w-full max-w-6xl scroll-my-24 flex-col items-center justify-center overflow-hidden rounded-2xl bg-gray-950 px-10 shadow-2xl shadow-black/50 sm:px-16 md:px-28 lg:mx-auto"
+      className="relative flex w-full max-w-6xl scroll-my-24 flex-col items-center justify-center overflow-hidden rounded-2xl bg-gray-950 px-10 shadow-2xl shadow-black/50 sm:px-16 sm:pb-10 md:px-28 lg:mx-auto"
     >
       <div className="absolute inset-0 z-0">
         <svg className="h-full w-full">
@@ -98,7 +98,7 @@ export const Map = () => {
       </div>
       <h2
         id="management-title"
-        className="z-20 max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white md:text-5xl"
+        className="z-20 max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white sm:mb-10 md:text-5xl"
       >
         Totalmente personalizable, fácil e intuitivo.
       </h2>
@@ -112,7 +112,7 @@ export const Map = () => {
               <RiUserAddLine className="absolute top-1/2 left-1/2 z-10 size-6 -translate-x-1/2 -translate-y-1/2 text-white" />
               <div
                 style={{ animationDelay: "0.2s" }}
-                className="absolute size-12 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                className="absolute top-0 left-0 size-12 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
               ></div>
             </div>
             <div className="flex flex-col">
@@ -136,7 +136,7 @@ export const Map = () => {
               <RiSettings3Line className="absolute top-1/2 left-1/2 z-10 size-6 -translate-x-1/2 -translate-y-1/2 text-white" />
               <div
                 style={{ animationDelay: "1s" }}
-                className="absolute size-12 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                className="absolute top-0 left-0 size-12 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
               ></div>
             </div>
             <div className="flex flex-col">
@@ -159,7 +159,7 @@ export const Map = () => {
               <RiPlayLine className="absolute top-1/2 left-1/2 z-10 size-6 -translate-x-1/2 -translate-y-1/2 text-white" />
               <div
                 style={{ animationDelay: "2s" }}
-                className="absolute size-12 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                className="absolute top-0 left-0 size-12 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
               ></div>
             </div>
             <div className="flex flex-col">
@@ -180,7 +180,7 @@ export const Map = () => {
               <RiUserAddLine
                 className="absolute z-10 size-8 text-white"
                 style={{
-                  top: "50%",
+                  top: "0%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
                 }}
@@ -189,13 +189,13 @@ export const Map = () => {
                 style={{
                   animationDelay: "0.2s",
                 }}
-                className="absolute size-14 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                className="absolute top-0 left-1/2 size-14 -translate-x-1/2 -translate-y-1/2 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
               ></div>
             </div>
-            <h3 className="mt-14 text-xl font-semibold text-[#77FF00]">
+            <h3 className="mt-10 text-xl font-semibold text-[#77FF00]">
               Paso 1
             </h3>
-            <div className="text-md relative mt-2 max-w-[20rem] text-center leading-tight text-white">
+            <div className="relative mt-2 max-w-[20rem] text-center text-sm leading-tight text-white">
               Selecciona objetivo del agente, configura el prompt y personaliza
               la voz.
             </div>
@@ -213,7 +213,7 @@ export const Map = () => {
               <RiSettings3Line
                 className="absolute z-10 size-8 text-white"
                 style={{
-                  top: "50%",
+                  top: "0%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
                 }}
@@ -222,13 +222,13 @@ export const Map = () => {
                 style={{
                   animationDelay: "1s",
                 }}
-                className="absolute size-14 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                className="absolute top-0 left-1/2 size-14 -translate-x-1/2 -translate-y-1/2 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
               ></div>
             </div>
-            <h3 className="mt-14 text-xl font-semibold text-[#77FF00]">
+            <h3 className="mt-10 text-xl font-semibold text-[#77FF00]">
               Paso 2
             </h3>
-            <div className="text-md relative mt-2 max-w-[20rem] text-center leading-tight text-white">
+            <div className="relative mt-2 max-w-[20rem] text-center text-sm leading-tight text-white">
               Selecciona la base de datos de tus leads y clientes.
             </div>
           </div>
@@ -245,7 +245,7 @@ export const Map = () => {
               <RiPlayLine
                 className="absolute z-10 size-8 text-white"
                 style={{
-                  top: "50%",
+                  top: "0%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
                 }}
@@ -254,13 +254,13 @@ export const Map = () => {
                 style={{
                   animationDelay: "2s",
                 }}
-                className="absolute size-14 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                className="absolute top-0 left-1/2 size-14 -translate-x-1/2 -translate-y-1/2 animate-[ping_5s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
               ></div>
             </div>
-            <h3 className="mt-14 text-xl font-semibold text-[#77FF00]">
+            <h3 className="mt-10 text-xl font-semibold text-[#77FF00]">
               Paso 3
             </h3>
-            <div className="text-md relative mt-2 max-w-[20rem] text-center leading-tight text-white">
+            <div className="relative mt-2 max-w-[20rem] text-center text-sm leading-tight text-white">
               Programa día y hora de las llamadas.
             </div>
           </div>

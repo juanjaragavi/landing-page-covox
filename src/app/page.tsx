@@ -25,7 +25,7 @@ export default function Home() {
       <section className="px-4 xl:px-0">
         <Testimonial />
       </section>
-      <FeatureDivider className="my-16 max-w-6xl" />
+      <FeatureDivider className="mt-12 max-w-6xl" />
       <section className="mt-4 mb-16 px-4 xl:px-0">
         <CallToAction />
       </section>

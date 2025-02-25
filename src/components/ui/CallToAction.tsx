@@ -1,34 +1,20 @@
-import { Button } from "../Button"
-
 export function CallToAction() {
   return (
     <section aria-labelledby="cta-title" className="mx-auto max-w-6xl">
-      <div className="grid items-start gap-8 sm:grid-cols-6">
-        <div className="sm:col-span-2">
+      <div className="grid items-start sm:grid-cols-6 sm:gap-8 sm:px-0">
+        <div className="px-6 sm:col-span-2 sm:px-0">
           <h2
             id="cta-title"
-            className="mt-8 scroll-my-60 text-3xl font-semibold tracking-tighter text-balance text-[#77FF00] md:text-4xl"
+            className="scroll-my-40 text-center text-3xl font-semibold tracking-tighter text-balance text-[#77FF00] sm:mt-8 sm:text-left md:text-4xl"
           >
             ¡No Esperes Más!
           </h2>
-          <p className="mt-3 mb-8 text-lg text-white">
+          <p className="mt-2 text-center text-lg leading-tight text-white sm:mt-3 sm:mb-8 sm:text-left">
             Empieza ahora y automatiza tu negocio con COVOX AI.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Button
-              onClick={() =>
-                (window.location.href = "https://admin.covox.io/login")
-              }
-              variant="primary"
-              asChild
-              className="text-md text-gray-900"
-            >
-              Solicita una Demo Gratuita
-            </Button>
-          </div>
         </div>
         <div className="relative isolate rounded-xl sm:col-span-4 sm:h-full">
-          <div className="absolute inset-0 -z-10 rounded-2xl bg-gray-900/80 blur-xl"></div>
+          <div className="absolute inset-0 -z-5 rounded-2xl bg-gray-900/80 blur-xl"></div>
           <form className="relative z-10 rounded-2xl bg-gray-900/80 p-8 backdrop-blur-sm">
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="space-y-6">
