@@ -23,7 +23,7 @@ const blogPosts = [
 ]
 
 function getFormattedDate(date: string) {
-  return new Date(date).toLocaleDateString("en-US", {
+  return new Date(date).toLocaleDateString("es-LA", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -32,25 +32,27 @@ function getFormattedDate(date: string) {
 
 export default function BlogPage() {
   return (
-    <section className="container mx-auto max-w-4xl px-4 py-32">
-      <h1 className="mb-8 text-4xl font-bold">Blog</h1>
+    <section className="container mx-auto max-w-4xl py-44">
+      <h1 className="mb-8 text-4xl font-bold text-[#77FF00]">
+        Bienvenidos al Blog
+      </h1>
       <div className="space-y-10">
         {blogPosts.map((post) => (
           <article key={post.slug} className="border-b border-gray-200 pb-8">
             <Link href={`/blog/${post.slug}`}>
-              <h2 className="mb-2 text-2xl font-semibold hover:text-blue-600">
+              <h2 className="mb-2 text-2xl font-semibold text-white underline-offset-2 transition-all duration-200 ease-in-out hover:text-[#77FF00] hover:underline">
                 {post.frontMatter.title}
               </h2>
             </Link>
-            <p className="mb-3 text-sm text-gray-500">
+            <p className="mb-3 text-sm text-gray-300">
               {getFormattedDate(post.frontMatter.date)}
             </p>
-            <p className="mb-4 text-gray-700">{post.frontMatter.excerpt}</p>
+            <p className="mb-4 text-gray-400">{post.frontMatter.excerpt}</p>
             <Link
               href={`/blog/${post.slug}`}
-              className="text-blue-600 hover:underline"
+              className="text-[#77FF00] underline-offset-2 transition-all duration-200 ease-in-out hover:text-white hover:underline"
             >
-              Read more →
+              Leer más →
             </Link>
           </article>
         ))}
