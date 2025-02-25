@@ -32,7 +32,7 @@ function getFormattedDate(date: string) {
 
 export default function BlogPage() {
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-16">
+    <section className="container mx-auto max-w-4xl px-4 py-32">
       <h1 className="mb-8 text-4xl font-bold">Blog</h1>
       <div className="space-y-10">
         {blogPosts.map((post) => (
@@ -55,6 +55,6 @@ export default function BlogPage() {
           </article>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
