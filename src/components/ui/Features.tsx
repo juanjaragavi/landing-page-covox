@@ -226,7 +226,7 @@ export default function Features() {
                 </div>
               </div>
 
-              <div className="absolute top-[240px] left-[385px]">
+              <div className="absolute top-[240px] left-[240px] md:left-[385px]">
                 <div className="relative">
                   <div
                     className="absolute inset-0 size-14 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
@@ -241,7 +241,7 @@ export default function Features() {
                 </div>
               </div>
 
-              <div className="absolute top-[337px] left-[336px]">
+              <div className="absolute top-[337px] left-[240px] md:left-[336px]">
                 <div className="relative">
                   <div
                     className="absolute inset-0 size-14 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
