@@ -24,21 +24,20 @@ export function Hero() {
               rel="noopener noreferrer"
               className="mx-auto w-full"
             >
-              <div className="inline-flex max-w-full items-center gap-3 rounded-full bg-white/5 px-2.5 py-0.5 pr-3 pl-0.5 font-medium text-gray-900 ring-1 shadow-lg shadow-[#77FF00]/20 ring-black/10 filter backdrop-blur-[1px] transition-colors hover:bg-[#77FF00]/[2.5%] focus:outline-hidden sm:text-sm dark:text-gray-100">
-                <span className="shrink-0 truncate rounded-full border border-[#77FF00] px-2.5 py-1 text-sm text-gray-600 sm:text-xs dark:bg-gray-800 dark:text-gray-300">
+              <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-white/5 px-2 py-0.5 text-xs font-medium text-gray-900 ring-1 shadow-md shadow-[#77FF00]/10 ring-black/10 backdrop-blur-[1px] transition-colors hover:bg-[#77FF00]/[2.5%] focus:outline-hidden sm:text-sm dark:text-gray-100">
+                <span className="shrink-0 truncate rounded-full border border-[#77FF00] px-2 py-1 text-xs text-gray-600 dark:bg-gray-800 dark:text-gray-300">
                   VIDEO
                 </span>
                 <span className="flex items-center gap-1 truncate">
                   <span className="w-full truncate">
                     ¡Mira cómo funciona nuestra IA Conversacional!
                   </span>
-
-                  <RiPlayFill className="size-4 shrink-0 fill-[#77FF00] text-gray-700 dark:text-gray-300" />
+                  <RiPlayFill className="size-3.5 shrink-0 fill-[#77FF00] text-gray-700 dark:text-gray-300" />
                 </span>
               </div>
             </a>
           </FadeDiv>
-          <h1 className="mt-4 text-center text-2xl font-semibold tracking-tighter text-gray-900 sm:mt-24 sm:text-5xl sm:leading-[1em] dark:text-white">
+          <h1 className="mt-10 text-center text-2xl leading-6 font-semibold tracking-tighter text-gray-900 sm:mt-24 sm:text-5xl sm:leading-[1em] dark:text-white">
             <FadeSpan>Agentes Conversacionales de IA</FadeSpan>
             <br />
             <FadeSpan>Hiper Realistas</FadeSpan>{" "}
