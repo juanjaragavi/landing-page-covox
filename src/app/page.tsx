@@ -1,3 +1,4 @@
+import AIVsHumans from "@/components/ui/AIVsHumans"
 import { CallToAction } from "@/components/ui/CallToAction"
 import { CovoxAIAnalytics } from "@/components/ui/CovoxAIAnalytics"
 import FeatureDivider from "@/components/ui/FeatureDivider"
@@ -21,6 +22,9 @@ export default function Home() {
       <FeatureDivider className="my-16 max-w-6xl" />
       <section className="mb-12 px-4 xl:px-0">
         <CovoxAIAnalytics />
+      </section>
+      <section className="my-12 px-4 xl:px-0">
+        <AIVsHumans />
       </section>
       <section className="px-4 xl:px-0">
         <Testimonial />

@@ -5,7 +5,6 @@ import {
   RiTruckFill,
   RiUserStarFill,
 } from "@remixicon/react"
-import { Divider } from "../Divider"
 import { StickerCard } from "./StickerCard"
 
 export function CovoxAIAnalytics() {
@@ -73,7 +72,6 @@ export function CovoxAIAnalytics() {
           </a>
         </div>
       </div>
-      <Divider className="mt-10"></Divider>
     </section>
   )
 }

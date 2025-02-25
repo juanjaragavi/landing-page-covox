@@ -358,7 +358,7 @@ export default function Features() {
                     className="relative flex items-center justify-center"
                   >
                     <AutoResponseIcon className="z-10 size-6 text-white" />
-                    <div className="absolute size-10 rounded-full bg-gray-800/50 ring-1 shadow-lg ring-black/5"></div>
+                    <div className="absolute size-10 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="flex items-center justify-center rounded-l-full bg-gray-600 p-1 text-xs ring-1 ring-gray-200">
@@ -373,7 +373,7 @@ export default function Features() {
                       style={{
                         animationDelay: "1s",
                       }}
-                      className="absolute size-10 animate-[float_4s_ease-in-out_infinite] rounded-full ring-1 ring-[#77FF00]/50"
+                      className="absolute size-10 animate-[ping_7s_ease_infinite] rounded-full ring-1 ring-[#77FF00]/50"
                     ></div>
                   </div>,
 
