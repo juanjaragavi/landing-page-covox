@@ -124,7 +124,7 @@ const Footer = () => {
             opacity={0.5}
           />
         </svg>
-        <div className="mr-auto ml-8 flex w-full justify-between lg:w-fit lg:flex-col">
+        <div className="mr-auto ml-4 flex w-full justify-between sm:ml-8 lg:w-fit lg:flex-col">
           <Link
             href="/"
             className="flex items-center font-medium text-white select-none sm:text-sm"
@@ -143,7 +143,7 @@ const Footer = () => {
           </Link>
 
           <div>
-            <div className="mt-4 flex items-center">
+            <div className="mt-1 mr-2 flex items-center sm:mt-4">
               {/* Social Icons */}
               <Link
                 href="#"
@@ -190,7 +190,10 @@ const Footer = () => {
 
         {/* Footer Sections */}
         {Object.entries(sections).map(([key, section]) => (
-          <div key={key} className="mt-6 min-w-44 pl-2 lg:mt-0 lg:pl-0">
+          <div
+            key={key}
+            className="mt-6 ml-4 min-w-44 pl-2 sm:ml-0 lg:mt-0 lg:pl-0"
+          >
             <h3 className="mb-4 font-medium text-[#77FF00] sm:text-sm">
               {section.title}
             </h3>
