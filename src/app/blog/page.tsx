@@ -3,6 +3,16 @@ import Link from "next/link"
 // Blog post metadata
 const blogPosts = [
   {
+    slug: "estrategias-ia-equipos-comerciales",
+    frontMatter: {
+      title:
+        "Estrategias Prácticas de IA Generativa para Equipos Comerciales: Potenciando el Día a Día del Vendedor",
+      date: "2025-02-25",
+      excerpt:
+        "Tácticas concretas y casos reales para integrar la IA generativa en las rutinas comerciales, optimizando desde la prospección hasta el postventa con resultados de hasta 65% más cierres y 40% menos tareas administrativas.",
+    },
+  },
+  {
     slug: "revolucion-agentes-ia-atencion-cliente",
     frontMatter: {
       title:
