@@ -128,7 +128,9 @@ El reciente AI Act europeo exige registros detallados de interacciones generativ
 
 Los equipos que adopten estas estrategias no solo sobrevivirán a la disrupción digital - liderarán la reinvención de las ventas consultivas. La clave está en usar la IAG no como reemplazo, sino como amplificador de la inteligencia emocional y estratégica humana.
 
+```html
 <div style="text-align: center">⁂</div>
+```
 
 [^1]: <https://aimfa.es/articulo/como-la-ia-generativa-cambiara-las-ventas/>
 

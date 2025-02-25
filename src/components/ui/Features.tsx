@@ -474,7 +474,7 @@ export default function Features() {
               <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                   <RiCustomerService2Line
-                    className="size-[5.5] text-white"
+                    className="size-8 text-white"
                     aria-hidden="true"
                   />
                 </div>
@@ -484,7 +484,7 @@ export default function Features() {
               <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                   <RiBarChartBoxLine
-                    className="size-[5.5] text-white"
+                    className="size-8 text-white"
                     aria-hidden="true"
                   />
                 </div>
@@ -494,7 +494,7 @@ export default function Features() {
               <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                   <RiRobot2Line
-                    className="size-[5.5] text-white"
+                    className="size-8 text-white"
                     aria-hidden="true"
                   />
                 </div>
@@ -504,7 +504,7 @@ export default function Features() {
               <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
                 <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
                   <RiTimeLine
-                    className="size-[5.5] text-white"
+                    className="size-8 text-white"
                     aria-hidden="true"
                   />
                 </div>
