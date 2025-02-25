@@ -1,10 +1,11 @@
 import { GeistSans } from "geist/font/sans"
 import type { Metadata } from "next"
+import { lazy, Suspense } from "react"
 import "./globals.css"
-
-import Footer from "@/components/ui/Footer"
-import { NavBar } from "@/components/ui/Navbar"
 import { siteConfig } from "./siteConfig"
+
+const NavBar = lazy(() => import("@/components/ui/Navbar"))
+const Footer = lazy(() => import("@/components/ui/Footer"))
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yoururl.com"),
@@ -44,12 +45,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="dark">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </head>
       <body
-        className={`${GeistSans.className} min-h-screen overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-[#77FF00] selection:text-gray-800 dark:bg-gray-900`}
+        className={`${GeistSans.className} min-h-[100dvh] overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-[#77FF00] selection:text-gray-800 dark:bg-gray-900`}
       >
-        <NavBar />
-        {children}
-        <Footer />
+        <Suspense fallback={null}>
+          <NavBar />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   )

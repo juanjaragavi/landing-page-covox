@@ -10,8 +10,8 @@ export function Hero() {
         <div className="absolute inset-0 -z-10">
           <div className="bg-gradient-radial absolute inset-0 from-transparent via-transparent to-gray-950/80 dark:to-gray-950"></div>
           <ScaleContainer>
-            <ScaleDiv className="flex items-center justify-center">
-              <GameOfLife />
+            <ScaleDiv className="flex items-center justify-center overflow-visible">
+              <GameOfLife className="overflow-visible" />
             </ScaleDiv>
           </ScaleContainer>
         </div>

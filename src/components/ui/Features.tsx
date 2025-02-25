@@ -22,7 +22,7 @@ export default function Features() {
     <section
       aria-label="COVOX AI | Agentes Conversacionales Features for Farms"
       id="solucion"
-      className="relative mx-auto max-w-6xl scroll-my-24"
+      className="relative mx-auto max-w-6xl scroll-my-24 px-4 sm:px-0"
     >
       {/* Vertical Lines */}
       <div className="pointer-events-none inset-0 select-none">
@@ -139,7 +139,7 @@ export default function Features() {
           <div className="flex flex-col gap-y-2">
             <div className="flex items-start gap-x-2">
               <div className="text-xl">
-                <ErrorCircleIcon className="size-8" />
+                <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 Tu equipo pierde tiempo en llamadas repetitivas
@@ -147,7 +147,7 @@ export default function Features() {
             </div>
             <div className="flex items-start gap-x-2">
               <div className="text-xl">
-                <ErrorCircleIcon className="size-8" />
+                <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
                 No logras atender todos los leads a tiempo
@@ -155,7 +155,7 @@ export default function Features() {
             </div>
             <div className="flex items-start gap-x-2">
               <div className="text-xl">
-                <ErrorCircleIcon className="size-8" />
+                <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
               <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-900 md:text-2xl dark:text-gray-100">
                 Los costos operativos son altos y los cierres bajos
@@ -164,7 +164,7 @@ export default function Features() {
           </div>
         </div>
 
-        <div className="relative col-span-2 flex items-center justify-center overflow-hidden">
+        <div className="relative col-span-2 flex h-full w-full items-center justify-center overflow-visible">
           <svg className="absolute size-full [mask-image:linear-gradient(transparent,white_10rem)]">
             <defs>
               <pattern
@@ -211,7 +211,7 @@ export default function Features() {
                   <CovoxAIMark className="animate-pulse p-1" />
                 </div>
               </div>
-              <div className="absolute top-[48px] left-[144px]">
+              <div className="absolute top-[96px] left-[192px]">
                 <div className="relative">
                   <div
                     className="absolute inset-0 size-14 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"

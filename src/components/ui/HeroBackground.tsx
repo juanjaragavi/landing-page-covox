@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react"
 
 type Grid = { alive: boolean; opacity: number }[][]
 
-const GameOfLife = () => {
+const GameOfLife = ({ className }: { className?: string }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -98,7 +98,9 @@ const GameOfLife = () => {
   }, [])
 
   return (
-    <div className="mask pointer-events-none overflow-hidden select-none">
+    <div
+      className={`mask pointer-events-none overflow-hidden select-none ${className}`}
+    >
       <canvas ref={canvasRef} width={1300} height={500} />
     </div>
   )

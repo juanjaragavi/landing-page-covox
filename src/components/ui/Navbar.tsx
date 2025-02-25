@@ -9,7 +9,7 @@ import Link from "next/link"
 import React from "react"
 import { Button } from "../Button"
 
-export function NavBar() {
+export default function NavBar() {
   const [open, setOpen] = React.useState(false)
   const scrolled = useScroll(15)
 
