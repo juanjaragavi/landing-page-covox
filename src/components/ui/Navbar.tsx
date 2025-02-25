@@ -23,11 +23,12 @@ export function NavBar() {
       )}
     >
       <div className="w-full md:my-auto">
-        <div className="relative flex items-center justify-between gap-x-10">
+        <div className="relative flex items-center justify-between">
           <Link href={siteConfig.baseLinks.home} aria-label="Home">
             <span className="sr-only">CovoxAI Tech Logo</span>
             <Image
               src="/images/logo-header.webp"
+              className="sm:mr-8"
               priority
               loading="eager"
               quality={90}
@@ -36,8 +37,8 @@ export function NavBar() {
               height={32}
             />
           </Link>
-          <nav className="hidden sm:block">
-            <div className="flex items-center gap-6 text-sm font-medium">
+          <nav className="mx-auto hidden sm:block">
+            <div className="text-md flex items-center gap-8 font-medium">
               <Link
                 className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
                 href="#solucion"
@@ -81,7 +82,7 @@ export function NavBar() {
               variant="secondary"
               className="text-md h-10 bg-[#77FF00] font-semibold"
             >
-              Solicita una Demo Gratuita
+              Crea tu Cuenta
             </Button>
           </div>
           <Button
@@ -137,7 +138,7 @@ export function NavBar() {
               variant="secondary"
               className="text-lg"
             >
-              Solicita una Demo Gratuita
+              Crea tu Cuenta
             </Button>
           </div>
         </nav>
