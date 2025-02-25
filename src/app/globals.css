@@ -239,3 +239,17 @@
 .animate-slide {
   animation: slide 2s linear infinite;
 }
+
+@keyframes slide-vertical {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-slide-vertical {
+  animation: slide-vertical 2s linear infinite;
+}
