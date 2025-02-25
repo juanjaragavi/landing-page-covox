@@ -44,7 +44,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300 dark:stroke-gray-700"
+              className="stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -65,7 +65,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300 dark:stroke-gray-700"
+              className="stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -85,7 +85,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300 dark:stroke-gray-700"
+              className="stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -105,7 +105,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300 dark:stroke-gray-700"
+              className="stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -125,7 +125,7 @@ export default function Features() {
               y1="0"
               x2="0"
               y2="100%"
-              className="stroke-gray-300 dark:stroke-gray-700"
+              className="stroke-gray-700"
               strokeWidth="2"
               strokeDasharray="3 3"
             />
@@ -145,7 +145,7 @@ export default function Features() {
               <div className="text-xl">
                 <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-100 md:text-2xl">
                 Tu equipo pierde tiempo en llamadas repetitivas
               </p>
             </div>
@@ -153,7 +153,7 @@ export default function Features() {
               <div className="text-xl">
                 <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-100 md:text-2xl">
                 No logras atender todos los leads a tiempo
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function Features() {
               <div className="text-xl">
                 <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-100 md:text-2xl">
                 Los costos operativos son altos y los cierres bajos
               </p>
             </div>
@@ -183,7 +183,7 @@ export default function Features() {
                     <path
                       key={i}
                       d={`M${-106 + offset},110 L${22 + offset},-18`}
-                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
+                      className="stroke-gray-700/70"
                       strokeWidth="1"
                     />
                   )
@@ -204,14 +204,14 @@ export default function Features() {
               className="mask absolute size-[432px]"
             >
               <path
-                className="stroke-gray-300 dark:stroke-gray-700"
+                className="stroke-gray-700"
                 d="M48 0v432M96 0v432M144 0v432M192 0v432M240 0v432M288 0v432M336 0v432M384 0v432M0 48h432M0 96h432M0 144h432M0 192h432M0 240h432M0 288h432M0 336h432M0 384h432"
               />
             </svg>
 
             <div className="pointer-events-none relative h-full select-none">
               <div className="absolute top-[192px] left-[144px]">
-                <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
+                <div className="flex h-12 w-12 items-center justify-center bg-gray-800 ring-1 shadow-sm ring-black/15">
                   <AlertIcon className="z-50 animate-pulse" />
                 </div>
               </div>
@@ -222,7 +222,7 @@ export default function Features() {
                     style={{ animationDelay: "0.5s" }}
                   ></div>
                   <div
-                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    className="relative flex h-12 w-12 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-gray-800 ring-1 shadow-sm ring-black/15"
                     style={{ animationDelay: "1s" }}
                   >
                     <LeadTimeIcon />
@@ -237,7 +237,7 @@ export default function Features() {
                     style={{ animationDelay: "1.5s" }}
                   ></div>
                   <div
-                    className="relative flex size-11 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white p-2 ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    className="relative flex size-11 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-gray-800 p-2 ring-1 shadow-sm ring-black/15"
                     style={{ animationDelay: "3s" }}
                   >
                     <MissedCallsIcon />
@@ -252,7 +252,7 @@ export default function Features() {
                     style={{ animationDelay: "2s" }}
                   ></div>
                   <div
-                    className="relative flex size-11 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-white p-1 ring-1 shadow-sm ring-black/15 dark:bg-gray-800"
+                    className="relative flex size-11 animate-[float_4s_ease-in-out_infinite] items-center justify-center bg-gray-800 p-1 ring-1 shadow-sm ring-black/15"
                     style={{ animationDelay: "4s" }}
                   >
                     <HighCostsIcon />
@@ -284,7 +284,7 @@ export default function Features() {
               <div className="text-xl">
                 <CheckCircleIcon className="size-8" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-100 md:text-2xl">
                 Responde y agenda{" "}
                 <span className="text-[#77FF00]">automáticamente</span> 24/7
               </p>
@@ -293,7 +293,7 @@ export default function Features() {
               <div className="text-xl">
                 <CheckCircleIcon className="size-8" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-100 md:text-2xl">
                 Atiende{" "}
                 <span className="text-[#77FF00]">100% de tus leads</span> sin
                 perder oportunidades
@@ -303,7 +303,7 @@ export default function Features() {
               <div className="text-xl">
                 <CheckCircleIcon className="size-8" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-100 md:text-2xl">
                 Reduce costos y{" "}
                 <span className="text-[#77FF00]">aumenta las conversiones</span>{" "}
                 sin contratar más personal
@@ -333,7 +333,7 @@ export default function Features() {
                     <path
                       key={i}
                       d={`M${-106 + offset},110 L${22 + offset},-18`}
-                      className="stroke-gray-200/70 dark:stroke-gray-700/70"
+                      className="stroke-gray-700/70"
                       strokeWidth="1"
                     />
                   )
@@ -358,13 +358,13 @@ export default function Features() {
                     className="relative flex items-center justify-center"
                   >
                     <AutoResponseIcon className="z-10 size-6 text-white" />
-                    <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
+                    <div className="absolute size-10 rounded-full bg-gray-800/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="flex items-center justify-center rounded-l-full bg-gray-600 p-1 text-xs ring-1 ring-gray-200">
                           <RiCircleLine className="size-3 shrink-0 text-[#77FF00]" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs font-semibold whitespace-nowrap text-gray-900 ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-200">
+                        <div className="rounded-r-full bg-gray-100/50 py-0.5 pr-1.5 pl-1 text-xs font-semibold whitespace-nowrap text-gray-900 ring-1 ring-gray-200">
                           24/7
                         </div>
                       </div>
@@ -382,13 +382,13 @@ export default function Features() {
                     className="relative flex items-center justify-center"
                   >
                     <LeadsIcon className="z-10 size-8 text-white" />
-                    <div className="absolute size-10 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
+                    <div className="absolute size-10 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
                         <div className="bg-bg-gray-600 flex items-center justify-center rounded-l-full p-1 text-xs ring-1 ring-gray-200">
                           <RiLoaderFill className="size-3 shrink-0 animate-spin text-[#77FF00]" />
                         </div>
-                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs font-semibold whitespace-nowrap text-gray-900 ring-1 ring-gray-200 dark:bg-gray-100/50 dark:ring-gray-200">
+                        <div className="rounded-r-full bg-gray-100/50 py-0.5 pr-1.5 pl-1 text-xs font-semibold whitespace-nowrap text-gray-900 ring-1 ring-gray-200">
                           100%
                         </div>
                       </div>
@@ -406,7 +406,7 @@ export default function Features() {
                     className="relative flex items-center justify-center"
                   >
                     <ConversionIcon className="z-10 size-8 text-white" />
-                    <div className="absolute size-10 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5 dark:bg-gray-800/50"></div>
+                    <div className="absolute size-10 rounded-full bg-[#77FF00]/50 ring-1 shadow-lg ring-black/5"></div>
                     <div
                       style={{
                         animationDelay: "2s",
@@ -418,7 +418,7 @@ export default function Features() {
               >
                 <div className="relative flex h-48 w-48 items-center justify-center">
                   <div className="rounded-full p-1 ring-1 ring-black/10">
-                    <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-white ring-1 shadow-[inset_0px_-15px_20px_rgba(0,0,0,0.1),0_7px_10px_0_rgba(0,0,0,0.15)] ring-black/20 dark:bg-gray-800">
+                    <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-gray-800 ring-1 shadow-[inset_0px_-15px_20px_rgba(0,0,0,0.1),0_7px_10px_0_rgba(0,0,0,0.15)] ring-black/20">
                       <CovoxFavicon />
                     </div>
                     <div className="absolute inset-12 animate-[spin_8s_linear_infinite] rounded-full bg-linear-to-t from-transparent via-[#77FF00] to-transparent blur-lg" />
@@ -459,7 +459,7 @@ export default function Features() {
                   <path
                     key={i}
                     d={`M${-106 + offset},110 L${22 + offset},-18`}
-                    className="stroke-gray-200/70 dark:stroke-gray-700/70"
+                    className="stroke-gray-700/70"
                     strokeWidth="1"
                   />
                 )
@@ -475,8 +475,8 @@ export default function Features() {
         <div className="pointer-events-none relative flex size-full h-[26rem] items-center justify-center p-10 select-none">
           <div className="relative">
             <div className="absolute top-[6rem] left-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
-                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-800 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00]">
+                <div className="w-fit rounded-full bg-linear-to-b from-gray-800 to-gray-900 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.09),0_3px_5px_0_rgba(0,0,0,0.19)] ring-gray-700/50 ring-inset">
                   <RiCustomerService2Line
                     className="size-8 text-white"
                     aria-hidden="true"
@@ -485,8 +485,8 @@ export default function Features() {
               </div>
             </div>
             <div className="absolute top-[6rem] right-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
-                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-800 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00]">
+                <div className="w-fit rounded-full bg-linear-to-b from-gray-800 to-gray-900 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-gray-700/50 ring-inset">
                   <RiBarChartBoxLine
                     className="size-8 text-white"
                     aria-hidden="true"
@@ -495,8 +495,8 @@ export default function Features() {
               </div>
             </div>
             <div className="absolute right-[6rem] bottom-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
-                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-800 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00]">
+                <div className="w-fit rounded-full bg-linear-to-b from-gray-800 to-gray-900 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-gray-700/50 ring-inset">
                   <RiRobot2Line
                     className="size-8 text-white"
                     aria-hidden="true"
@@ -505,8 +505,8 @@ export default function Features() {
               </div>
             </div>
             <div className="absolute bottom-[6rem] left-[6rem] z-20">
-              <div className="relative mx-auto w-fit rounded-full bg-gray-50 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00] dark:bg-gray-800">
-                <div className="w-fit rounded-full bg-linear-to-b from-white to-gray-100 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-white/50 ring-inset dark:from-gray-800 dark:to-gray-900 dark:ring-gray-700/50">
+              <div className="relative mx-auto w-fit rounded-full bg-gray-800 p-1 ring-1 shadow-md shadow-black/10 ring-[#77FF00]">
+                <div className="w-fit rounded-full bg-linear-to-b from-gray-800 to-gray-900 p-3 ring-1 shadow-[inset_0px_-2px_6px_rgba(0,0,0,0.05),0_7px_10px_0_rgba(0,0,0,0.10)] ring-gray-700/50 ring-inset">
                   <RiTimeLine
                     className="size-8 text-white"
                     aria-hidden="true"
@@ -523,7 +523,7 @@ export default function Features() {
                 style={{ transform: `rotate(${rotation}deg)` }}
               >
                 <div className="relative">
-                  <div className="h-0.5 w-60 bg-linear-to-r from-gray-300 to-transparent dark:from-gray-700" />
+                  <div className="h-0.5 w-60 bg-linear-to-r from-gray-700 to-transparent" />
                   <div
                     className="absolute top-0 left-0 h-0.5 w-28 bg-linear-to-r from-transparent via-[#77FF00] to-transparent"
                     style={{

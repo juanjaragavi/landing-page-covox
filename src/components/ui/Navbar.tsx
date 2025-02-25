@@ -18,8 +18,8 @@ export default function NavBar() {
       className={cx(
         "fixed inset-x-4 top-4 z-50 mx-auto flex max-w-6xl justify-center rounded-lg border border-transparent px-3 py-3 transition duration-300",
         scrolled || open
-          ? "border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm dark:bg-gray-900/80"
-          : "bg-white/0 dark:bg-gray-900/0",
+          ? "border-gray-200/50 bg-gray-900/80 shadow-2xl shadow-black/5 backdrop-blur-sm"
+          : "bg-gray-900/0",
       )}
     >
       <div className="w-full md:my-auto">
@@ -40,31 +40,31 @@ export default function NavBar() {
           <nav className="mx-auto hidden sm:block">
             <div className="text-md flex items-center gap-4 font-medium">
               <Link
-                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
+                className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#solucion"
               >
                 La Solución
               </Link>
               <Link
-                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
+                className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#como-funciona"
               >
                 ¿Cómo Funciona?
               </Link>
               <Link
-                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
+                className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#casos-de-uso"
               >
                 Casos de Uso
               </Link>
               <Link
-                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
+                className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#testimoniales"
               >
                 Testimoniales
               </Link>
               <Link
-                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
+                className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/blog"
               >
                 Blog
@@ -99,12 +99,12 @@ export default function NavBar() {
           >
             {!open ? (
               <RiMenuFill
-                className="size-6 shrink-0 text-gray-900 dark:text-gray-100"
+                className="size-6 shrink-0 text-gray-100"
                 aria-hidden
               />
             ) : (
               <RiCloseFill
-                className="size-6 shrink-0 text-gray-900 dark:text-gray-100"
+                className="size-6 shrink-0 text-gray-100"
                 aria-hidden
               />
             )}
@@ -116,7 +116,7 @@ export default function NavBar() {
             open ? "" : "hidden",
           )}
         >
-          <ul className="font-medium text-gray-900 dark:text-gray-100">
+          <ul className="font-medium text-gray-100">
             <li onClick={() => setOpen(false)}>
               <Link href="/#solucion">La Solución</Link>
             </li>

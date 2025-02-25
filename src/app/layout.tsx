@@ -44,15 +44,22 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className="dark">
+    <html lang="es" className="dark" style={{ colorScheme: "dark" }}>
       <head>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
+        <meta name="color-scheme" content="dark" />
+        <style>{`
+          html { color-scheme: dark !important; }
+          @media (prefers-color-scheme: light) {
+            html.dark { color-scheme: dark !important; }
+          }
+        `}</style>
       </head>
       <body
-        className={`${GeistSans.className} min-h-[100dvh] overflow-x-hidden scroll-auto bg-gray-50 antialiased selection:bg-[#77FF00] selection:text-gray-800 dark:bg-gray-900`}
+        className={`${GeistSans.className} min-h-[100dvh] overflow-x-hidden scroll-auto bg-gray-900 antialiased selection:bg-[#77FF00] selection:text-gray-800`}
       >
         <Suspense fallback={null}>
           <NavBar />
