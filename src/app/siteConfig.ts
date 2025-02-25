@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "COVOX AI | Agentes Conversacionales",
-  url: "https://solar.tremor.so",
-  description: "Automation for every Farm.",
+  url: "https://covox.io",
+  description: "Agentes Conversacionales",
   baseLinks: {
     home: "/",
   },
