@@ -208,7 +208,7 @@ export default function Features() {
             <div className="pointer-events-none relative h-full select-none">
               <div className="absolute top-[192px] left-[191.8px]">
                 <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                  <CovoxAIMark className="p-1" />
+                  <CovoxAIMark className="animate-pulse p-1" />
                 </div>
               </div>
               <div className="absolute top-[48px] left-[144px]">
