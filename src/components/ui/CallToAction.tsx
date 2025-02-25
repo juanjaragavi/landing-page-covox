@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { Button } from "../Button"
 
 export function CallToAction() {
@@ -24,9 +23,7 @@ export function CallToAction() {
               asChild
               className="text-md text-gray-900"
             >
-              <Link href="https://admin.covox.io/login">
-                Solicita una Demo Gratuita
-              </Link>
+              Solicita una Demo Gratuita
             </Button>
           </div>
         </div>
