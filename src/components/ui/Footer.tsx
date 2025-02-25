@@ -178,8 +178,10 @@ const Footer = () => {
                 <RiSlackFill className="size-5 fill-[#77FF00]" />
               </Link>
             </div>
-            <div className="ml-0 hidden text-sm text-white lg:inline">
-              TRADEBOG LLC: 16192 COASTAL HIGHWAY
+            <div className="ml-0 hidden text-sm leading-tight text-white lg:inline">
+              <span className="font-bold text-[#77FF00]">TRADEBOG, LLC.</span>{" "}
+              <br />
+              16192 COASTAL HIGHWAY
               <br />
               LEWES, DELAWARE.
             </div>
