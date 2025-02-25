@@ -94,8 +94,8 @@ export function NavBar() {
           <Button
             onClick={() => setOpen(!open)}
             variant="secondary"
-            className="p-1.5 sm:hidden"
-            aria-label={open ? "CloseNavigation Menu" : "Open Navigation Menu"}
+            className="border border-[#77FF00]/80 bg-gray-950/80 p-2 shadow-sm shadow-[#77FF00]/10 hover:bg-[#77FF00]/10 sm:hidden"
+            aria-label={open ? "Close Navigation Menu" : "Open Navigation Menu"}
           >
             {!open ? (
               <RiMenuFill
@@ -141,7 +141,7 @@ export function NavBar() {
                 (window.location.href = "https://admin.covox.io/login")
               }
             >
-              Login
+              Inicia Sesión
             </Button>
             <Button
               onClick={() =>
