@@ -33,7 +33,7 @@ export async function GET() {
               COVOX AI
             </div>
             <div style={{ fontSize: 30 }}>
-              AI-powered voice solutions for agriculture
+              Asistentes de Servicio al Cliente
             </div>
           </div>
         </div>
