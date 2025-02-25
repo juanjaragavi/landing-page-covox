@@ -78,7 +78,7 @@ export function NavBar() {
               variant="secondary"
               className="text-md h-10 bg-[#77FF00] font-semibold"
             >
-              🔹 Solicita una Demo Gratuita
+              Solicita una Demo Gratuita
             </Button>
           </div>
           <Button
@@ -128,7 +128,7 @@ export function NavBar() {
               Login
             </Button>
             <Button variant="secondary" className="text-lg">
-              🔹 Solicita una Demo Gratuita
+              Solicita una Demo Gratuita
             </Button>
           </div>
         </nav>

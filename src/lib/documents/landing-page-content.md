@@ -10,7 +10,7 @@ Automatiza conversaciones, agenda citas y cierra más ventas con nuestra platafo
 
 **Llamado a la acción (CTA):**
 
-🔹 **Solicita una demo gratuita**
+    **Solicita una demo gratuita**
 
 **Imagen o video:**  
 📽️ Un video corto mostrando la IA en acción, conversando con un usuario.

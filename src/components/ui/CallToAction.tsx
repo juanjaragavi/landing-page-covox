@@ -16,8 +16,17 @@ export function CallToAction() {
             Empieza ahora y automatiza tu negocio con COVOX AI.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button variant="primary" asChild className="text-md text-gray-900">
-              <Link href="#">🔹 Solicita una Demo Gratuita</Link>
+            <Button
+              onClick={() =>
+                (window.location.href = "https://admin.covox.io/login")
+              }
+              variant="primary"
+              asChild
+              className="text-md text-gray-900"
+            >
+              <Link href="https://admin.covox.io/login">
+                Solicita una Demo Gratuita
+              </Link>
             </Button>
           </div>
         </div>
