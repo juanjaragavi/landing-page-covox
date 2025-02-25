@@ -32,7 +32,7 @@ COVOX AI is an advanced conversational AI platform that enables businesses to cr
 
 - **Next.js**: React framework for server-side rendering and static site generation
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development
-- **Tremor**: Open-source UI components for building dashboards
+- **CovoxAI Components**: UI components made excusively for this Landing Page
 - **Radix UI**: Unstyled, accessible UI components for React
 
 ## License
