@@ -23,7 +23,7 @@ export function NavBar() {
       )}
     >
       <div className="w-full md:my-auto">
-        <div className="relative flex items-center justify-between">
+        <div className="relative flex items-center justify-between gap-x-10">
           <Link href={siteConfig.baseLinks.home} aria-label="Home">
             <span className="sr-only">CovoxAI Tech Logo</span>
             <Image
@@ -32,44 +32,55 @@ export function NavBar() {
               loading="eager"
               quality={90}
               alt="Covox Logo"
-              width={150}
-              height={40}
+              width={120}
+              height={32}
             />
           </Link>
-          <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
-            <div className="flex items-center gap-10 text-sm font-medium">
+          <nav className="hidden sm:block">
+            <div className="flex items-center gap-6 text-sm font-medium">
               <Link
-                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
                 href="#solucion"
               >
                 La Solución
               </Link>
               <Link
-                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
                 href="#como-funciona"
               >
                 ¿Cómo Funciona?
               </Link>
               <Link
-                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
                 href="#casos-de-uso"
               >
                 Casos de Uso
               </Link>
               <Link
-                className="px-2 py-1 text-gray-900 dark:text-gray-100"
+                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
                 href="#testimoniales"
               >
                 Testimoniales
               </Link>
             </div>
           </nav>
-          <Button
-            variant="secondary"
-            className="text-md hidden h-10 bg-[#77FF00] font-semibold sm:block"
-          >
-            🔹 Solicita una Demo Gratuita
-          </Button>
+          <div className="ml-auto hidden items-center gap-4 sm:flex">
+            <Button
+              variant="ghost"
+              className="text-md h-10 font-semibold"
+              onClick={() =>
+                (window.location.href = "https://admin.covox.io/login")
+              }
+            >
+              Inicia Sesión
+            </Button>
+            <Button
+              variant="secondary"
+              className="text-md h-10 bg-[#77FF00] font-semibold"
+            >
+              🔹 Solicita una Demo Gratuita
+            </Button>
+          </div>
           <Button
             onClick={() => setOpen(!open)}
             variant="secondary"
@@ -106,9 +117,20 @@ export function NavBar() {
               <Link href="#casos-de-uso">Analytics</Link>
             </li>
           </ul>
-          <Button variant="secondary" className="text-lg">
-            🔹 Solicita una Demo Gratuita
-          </Button>
+          <div className="flex flex-col gap-4">
+            <Button
+              variant="ghost"
+              className="text-lg"
+              onClick={() =>
+                (window.location.href = "https://admin.covox.io/login")
+              }
+            >
+              Login
+            </Button>
+            <Button variant="secondary" className="text-lg">
+              🔹 Solicita una Demo Gratuita
+            </Button>
+          </div>
         </nav>
       </div>
     </header>

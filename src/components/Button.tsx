@@ -64,11 +64,16 @@ const buttonVariants = tv({
         // border
         "border-transparent",
         // text color
-        "text-gray-900",
+        "text-[#77FF00]",
         // hover color
         "bg-transparent hover:bg-gray-100",
         // disabled
         "disabled:text-gray-400",
+        // border
+        "ring ring-[#77FF00]",
+        "hover:bg-[#77FF00]",
+        "hover:text-gray-900",
+        "transition-color duration-200 ease-linear",
       ],
       destructive: [
         // text color
