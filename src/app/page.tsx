@@ -8,27 +8,27 @@ import Testimonial from "@/components/ui/Testimonial"
 
 export default function Home() {
   return (
-    <main className="relative mx-auto flex flex-col">
-      <div className="pt-28">
+    <main className="relative mx-auto flex flex-col overflow-x-hidden">
+      <section className="pt-28">
         <Hero />
-      </div>
-      <div className="mt-20 px-4 xl:px-0">
+      </section>
+      <section className="mt-20 px-4 xl:px-0">
         <Features />
-      </div>
-      <div className="mt-32 px-4 xl:px-0">
+      </section>
+      <section className="mt-32 px-4 xl:px-0">
         <Map />
-      </div>
+      </section>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mb-12 px-4 xl:px-0">
+      <section className="mb-12 px-4 xl:px-0">
         <CovoxAIAnalytics />
-      </div>
-      <div className="px-4 xl:px-0">
+      </section>
+      <section className="px-4 xl:px-0">
         <Testimonial />
-      </div>
+      </section>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mt-4 mb-16 px-4 xl:px-0">
+      <section className="mt-4 mb-16 px-4 xl:px-0">
         <CallToAction />
-      </div>
+      </section>
     </main>
   )
 }

@@ -7,14 +7,18 @@ import {
   RiTimeLine,
 } from "@remixicon/react"
 import Image from "next/image"
-import { CovoxAIMark } from "../../../public/CovoxAIMark"
 import { CovoxFavicon } from "../../../public/CovoxFavicon"
 import { FadeDiv } from "../Fade"
 import { Orbit } from "../Orbit"
 import CheckCircleIcon from "./CheckCircleIcon"
 import ChipViz from "./ChipViz"
 import ErrorCircleIcon from "./ErrorCircleIcon"
-import { HighCostsIcon, LeadTimeIcon, MissedCallsIcon } from "./ProblemIcons"
+import {
+  AlertIcon,
+  HighCostsIcon,
+  LeadTimeIcon,
+  MissedCallsIcon,
+} from "./ProblemIcons"
 import { AutoResponseIcon, ConversionIcon, LeadsIcon } from "./SolutionIcons"
 
 export default function Features() {
@@ -137,7 +141,7 @@ export default function Features() {
             <div className="absolute top-1 -left-[8px] h-8 w-[5px] rounded-r-sm bg-red-500" />
           </h2>
           <div className="flex flex-col gap-y-2">
-            <div className="flex items-start gap-x-2">
+            <div className="flex items-center gap-x-2">
               <div className="text-xl">
                 <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
@@ -145,7 +149,7 @@ export default function Features() {
                 Tu equipo pierde tiempo en llamadas repetitivas
               </p>
             </div>
-            <div className="flex items-start gap-x-2">
+            <div className="flex items-center gap-x-2">
               <div className="text-xl">
                 <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
@@ -153,7 +157,7 @@ export default function Features() {
                 No logras atender todos los leads a tiempo
               </p>
             </div>
-            <div className="flex items-start gap-x-2">
+            <div className="flex items-center gap-x-2">
               <div className="text-xl">
                 <ErrorCircleIcon className="size-8 text-red-500" />
               </div>
@@ -208,7 +212,7 @@ export default function Features() {
             <div className="pointer-events-none relative h-full select-none">
               <div className="absolute top-[192px] left-[144px]">
                 <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                  <CovoxAIMark className="z-50 animate-pulse" />
+                  <AlertIcon className="z-50 animate-pulse" />
                 </div>
               </div>
               <div className="absolute top-[96px] left-[192px]">

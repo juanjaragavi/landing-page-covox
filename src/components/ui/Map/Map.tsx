@@ -93,12 +93,12 @@ export const Map = () => {
         </svg>
       </div>
 
-      <div className="pt-12 text-base font-semibold tracking-tight text-[#77FF00] sm:pt-20 sm:text-lg">
+      <div className="z-10 pt-12 text-base font-semibold tracking-tight text-[#77FF00] sm:pt-20 sm:text-lg">
         ¿Cómo Funciona?
       </div>
       <h2
         id="management-title"
-        className="max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white md:text-5xl"
+        className="z-20 max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white md:text-5xl"
       >
         Totalmente personalizable, fácil e intuitivo.
       </h2>
