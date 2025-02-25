@@ -206,9 +206,9 @@ export default function Features() {
             </svg>
 
             <div className="pointer-events-none relative h-full select-none">
-              <div className="absolute top-[192px] left-[191.8px]">
+              <div className="absolute top-[192px] left-[144px]">
                 <div className="flex h-12 w-12 items-center justify-center bg-white ring-1 shadow-sm ring-black/15 dark:bg-gray-800">
-                  <CovoxAIMark className="animate-pulse p-1" />
+                  <CovoxAIMark className="z-50 animate-pulse" />
                 </div>
               </div>
               <div className="absolute top-[96px] left-[192px]">
@@ -226,7 +226,7 @@ export default function Features() {
                 </div>
               </div>
 
-              <div className="absolute top-[240px] left-[240px] md:left-[385px]">
+              <div className="absolute top-[260px] left-[240px] md:top-[242px] md:left-[240px]">
                 <div className="relative">
                   <div
                     className="absolute inset-0 size-14 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
@@ -241,7 +241,7 @@ export default function Features() {
                 </div>
               </div>
 
-              <div className="absolute top-[337px] left-[240px] md:left-[336px]">
+              <div className="absolute top-[337px] left-[140px] md:top-[286px] md:left-[106px]">
                 <div className="relative">
                   <div
                     className="absolute inset-0 size-14 animate-[pulse_3s_ease-in-out_infinite] bg-red-500/40 blur-[8px]"
