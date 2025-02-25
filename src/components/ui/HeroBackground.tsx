@@ -5,12 +5,26 @@ type Grid = { alive: boolean; opacity: number }[][]
 
 const GameOfLife = ({ className }: { className?: string }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const canvas = canvasRef.current
-    if (!canvas) return
+    const container = containerRef.current
+    if (!canvas || !container) return
     const ctx = canvas.getContext("2d")
     if (!ctx) return
+
+    // Make canvas responsive to container size
+    const resizeCanvas = () => {
+      canvas.width = container.clientWidth
+      canvas.height = container.clientHeight
+    }
+
+    // Initial resize
+    resizeCanvas()
+
+    // Add resize listener
+    window.addEventListener("resize", resizeCanvas)
 
     let animationFrameId: number
     const cellSize = 4
@@ -94,14 +108,16 @@ const GameOfLife = ({ className }: { className?: string }) => {
 
     return () => {
       cancelAnimationFrame(animationFrameId)
+      window.removeEventListener("resize", resizeCanvas)
     }
   }, [])
 
   return (
     <div
-      className={`mask pointer-events-none overflow-hidden select-none ${className}`}
+      ref={containerRef}
+      className={`mask pointer-events-none h-[500px] max-h-[50vh] w-full overflow-hidden select-none ${className}`}
     >
-      <canvas ref={canvasRef} width={1300} height={500} />
+      <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} />
     </div>
   )
 }
