@@ -132,9 +132,9 @@ export default function Features() {
         {/* Content */}
 
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative mb-3 text-4xl font-semibold tracking-tight text-red-500">
+          <h2 className="relative mb-3 pl-2 text-4xl font-semibold tracking-tight text-red-500">
             Problema
-            <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-red-500" />
+            <div className="absolute top-1 -left-[8px] h-8 w-[5px] rounded-r-sm bg-red-500" />
           </h2>
           <div className="flex flex-col gap-y-2">
             <div className="flex items-start gap-x-2">
@@ -157,7 +157,7 @@ export default function Features() {
               <div className="text-xl">
                 <ErrorCircleIcon className="size-8" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-900 md:text-2xl dark:text-gray-100">
                 Los costos operativos son altos y los cierres bajos
               </p>
             </div>
@@ -261,9 +261,9 @@ export default function Features() {
 
         <div className="col-span-2 my-auto px-2">
           <FadeDiv className="relative flex flex-row gap-x-1">
-            <h2 className="animate-fadeIn relative mt-2 text-4xl font-semibold tracking-tight text-[#77FF00]">
+            <h2 className="animate-fadeIn relative mt-2 pl-2 text-4xl font-semibold tracking-tight text-[#77FF00]">
               Solución
-              <div className="absolute top-1 -left-[8px] h-8 w-[3px] rounded-r-sm bg-[#77FF00]" />
+              <div className="absolute top-1 -left-[8px] h-8 w-[5px] rounded-r-sm bg-[#77FF00]" />
             </h2>
             <Image
               src="/images/logo-header.webp"
@@ -289,7 +289,7 @@ export default function Features() {
               <div className="text-xl">
                 <CheckCircleIcon className="size-8" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-900 md:text-2xl dark:text-gray-100">
                 Atiende{" "}
                 <span className="text-[#77FF00]">100% de tus leads</span> sin
                 perder oportunidades
@@ -299,7 +299,7 @@ export default function Features() {
               <div className="text-xl">
                 <CheckCircleIcon className="size-8" />
               </div>
-              <p className="text-xl leading-tight font-semibold tracking-tighter text-balance text-gray-900 md:text-2xl dark:text-gray-100">
+              <p className="text-xl leading-tight font-semibold tracking-tighter text-gray-900 md:text-2xl dark:text-gray-100">
                 Reduce costos y{" "}
                 <span className="text-[#77FF00]">aumenta las conversiones</span>{" "}
                 sin contratar más personal
