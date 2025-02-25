@@ -3,21 +3,43 @@ import Link from "next/link"
 // Blog post metadata
 const blogPosts = [
   {
-    slug: "optimizing-ai-model-performance",
+    slug: "revolucion-agentes-ia-atencion-cliente",
     frontMatter: {
-      title: "Optimizing AI Model Performance for Agricultural Analysis",
+      title:
+        "La Revolución de los Agentes de IA Generativa en la Atención al Cliente y Optimización Comercial",
       date: "2025-02-25",
       excerpt:
-        "Advanced techniques for improving inference speed and accuracy in crop analysis models.",
+        "Análisis detallado de cómo los agentes de IA generativa están transformando la atención al cliente y las estrategias comerciales con mejoras de hasta un 60% en satisfacción y 35% en conversiones.",
     },
   },
   {
-    slug: "getting-started-with-covox-ai",
+    slug: "impacto-ia-generativa-ventas",
     frontMatter: {
-      title: "Getting Started with Covox AI",
-      date: "2025-02-24",
+      title:
+        "El Impacto Transformador de la IA Generativa en la Automatización, Optimización Comercial y Ventas",
+      date: "2025-02-25",
       excerpt:
-        "Learn how to integrate Covox AI into your existing workflows with our step-by-step guide.",
+        "Análisis de cómo la IA generativa está revolucionando los procesos comerciales y estrategias de ventas en 2025.",
+    },
+  },
+  {
+    slug: "optimizacion-agentes-ia-conversacional",
+    frontMatter: {
+      title:
+        "Optimización de Agentes de IA Conversacional para Ventas y Atención al Cliente",
+      date: "2025-02-25",
+      excerpt:
+        "Técnicas avanzadas para mejorar la efectividad de los agentes de IA conversacional en ventas, programación de citas y atención al cliente.",
+    },
+  },
+  {
+    slug: "primeros-pasos-automatizando-conversaciones",
+    frontMatter: {
+      title:
+        "Primeros Pasos con Covox AI: Automatizando Conversaciones de Ventas",
+      date: "2025-02-25",
+      excerpt:
+        "Aprenda cómo implementar agentes conversacionales de IA para automatizar ventas, programar citas y mejorar la atención al cliente con nuestra guía paso a paso.",
     },
   },
 ]
