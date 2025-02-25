@@ -75,6 +75,9 @@ export function NavBar() {
               Inicia Sesión
             </Button>
             <Button
+              onClick={() =>
+                (window.location.href = "https://admin.covox.io/login")
+              }
               variant="secondary"
               className="text-md h-10 bg-[#77FF00] font-semibold"
             >
@@ -127,7 +130,13 @@ export function NavBar() {
             >
               Login
             </Button>
-            <Button variant="secondary" className="text-lg">
+            <Button
+              onClick={() =>
+                (window.location.href = "https://admin.covox.io/login")
+              }
+              variant="secondary"
+              className="text-lg"
+            >
               Solicita una Demo Gratuita
             </Button>
           </div>
