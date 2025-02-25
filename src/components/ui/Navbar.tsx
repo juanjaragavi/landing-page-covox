@@ -28,7 +28,7 @@ export function NavBar() {
             <span className="sr-only">CovoxAI Tech Logo</span>
             <Image
               src="/images/logo-header.webp"
-              className="sm:mr-8"
+              className="sm:mr-4"
               priority
               loading="eager"
               quality={90}
@@ -38,30 +38,36 @@ export function NavBar() {
             />
           </Link>
           <nav className="mx-auto hidden sm:block">
-            <div className="text-md flex items-center gap-8 font-medium">
+            <div className="text-md flex items-center gap-4 font-medium">
               <Link
                 className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
-                href="#solucion"
+                href="/#solucion"
               >
                 La Solución
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
-                href="#como-funciona"
+                href="/#como-funciona"
               >
                 ¿Cómo Funciona?
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
-                href="#casos-de-uso"
+                href="/#casos-de-uso"
               >
                 Casos de Uso
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
-                href="#testimoniales"
+                href="/#testimoniales"
               >
                 Testimoniales
+              </Link>
+              <Link
+                className="px-2 py-1 text-gray-900 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline dark:text-gray-100"
+                href="/blog"
+              >
+                Blog
               </Link>
             </div>
           </nav>
@@ -106,19 +112,25 @@ export function NavBar() {
         </div>
         <nav
           className={cx(
-            "mt-6 flex flex-col gap-6 text-lg ease-in-out will-change-transform sm:hidden",
+            "mt-6 flex flex-col gap-3 text-lg ease-in-out will-change-transform sm:hidden",
             open ? "" : "hidden",
           )}
         >
-          <ul className="space-y-4 font-medium text-gray-900 dark:text-gray-100">
+          <ul className="font-medium text-gray-900 dark:text-gray-100">
             <li onClick={() => setOpen(false)}>
-              <Link href="#solucion">La Solución</Link>
+              <Link href="/#solucion">La Solución</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#como-funciona">¿Cómo Funciona?</Link>
+              <Link href="/#como-funciona">¿Cómo Funciona?</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#casos-de-uso">Analytics</Link>
+              <Link href="/#casos-de-uso">Casos de Uso</Link>
+            </li>
+            <li onClick={() => setOpen(false)}>
+              <Link href="/#testimoniales">Testimoniales</Link>
+            </li>
+            <li onClick={() => setOpen(false)}>
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
           <div className="flex flex-col gap-4">
