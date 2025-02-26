@@ -1,10 +1,12 @@
 import AIVsHumans from "@/components/ui/AIVsHumans"
 import { CallToAction } from "@/components/ui/CallToAction"
 import { CovoxAIAnalytics } from "@/components/ui/CovoxAIAnalytics"
+import FAQ from "@/components/ui/FAQ"
 import FeatureDivider from "@/components/ui/FeatureDivider"
 import Features from "@/components/ui/Features"
 import { Hero } from "@/components/ui/Hero"
 import { Map } from "@/components/ui/Map/Map"
+import Pricing from "@/components/ui/Pricing"
 import Testimonial from "@/components/ui/Testimonial"
 
 export default function Home() {
@@ -30,6 +32,12 @@ export default function Home() {
         <Testimonial />
       </section>
       <FeatureDivider className="mt-12 max-w-6xl" />
+      <section className="mt-4 px-4 xl:px-0">
+        <Pricing />
+      </section>
+      <section className="px-4 xl:px-0">
+        <FAQ />
+      </section>
       <section className="mt-4 mb-16 px-4 xl:px-0">
         <CallToAction />
       </section>
