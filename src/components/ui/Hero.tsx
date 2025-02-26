@@ -6,7 +6,7 @@ import GameOfLife from "./HeroBackground"
 export function Hero() {
   return (
     <div aria-label="hero">
-      <div className="relative">
+      <div className="relative px-8">
         <div className="absolute inset-0 -z-10">
           <div className="bg-gradient-radial absolute inset-0 from-transparent via-transparent to-gray-950"></div>
           <ScaleContainer>
@@ -35,15 +35,15 @@ export function Hero() {
               </div>
             </a>
           </FadeDiv>
-          <h1 className="mt-10 text-center text-2xl leading-6 font-semibold tracking-tighter text-white sm:mt-24 sm:text-5xl sm:leading-[1em]">
-            <FadeSpan>Agentes Conversacionales de IA</FadeSpan>
-            <br />
+          <h1 className="mt-10 text-center text-3xl leading-8 font-semibold tracking-tighter text-white sm:mt-24 sm:text-5xl sm:leading-[1em]">
+            <FadeSpan>Agentes Conversacionales de IA</FadeSpan>{" "}
+            <br className="hidden sm:flex" />
             <FadeSpan>Hiper Realistas</FadeSpan>{" "}
-            <FadeSpan>que puedes crear</FadeSpan>
-            <br />
+            <FadeSpan>que puedes crear</FadeSpan>{" "}
+            <br className="hidden sm:flex" />
             <FadeSpan>en Minutos</FadeSpan> <FadeSpan>🚀</FadeSpan>
           </h1>
-          <p className="mt-4 max-w-xl text-center text-base leading-tight font-medium text-balance text-white sm:mt-2 sm:text-xl">
+          <p className="mt-4 max-w-xl text-center text-xl leading-5 font-medium text-balance text-white sm:mt-2 sm:text-xl">
             <FadeSpan>Automatiza conversaciones,</FadeSpan>{" "}
             <FadeSpan>agenda citas</FadeSpan>{" "}
             <FadeSpan>y cierra más ventas</FadeSpan>{" "}
