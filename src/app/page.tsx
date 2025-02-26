@@ -8,6 +8,7 @@ import { Hero } from "@/components/ui/Hero"
 import { Map } from "@/components/ui/Map/Map"
 import Pricing from "@/components/ui/Pricing"
 import Testimonial from "@/components/ui/Testimonial"
+import { Video } from "@/components/ui/Video"
 
 export default function Home() {
   return (
@@ -38,7 +39,10 @@ export default function Home() {
       <section className="px-4 xl:px-0">
         <FAQ />
       </section>
-      <section className="mt-4 mb-16 px-4 xl:px-0">
+      <section className="mt-8 px-4 xl:px-0">
+        <Video />
+      </section>
+      <section className="mt-12 mb-16 px-4 xl:px-0">
         <CallToAction />
       </section>
     </main>

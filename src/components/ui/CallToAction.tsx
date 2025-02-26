@@ -63,6 +63,7 @@ export function CallToAction() {
                     <option value="demo">Solicitar Demo</option>
                     <option value="support">Soporte Técnico</option>
                     <option value="sales">Consultas Comerciales</option>
+                    <option value="sales">Trabaja con Nosotros</option>
                     <option value="other">Otro</option>
                   </select>
                 </div>
