@@ -56,7 +56,7 @@ export default function FAQ() {
   ]
 
   return (
-    <section id="faq" className="w-full bg-transparent px-4 pb-14">
+    <div id="faq" className="w-full bg-transparent px-4 pb-14">
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-12 text-center text-3xl font-bold text-white">
           Preguntas Frecuentes (FAQ)
@@ -104,6 +104,6 @@ export default function FAQ() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   )
 }

@@ -34,15 +34,16 @@ const buttonVariants = tv({
         // border
         "border-lime-600",
         // text color
-        "text-gray-800",
+        "text-gray-900",
         // background color
-        "bg-gray-800",
+        "bg-[#77FF00]",
         //hover color
         "hover:bg-white",
         // disabled
         "disabled:text-gray-400",
         "hover:border-gray-600",
         "hover:shadow-black",
+        "font-semibold",
       ],
       light: [
         // base

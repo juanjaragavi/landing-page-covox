@@ -90,7 +90,7 @@ export default function Pricing() {
   ]
 
   return (
-    <section id="pricing" className="w-full bg-transparent py-14">
+    <div id="pricing" className="w-full bg-transparent py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -301,6 +301,6 @@ export default function Pricing() {
           </div>
         </motion.div>
       </div>
-    </section>
+    </div>
   )
 }

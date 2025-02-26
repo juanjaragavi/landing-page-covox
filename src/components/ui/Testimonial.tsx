@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Testimonial() {
   return (
-    <section
+    <div
       id="testimoniales"
       aria-labelledby="testimoniales"
       className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-xl shadow-2xl shadow-[#366A79]/70"
@@ -60,6 +60,6 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

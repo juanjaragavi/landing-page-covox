@@ -23,7 +23,7 @@ import {
 
 export default function AIVsHumans() {
   return (
-    <section
+    <div
       aria-label="COVOX AI | Agentes Conversacionales"
       className="relative mx-auto mb-12 max-w-6xl scroll-my-12 items-center justify-center px-4 sm:px-0"
     >
@@ -542,6 +542,6 @@ export default function AIVsHumans() {
           Potencia tu negocio hoy mismo 🚀
         </a>
       </FadeDiv>
-    </section>
+    </div>
   )
 }

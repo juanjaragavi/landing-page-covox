@@ -23,7 +23,7 @@ import { AutoResponseIcon, ConversionIcon, LeadsIcon } from "./SolutionIcons"
 
 export default function Features() {
   return (
-    <section
+    <div
       aria-label="COVOX AI | Agentes Conversacionales Features for Farms"
       id="solucion"
       aria-labelledby="solucion"
@@ -541,6 +541,6 @@ export default function Features() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

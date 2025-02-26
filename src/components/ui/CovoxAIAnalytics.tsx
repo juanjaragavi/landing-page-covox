@@ -9,7 +9,7 @@ import { StickerCard } from "./StickerCard"
 
 export function CovoxAIAnalytics() {
   return (
-    <section
+    <div
       id="casos-de-uso"
       aria-labelledby="casos-de-uso"
       className="relative mx-auto w-full max-w-6xl overflow-hidden"
@@ -70,6 +70,6 @@ export function CovoxAIAnalytics() {
           </a>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

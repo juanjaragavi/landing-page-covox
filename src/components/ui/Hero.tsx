@@ -5,7 +5,7 @@ import GameOfLife from "./HeroBackground"
 
 export function Hero() {
   return (
-    <section aria-label="hero">
+    <div aria-label="hero">
       <div className="relative">
         <div className="absolute inset-0 -z-10">
           <div className="bg-gradient-radial absolute inset-0 from-transparent via-transparent to-gray-950"></div>
@@ -60,6 +60,6 @@ export function Hero() {
           </FadeDiv>
         </FadeContainer>
       </div>
-    </section>
+    </div>
   )
 }

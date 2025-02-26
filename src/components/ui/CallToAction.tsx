@@ -1,6 +1,6 @@
 export function CallToAction() {
   return (
-    <section aria-labelledby="cta-title" className="mx-auto max-w-6xl">
+    <div aria-labelledby="cta-title" className="mx-auto max-w-6xl">
       <div className="grid items-start sm:grid-cols-6 sm:gap-8 sm:px-0">
         <div className="px-6 sm:col-span-2 sm:px-0">
           <h2
@@ -88,7 +88,7 @@ export function CallToAction() {
           </form>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
