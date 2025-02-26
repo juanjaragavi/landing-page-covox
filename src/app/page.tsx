@@ -11,7 +11,7 @@ import Testimonial from "@/components/ui/Testimonial"
 
 export default function Home() {
   return (
-    <main className="relative mx-auto flex flex-col overflow-x-hidden">
+    <main id="top" className="relative mx-auto flex flex-col overflow-x-hidden">
       <section className="pt-28">
         <Hero />
       </section>

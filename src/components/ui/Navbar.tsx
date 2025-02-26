@@ -13,6 +13,32 @@ export default function NavBar() {
   const [open, setOpen] = React.useState(false)
   const scrolled = useScroll(15)
 
+  // Function to handle smooth scrolling to sections
+  const scrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    // Only handle internal anchor links
+    if (href.startsWith("/#")) {
+      e.preventDefault()
+      const targetId = href.replace("/#", "")
+      const targetElement = document.getElementById(targetId)
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 100, // Offset to account for fixed header
+          behavior: "smooth",
+        })
+
+        // Update URL without the jump
+        window.history.pushState({}, "", href)
+
+        // Close mobile menu if open
+        if (open) setOpen(false)
+      }
+    }
+  }
+
   return (
     <header
       className={cx(
@@ -42,24 +68,28 @@ export default function NavBar() {
               <Link
                 className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#solucion"
+                onClick={(e) => scrollToSection(e, "/#solucion")}
               >
                 La Solución
               </Link>
               <Link
                 className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#como-funciona"
+                onClick={(e) => scrollToSection(e, "/#como-funciona")}
               >
                 ¿Cómo Funciona?
               </Link>
               <Link
                 className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#casos-de-uso"
+                onClick={(e) => scrollToSection(e, "/#casos-de-uso")}
               >
                 Casos de Uso
               </Link>
               <Link
                 className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
                 href="/#testimoniales"
+                onClick={(e) => scrollToSection(e, "/#testimoniales")}
               >
                 Testimoniales
               </Link>
@@ -117,17 +147,37 @@ export default function NavBar() {
           )}
         >
           <ul className="font-medium text-gray-100">
-            <li onClick={() => setOpen(false)}>
-              <Link href="/#solucion">La Solución</Link>
+            <li>
+              <Link
+                href="/#solucion"
+                onClick={(e) => scrollToSection(e, "/#solucion")}
+              >
+                La Solución
+              </Link>
             </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/#como-funciona">¿Cómo Funciona?</Link>
+            <li>
+              <Link
+                href="/#como-funciona"
+                onClick={(e) => scrollToSection(e, "/#como-funciona")}
+              >
+                ¿Cómo Funciona?
+              </Link>
             </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/#casos-de-uso">Casos de Uso</Link>
+            <li>
+              <Link
+                href="/#casos-de-uso"
+                onClick={(e) => scrollToSection(e, "/#casos-de-uso")}
+              >
+                Casos de Uso
+              </Link>
             </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/#testimoniales">Testimoniales</Link>
+            <li>
+              <Link
+                href="/#testimoniales"
+                onClick={(e) => scrollToSection(e, "/#testimoniales")}
+              >
+                Testimoniales
+              </Link>
             </li>
             <li onClick={() => setOpen(false)}>
               <Link href="/blog">Blog</Link>

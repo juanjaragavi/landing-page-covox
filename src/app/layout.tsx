@@ -6,6 +6,7 @@ import { siteConfig } from "./siteConfig"
 
 const NavBar = lazy(() => import("@/components/ui/Navbar"))
 const Footer = lazy(() => import("@/components/ui/Footer"))
+const BackToTop = lazy(() => import("@/components/ui/BackToTop"))
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yoururl.com"),
@@ -64,6 +65,7 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <NavBar />
           {children}
+          <BackToTop />
           <Footer />
         </Suspense>
       </body>
