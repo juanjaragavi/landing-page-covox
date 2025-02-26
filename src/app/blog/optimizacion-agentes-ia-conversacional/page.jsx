@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Post() {
   return (
     <div className="container mx-auto max-w-4xl px-4 py-44">
@@ -6,6 +8,14 @@ export default function Post() {
         Cliente
       </h1>
       <p className="mb-8 text-gray-400">25 de febrero de 2025</p>
+
+      <Image
+        src="/images/optimizacion-de-agentes-de-ia-conversacional-para-ventas-y-atencion-al-cliente.webp"
+        alt="Optimización de Agentes de IA Conversacional para Ventas y Atención al Cliente"
+        width={1200}
+        height={630}
+        className="mb-8 rounded-xl border border-[#77FF00]"
+      />
 
       <div className="prose prose-lg prose-invert max-w-none text-white">
         <p>

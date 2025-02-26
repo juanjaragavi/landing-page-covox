@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Post() {
   return (
     <div className="container mx-auto max-w-4xl px-4 py-44">
@@ -5,6 +7,14 @@ export default function Post() {
         Primeros Pasos con Covox AI: Automatizando Conversaciones de Ventas
       </h1>
       <p className="mb-8 text-gray-400">25 de febrero de 2025</p>
+
+      <Image
+        src="/images/primeros-pasos-con-covox-ai-automatizando-conversaciones-de-ventas.webp"
+        alt="Primeros Pasos con Covox AI: Automatizando Conversaciones de Ventas"
+        width={1200}
+        height={630}
+        className="mb-8 rounded-xl border border-[#77FF00]"
+      />
 
       <div className="prose prose-lg prose-invert max-w-none text-white">
         <p>

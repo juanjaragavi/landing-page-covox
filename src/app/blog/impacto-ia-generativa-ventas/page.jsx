@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Post() {
   return (
     <div className="container mx-auto max-w-4xl px-4 py-44">
@@ -6,6 +8,14 @@ export default function Post() {
         Optimización Comercial y Ventas
       </h1>
       <p className="mb-8 text-gray-400">25 de febrero de 2025</p>
+
+      <Image
+        src="/images/el-impacto-transformador-de-la-ia-generativa-en-la-automatizacion-optimizacion-comercial-y-ventas.webp"
+        alt="El Impacto Transformador de la IA Generativa en la Automatización, Optimización Comercial y Ventas"
+        width={1200}
+        height={630}
+        className="mb-8 rounded-xl border border-[#77FF00]"
+      />
 
       <div className="prose prose-lg prose-invert max-w-none text-white">
         <p>

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 // Blog post metadata
@@ -79,6 +80,25 @@ export default function BlogPage() {
             <p className="mb-3 text-sm text-gray-300">
               {getFormattedDate(post.frontMatter.date)}
             </p>
+            <Link href={`/blog/${post.slug}`} className="mb-4 block">
+              <Image
+                src={
+                  post.slug === "estrategias-ia-equipos-comerciales"
+                    ? "/images/estrategias-practicas-de-ia-generativa-para-equipos-comerciales-potenciando-el-dia-a-dia-del-vendedor.webp"
+                    : post.slug === "revolucion-agentes-ia-atencion-cliente"
+                      ? "/images/la-revolucion-de-los-agentes-de-ia-generativa-en-la-atencion-al-cliente-y-optimizacion-comercial.webp"
+                      : post.slug === "impacto-ia-generativa-ventas"
+                        ? "/images/el-impacto-transformador-de-la-ia-generativa-en-la-automatizacion-optimizacion-comercial-y-ventas.webp"
+                        : post.slug === "optimizacion-agentes-ia-conversacional"
+                          ? "/images/optimizacion-de-agentes-de-ia-conversacional-para-ventas-y-atencion-al-cliente.webp"
+                          : "/images/primeros-pasos-con-covox-ai-automatizando-conversaciones-de-ventas.webp"
+                }
+                alt={post.frontMatter.title}
+                width={800}
+                height={420}
+                className="rounded-xl border border-[#77FF00]"
+              />
+            </Link>
             <p className="mb-4 text-gray-400">{post.frontMatter.excerpt}</p>
             <Link
               href={`/blog/${post.slug}`}

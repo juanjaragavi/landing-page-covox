@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Post() {
   return (
     <div className="container mx-auto max-w-4xl px-4 py-44">
@@ -6,6 +8,14 @@ export default function Post() {
         Potenciando el Día a Día del Vendedor
       </h1>
       <p className="mb-8 text-gray-400">25 de febrero de 2025</p>
+
+      <Image
+        src="/images/estrategias-practicas-de-ia-generativa-para-equipos-comerciales-potenciando-el-dia-a-dia-del-vendedor.webp"
+        alt="Estrategias Prácticas de IA Generativa para Equipos Comerciales"
+        width={1200}
+        height={630}
+        className="mb-8 rounded-xl border border-[#77FF00]"
+      />
 
       <div className="prose prose-lg prose-invert max-w-none text-white">
         <p>
