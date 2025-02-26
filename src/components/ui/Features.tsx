@@ -26,6 +26,7 @@ export default function Features() {
     <section
       aria-label="COVOX AI | Agentes Conversacionales Features for Farms"
       id="solucion"
+      aria-labelledby="solucion"
       className="relative mx-auto max-w-6xl scroll-my-24 px-4 sm:px-0"
     >
       {/* Vertical Lines */}

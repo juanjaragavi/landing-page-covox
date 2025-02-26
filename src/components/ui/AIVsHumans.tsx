@@ -25,7 +25,6 @@ export default function AIVsHumans() {
   return (
     <section
       aria-label="COVOX AI | Agentes Conversacionales"
-      id="solucion"
       className="relative mx-auto mb-12 max-w-6xl scroll-my-12 items-center justify-center px-4 sm:px-0"
     >
       <div className="z-10 w-full pt-6 text-center text-base font-semibold tracking-tight text-[#77FF00] sm:pt-20 sm:text-lg">

@@ -10,14 +10,12 @@ import { StickerCard } from "./StickerCard"
 export function CovoxAIAnalytics() {
   return (
     <section
+      id="casos-de-uso"
       aria-labelledby="casos-de-uso"
       className="relative mx-auto w-full max-w-6xl overflow-hidden"
     >
       <div className="mb-6">
-        <h2
-          id="casos-de-uso"
-          className="relative scroll-my-14 text-lg font-semibold tracking-tight text-[#77FF00]"
-        >
+        <h2 className="relative scroll-my-14 text-lg font-semibold tracking-tight text-[#77FF00]">
           Verticales y Casos de Uso
           <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
         </h2>
