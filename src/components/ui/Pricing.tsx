@@ -188,7 +188,7 @@ export default function Pricing() {
                     {plan.annualNote}
                   </div>
                 )}
-                {plan.monthlyPayment && (
+                {plan.monthlyPayment && !isAnnual && (
                   <div className="mt-2 text-center text-sm text-gray-400">
                     Pago mensual
                   </div>
