@@ -10,19 +10,19 @@ export default function Pricing() {
 
   const plans = [
     {
-      name: "Basic",
-      description: "For companies looking to scale their operations.",
+      name: "Básico",
+      description: "Para empresas que buscan escalar sus operaciones.",
       priceMonthly: 9,
       priceAnnual: 7,
-      annualNote: "$87 USD annual",
+      annualNote: "$87 USD anual",
       features: [
-        "3 Agents",
-        "5 users",
-        "Self Service",
-        "Email support",
-        "3GB of database storage",
+        "3 Agentes conversacionales",
+        "5 usuarios",
+        "Autoservicio",
+        "Soporte por email",
+        "3GB de almacenamiento",
       ],
-      cta: "Get Started",
+      cta: "Comenzar",
       popular: false,
       pricePerMinute: "$0.22 USD",
       monthlyPayment: true,
@@ -30,19 +30,19 @@ export default function Pricing() {
     },
     {
       name: "Startup",
-      description: "For growing startups",
+      description: "Para startups en crecimiento",
       priceMonthly: 49,
       priceAnnual: 39,
-      annualNote: "$39 USD annual",
+      annualNote: "$468 USD anual",
       features: [
-        "Unlimited Agents",
-        "Unlimited users",
-        "Email and chat support",
-        "Chat support priority",
-        "10GB of database storage",
-        "Account Manager",
+        "Agentes ilimitados",
+        "Usuarios ilimitados",
+        "Soporte por email y chat",
+        "Prioridad en soporte",
+        "10GB de almacenamiento",
+        "Gestor de cuenta",
       ],
-      cta: "Get Started",
+      cta: "Comenzar",
       popular: true,
       pricePerMinute: "$0.21 USD",
       monthlyPayment: true,
@@ -50,20 +50,20 @@ export default function Pricing() {
     },
     {
       name: "Business",
-      description: "For companies that REALLY want to unleash AI.",
+      description: "Para empresas que REALMENTE quieren potenciar la IA.",
       priceMonthly: 399,
       priceAnnual: 299,
-      annualNote: "$299 USD annual",
+      annualNote: "$3,588 USD anual",
       features: [
-        "Unlimited Agents",
-        "Unlimited users",
-        "Premium support",
-        "Chat support priority",
-        "1-1 support with tech team",
-        "20GB of database storage",
-        "Dedicated Account Manager",
+        "Agentes ilimitados",
+        "Usuarios ilimitados",
+        "Soporte premium",
+        "Prioridad en soporte",
+        "Soporte 1-1 con equipo técnico",
+        "20GB de almacenamiento",
+        "Gestor de cuenta dedicado",
       ],
-      cta: "Get Started",
+      cta: "Comenzar",
       popular: false,
       pricePerMinute: "$0.20 USD",
       monthlyPayment: true,
@@ -71,32 +71,32 @@ export default function Pricing() {
     },
     {
       name: "Enterprise",
-      description: "Contact our Sales Team",
-      price: "Contact our Sales Team",
+      description: "Contacta a nuestro equipo de ventas",
+      price: "Contacta a nuestro equipo de ventas",
       features: [
-        "Custom Agents",
-        "Unlimited users",
-        "Premium support",
-        "Priority support",
-        "Dedicated tech team",
-        "Custom storage solutions",
-        "Dedicated Account Manager",
-        "Custom integrations",
+        "Agentes personalizados",
+        "Usuarios ilimitados",
+        "Soporte premium",
+        "Soporte prioritario",
+        "Equipo técnico dedicado",
+        "Soluciones de almacenamiento personalizadas",
+        "Gestor de cuenta dedicado",
+        "Integraciones personalizadas",
       ],
-      cta: "Contact Sales",
+      cta: "Contactar ventas",
       popular: false,
       enterprise: true,
     },
   ]
 
   return (
-    <section id="pricing" className="w-full bg-transparent py-20">
+    <section id="pricing" className="w-full bg-transparent py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Planes y Precios
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-xl leading-tight text-gray-300">
+          <p className="mx-auto mt-2 max-w-2xl text-xl leading-tight text-gray-300">
             Diferentes planes según necesidades, con opción de prueba gratuita.
           </p>
         </div>
@@ -163,7 +163,7 @@ export default function Pricing() {
               )}
 
               <div className="mb-8">
-                <h3 className="text-center text-xl font-bold text-white md:text-left md:text-xl">
+                <h3 className="text-center text-xl font-bold text-[#77FF00] md:text-left md:text-xl">
                   {plan.name}
                 </h3>
                 <p className="text-md mt-2 text-center leading-tight text-gray-300 md:text-left md:text-sm">
@@ -195,17 +195,17 @@ export default function Pricing() {
                 )}
                 {plan.selfService && (
                   <div className="mt-1 text-center text-sm text-gray-400">
-                    Self service
+                    Autoservicio
                   </div>
                 )}
                 {plan.premiumSupport && (
                   <div className="mt-1 text-center text-sm text-gray-400">
-                    Premium support
+                    Soporte premium
                   </div>
                 )}
                 {plan.pricePerMinute && (
                   <div className="mt-3 text-center text-sm text-green-400">
-                    Price per minute: {plan.pricePerMinute}
+                    Precio por minuto: {plan.pricePerMinute}
                   </div>
                 )}
               </div>
@@ -225,9 +225,9 @@ export default function Pricing() {
                 <Link
                   href="#contact"
                   className="inline-block w-full"
-                  aria-label={`Contact us about ${plan.name} plan`}
+                  aria-label={`Contactar sobre el plan ${plan.name}`}
                   rel="noopener noreferrer"
-                  title={`Get more information about our ${plan.name} plan`}
+                  title={`Obtener más información sobre nuestro plan ${plan.name}`}
                 >
                   <button className="w-full rounded-lg bg-white px-4 py-2 text-center font-semibold text-black transition-colors hover:bg-gray-100">
                     {plan.cta}
@@ -237,8 +237,8 @@ export default function Pricing() {
                 <Link
                   href="#contact"
                   className="inline-block w-full"
-                  aria-label={`Sign up for ${plan.name} plan`}
-                  title={`Get started with our ${plan.name} plan`}
+                  aria-label={`Registrarse para el plan ${plan.name}`}
+                  title={`Comenzar con nuestro plan ${plan.name}`}
                   rel="noopener noreferrer"
                 >
                   <button className="w-full rounded-lg bg-green-500 px-4 py-2 text-center font-semibold text-black transition-colors hover:bg-green-600">
@@ -254,14 +254,14 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mt-20"
+          className="mt-14"
         >
-          <h2 className="my-10 text-center text-3xl font-bold text-white">
+          <h2 className="mb-10 text-center text-3xl font-bold text-white">
             Información Adicional
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-lg bg-white/5 p-6 backdrop-blur-sm">
-              <h3 className="mb-4 text-xl font-bold text-white">
+              <h3 className="mb-4 text-xl font-bold text-[#77FF00]">
                 Prueba Gratuita
               </h3>
               <ul className="space-y-2">
@@ -280,7 +280,7 @@ export default function Pricing() {
               </ul>
             </div>
             <div className="rounded-lg bg-white/5 p-6 backdrop-blur-sm">
-              <h3 className="mb-4 text-xl font-bold text-white">
+              <h3 className="mb-4 text-xl font-bold text-[#77FF00]">
                 Términos y Condiciones
               </h3>
               <ul className="space-y-2">

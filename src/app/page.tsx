@@ -32,7 +32,7 @@ export default function Home() {
         <Testimonial />
       </section>
       <FeatureDivider className="mt-12 max-w-6xl" />
-      <section className="mt-4 px-4 xl:px-0">
+      <section className="px-4 xl:px-0">
         <Pricing />
       </section>
       <section className="px-4 xl:px-0">
