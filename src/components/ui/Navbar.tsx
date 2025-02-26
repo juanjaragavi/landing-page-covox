@@ -6,12 +6,15 @@ import { cx } from "@/lib/utils"
 import { RiCloseFill, RiMenuFill } from "@remixicon/react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import React from "react"
 import { Button } from "../Button"
 
 export default function NavBar() {
   const [open, setOpen] = React.useState(false)
   const scrolled = useScroll(15)
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
 
   // Function to handle smooth scrolling to sections
   const scrollToSection = (
@@ -21,6 +24,14 @@ export default function NavBar() {
     // Only handle internal anchor links
     if (href.startsWith("/#")) {
       e.preventDefault()
+
+      // If we're not on the home page, navigate to the home page with the anchor
+      if (!isHomePage) {
+        window.location.href = href
+        return
+      }
+
+      // If we are on the home page, scroll to the section
       const targetId = href.replace("/#", "")
       const targetElement = document.getElementById(targetId)
 
@@ -92,12 +103,6 @@ export default function NavBar() {
                 onClick={(e) => scrollToSection(e, "/#testimoniales")}
               >
                 Testimoniales
-              </Link>
-              <Link
-                className="px-2 py-1 text-gray-100 underline-offset-2 transition-all duration-300 ease-out hover:text-[#77FF00] hover:underline"
-                href="/blog"
-              >
-                Blog
               </Link>
             </div>
           </nav>

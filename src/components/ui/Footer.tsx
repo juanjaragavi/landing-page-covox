@@ -1,3 +1,5 @@
+"use client"
+
 import {
   RiGithubFill,
   RiSlackFill,
@@ -6,8 +8,23 @@ import {
 } from "@remixicon/react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const Footer = () => {
+  const pathname = usePathname()
+  const isHomePage = pathname === "/"
+  // Function to handle link clicks
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    // Only handle internal anchor links when not on home page
+    if (href.startsWith("/#") && !isHomePage) {
+      e.preventDefault()
+      window.location.href = href
+    }
+  }
+
   const sections = {
     product: {
       title: "Producto",
@@ -188,6 +205,7 @@ const Footer = () => {
                   <Link
                     href={item.href}
                     className="leading-tight font-normal text-white sm:text-sm"
+                    onClick={(e) => handleLinkClick(e, item.href)}
                   >
                     {item.label}
                   </Link>
