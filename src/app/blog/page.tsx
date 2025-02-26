@@ -68,7 +68,7 @@ export default function BlogPage() {
       <h1 className="mb-8 text-center text-4xl font-bold text-[#77FF00] sm:text-left">
         Bienvenidos al Blog
       </h1>
-      <div className="space-y-10 px-10">
+      <div className="space-y-10 px-10 sm:px-0">
         {blogPosts.map((post) => (
           <article key={post.slug} className="border-b border-gray-200 pb-8">
             <Link href={`/blog/${post.slug}`}>
