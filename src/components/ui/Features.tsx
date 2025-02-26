@@ -137,9 +137,9 @@ export default function Features() {
         {/* Content */}
 
         <div className="col-span-2 my-auto px-2">
-          <h2 className="relative mb-3 pl-2 text-4xl font-semibold tracking-tight text-red-500">
+          <h2 className="relative mb-3 pl-2 text-3xl font-semibold tracking-tight text-red-500 sm:text-4xl">
             Problema
-            <div className="absolute top-1 -left-[8px] h-8 w-[5px] rounded-r-sm bg-red-500" />
+            <div className="absolute top-0 -left-[8px] h-8 w-[5px] rounded-r-sm bg-red-500" />
           </h2>
           <div className="flex flex-col gap-y-2">
             <div className="flex items-center gap-x-2">
@@ -266,9 +266,9 @@ export default function Features() {
 
         <div className="col-span-2 my-auto mt-6 px-2 sm:mt-0">
           <FadeDiv className="relative flex flex-row gap-x-1">
-            <h2 className="animate-fadeIn relative mt-2 pl-2 text-4xl font-semibold tracking-tight text-[#77FF00]">
+            <h2 className="animate-fadeIn relative mt-2 pl-2 text-3xl font-semibold tracking-tight text-[#77FF00] sm:text-4xl">
               Solución
-              <div className="absolute top-1 -left-[8px] h-8 w-[5px] rounded-r-sm bg-[#77FF00]" />
+              <div className="absolute top-0 -left-[8px] h-8 w-[5px] rounded-r-sm bg-[#77FF00]" />
             </h2>
             <Image
               src="/images/logo-header.webp"
