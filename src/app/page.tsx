@@ -22,7 +22,7 @@ export default function Home() {
         <Map />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <section className="mb-12 px-4 xl:px-0">
+      <section className="mb-12 px-10 xl:px-0">
         <CovoxAIAnalytics />
       </section>
       <section className="my-12 px-4 xl:px-0">

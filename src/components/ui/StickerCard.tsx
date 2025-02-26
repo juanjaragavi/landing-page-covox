@@ -21,7 +21,7 @@ export const StickerCard = ({
         <div className="relative flex items-center gap-2">
           <div className="absolute -left-4 h-5 w-[3px] rounded-r-sm bg-[#77FF00]" />
           <Icon className="size-8 shrink-0 text-[#77FF00]" />
-          <h3 className="font-medium text-gray-900 sm:text-lg sm:leading-tight">
+          <h3 className="text-xl leading-6 font-semibold tracking-tight text-gray-900 sm:text-xl sm:leading-tight">
             {title}
           </h3>
         </div>
