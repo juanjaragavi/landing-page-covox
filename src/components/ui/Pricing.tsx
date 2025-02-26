@@ -266,16 +266,10 @@ export default function Pricing() {
               </h3>
               <ul className="space-y-2">
                 <li className="text-gray-300">
-                  • Prueba gratuita de 14 días sin compromiso
-                </li>
-                <li className="text-gray-300">
-                  • Acceso completo a todas las funcionalidades
+                  • 10 minutos de créditos para hacer llamadas GRATIS
                 </li>
                 <li className="text-gray-300">
                   • Soporte técnico durante la prueba
-                </li>
-                <li className="text-gray-300">
-                  • Sin necesidad de tarjeta de crédito
                 </li>
               </ul>
             </div>
