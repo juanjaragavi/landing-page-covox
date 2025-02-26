@@ -12,31 +12,16 @@ const Footer = () => {
     product: {
       title: "Producto",
       items: [
-        { label: "La Solución", href: "#solucion" },
-        { label: "¿Cómo Funciona?", href: "#como-funciona" },
-        { label: "Casos de Uso", href: "#casos-de-uso", external: true },
+        { label: "La Solución", href: "/#solucion" },
+        { label: "¿Cómo Funciona?", href: "/#como-funciona" },
+        { label: "Casos de Uso", href: "/#casos-de-uso" },
       ],
     },
     resources: {
       title: "Recursos",
       items: [
-        { label: "Blog", href: "#" },
-        { label: "Testimoniales", href: "#testimoniales" },
-      ],
-    },
-    company: {
-      title: "Compañía",
-      items: [
-        { label: "Sobre Nosotros", href: "#" },
-        { label: "Carreras", href: "#" },
-        { label: "Contacto", href: "#" },
-      ],
-    },
-    legal: {
-      title: "Legal",
-      items: [
-        { label: "Términos de Servicio", href: "#" },
-        { label: "Política de Privacidad", href: "#" },
+        { label: "Blog", href: "/blog" },
+        { label: "Testimoniales", href: "/#testimoniales" },
       ],
     },
   }
