@@ -19,9 +19,7 @@ export function Hero() {
           <FadeDiv className="mx-auto">
             <a
               aria-label="View latest update the changelog page"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#video-demo"
               className="mx-auto w-full"
             >
               <div className="inline-flex max-w-full items-center gap-2 rounded-full bg-white/5 px-2 py-0.5 text-xs font-medium text-gray-100 ring-1 shadow-md shadow-[#77FF00]/10 ring-black/10 backdrop-blur-[1px] transition-colors hover:bg-[#77FF00]/[2.5%] focus:outline-hidden sm:text-sm">

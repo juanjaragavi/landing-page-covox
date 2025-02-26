@@ -15,7 +15,7 @@ export function Video() {
             tu negocio.
           </p>
         </div>
-        <div className="relative sm:col-span-4">
+        <div className="relative rounded-xl sm:col-span-4">
           <div className="overflow-hidden rounded-xl shadow-lg shadow-[#77FF00]/20">
             <div className="aspect-video w-full rounded-xl">
               <iframe
