@@ -160,7 +160,7 @@ export default function AIVsHumans() {
 
           <div className="relative z-10 flex w-full flex-col gap-6">
             {/* Item 1: Disponible 24/7 */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-cell hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div className="absolute size-12 animate-[ping_4s_ease_infinite] rounded-full bg-[#77FF00]/20"></div>
                 <div className="relative flex size-10 items-center justify-center rounded-full bg-[#77FF00]/20 p-2 ring-1 ring-[#77FF00]/50">
@@ -178,7 +178,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 2: Atiende 100% de los leads */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-cell hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[ping_4s_ease_infinite] rounded-full bg-[#77FF00]/20"
@@ -199,7 +199,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 3: Costos reducidos */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-cell hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[ping_4s_ease_infinite] rounded-full bg-[#77FF00]/20"
@@ -220,7 +220,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 4: Respuesta inmediata */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-cell hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[ping_4s_ease_infinite] rounded-full bg-[#77FF00]/20"
@@ -239,7 +239,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 5: Sin errores, siempre optimizado */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-cell hover:border-[#77FF00]/50 hover:shadow-[0_0_15px_rgba(119,255,0,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[ping_4s_ease_infinite] rounded-full bg-[#77FF00]/20"
@@ -357,7 +357,7 @@ export default function AIVsHumans() {
 
           <div className="relative z-10 flex w-full flex-col gap-6">
             {/* Item 1: Horario limitado */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-help hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div className="absolute size-12 animate-[pulse_3s_ease-in-out_infinite] rounded-full bg-red-500/20"></div>
                 <div className="relative flex size-10 items-center justify-center rounded-full bg-red-500/20 p-2 ring-1 ring-red-500/50">
@@ -375,7 +375,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 2: Se pierden oportunidades */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-help hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[pulse_3s_ease-in-out_infinite] rounded-full bg-red-500/20"
@@ -394,7 +394,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 3: Costos operativos altos */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-help hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[pulse_3s_ease-in-out_infinite] rounded-full bg-red-500/20"
@@ -415,7 +415,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 4: Tiempo de espera */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-help hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[pulse_3s_ease-in-out_infinite] rounded-full bg-red-500/20"
@@ -436,7 +436,7 @@ export default function AIVsHumans() {
             </div>
 
             {/* Item 5: Fatiga y errores humanos */}
-            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
+            <div className="flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-900/80 p-4 transition-all hover:cursor-help hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.15)]">
               <div className="relative flex size-12 items-center justify-center">
                 <div
                   className="absolute size-12 animate-[pulse_3s_ease-in-out_infinite] rounded-full bg-red-500/20"
