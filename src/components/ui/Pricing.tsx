@@ -223,7 +223,7 @@ export default function Pricing() {
 
               {plan.enterprise ? (
                 <Link
-                  href="#contact"
+                  href="https://admin.covox.io/login"
                   className="inline-block w-full"
                   aria-label={`Contactar sobre el plan ${plan.name}`}
                   rel="noopener noreferrer"
@@ -235,7 +235,7 @@ export default function Pricing() {
                 </Link>
               ) : (
                 <Link
-                  href="#contact"
+                  href="https://admin.covox.io/login"
                   className="inline-block w-full"
                   aria-label={`Registrarse para el plan ${plan.name}`}
                   title={`Comenzar con nuestro plan ${plan.name}`}
