@@ -1,20 +1,14 @@
 import { ImageResponse } from "next/og"
 
 export const runtime = "edge"
-export const alt = "COVOX AI - Agentes Conversacionales de IA Hiper Realistas"
-export const size = {
-  width: 1200,
-  height: 630,
-}
-export const contentType = "image/png"
 
-export default async function Image() {
+export async function GET() {
   try {
-    const logoUrl = new URL(
-      "../../public/images/logo-header.webp",
-      import.meta.url,
-    )
-    const logoData = await fetch(logoUrl).then((res) => res.arrayBuffer())
+    // In Next.js Edge Runtime, we need to use a different approach to access public files
+    // The path should be relative to the domain root, not the file system
+    const logoData = await fetch(
+      new URL("/images/logo-header.webp", "https://covox.ai"),
+    ).then((res) => res.arrayBuffer())
     const logoBase64 = Buffer.from(logoData).toString("base64")
     const logoDataUrl = `data:image/webp;base64,${logoBase64}`
 
@@ -108,7 +102,8 @@ export default async function Image() {
         </div>
       ),
       {
-        ...size,
+        width: 1200,
+        height: 630,
       },
     )
   } catch (e) {
