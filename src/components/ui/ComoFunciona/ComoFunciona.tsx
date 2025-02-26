@@ -1,6 +1,6 @@
 import { RiPlayLine, RiSettings3Line, RiUserAddLine } from "@remixicon/react"
 
-export const Map = () => {
+export const ComoFunciona = () => {
   return (
     <div
       id="como-funciona"

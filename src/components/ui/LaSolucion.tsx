@@ -21,10 +21,10 @@ import {
 } from "./ProblemIcons"
 import { AutoResponseIcon, ConversionIcon, LeadsIcon } from "./SolutionIcons"
 
-export default function Features() {
+export default function LaSolucion() {
   return (
     <div
-      aria-label="COVOX AI | Agentes Conversacionales Features for Farms"
+      aria-label="COVOX AI | Agentes Conversacionales LaSolucion for Farms"
       id="solucion"
       aria-labelledby="solucion"
       className="relative mx-auto max-w-6xl scroll-my-24 px-4 sm:px-0"

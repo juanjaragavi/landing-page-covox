@@ -7,7 +7,7 @@ import {
 } from "@remixicon/react"
 import { StickerCard } from "./StickerCard"
 
-export function CovoxAIAnalytics() {
+export function CasosDeUso() {
   return (
     <div
       id="casos-de-uso"

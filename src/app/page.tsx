@@ -1,11 +1,11 @@
 import AIVsHumans from "@/components/ui/AIVsHumans"
 import { CallToAction } from "@/components/ui/CallToAction"
-import { CovoxAIAnalytics } from "@/components/ui/CovoxAIAnalytics"
+import { CasosDeUso } from "@/components/ui/CasosDeUso"
+import { ComoFunciona } from "@/components/ui/ComoFunciona/ComoFunciona"
 import FAQ from "@/components/ui/FAQ"
 import FeatureDivider from "@/components/ui/FeatureDivider"
-import Features from "@/components/ui/Features"
 import { Hero } from "@/components/ui/Hero"
-import { Map } from "@/components/ui/Map/Map"
+import LaSolucion from "@/components/ui/LaSolucion"
 import Pricing from "@/components/ui/Pricing"
 import Testimonial from "@/components/ui/Testimonial"
 import { Video } from "@/components/ui/Video"
@@ -17,14 +17,14 @@ export default function Home() {
         <Hero />
       </section>
       <section className="mt-20 px-4 xl:px-0">
-        <Features />
+        <LaSolucion />
       </section>
       <section className="mt-32 px-4 xl:px-0">
-        <Map />
+        <ComoFunciona />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
       <section className="mb-12 px-10 xl:px-0">
-        <CovoxAIAnalytics />
+        <CasosDeUso />
       </section>
       <section className="my-12 px-4 xl:px-0">
         <AIVsHumans />
