@@ -64,11 +64,11 @@ function getFormattedDate(date: string) {
 
 export default function BlogPage() {
   return (
-    <section className="container mx-auto max-w-4xl py-44">
-      <h1 className="mb-8 text-4xl font-bold text-[#77FF00]">
+    <section className="container mx-auto max-w-4xl pt-36 pb-20">
+      <h1 className="mb-8 text-center text-4xl font-bold text-[#77FF00] sm:text-left">
         Bienvenidos al Blog
       </h1>
-      <div className="space-y-10">
+      <div className="space-y-10 px-10">
         {blogPosts.map((post) => (
           <article key={post.slug} className="border-b border-gray-200 pb-8">
             <Link href={`/blog/${post.slug}`}>
