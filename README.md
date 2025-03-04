@@ -24,6 +24,10 @@ COVOX AI is an advanced conversational AI platform that enables businesses to cr
 
 ## Getting Started
 
+For detailed development instructions, please refer to [README.dev.md](README.dev.md).
+
+Quick start:
+
 1. Install dependencies:
 
    ```bash
@@ -33,10 +37,12 @@ COVOX AI is an advanced conversational AI platform that enables businesses to cr
 2. Start the development server:
 
    ```bash
-   pnpm run dev
+   pnpm dev
    ```
 
 3. Visit [http://localhost:3000](http://localhost:3000) to view the application
+
+**Important Note:** This project uses **pnpm** exclusively as its package manager. Please do not use npm or yarn.
 
 ## Technology Stack
 
