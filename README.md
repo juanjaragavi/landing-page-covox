@@ -77,6 +77,10 @@ Quick start:
 
 COVOX AI is licensed under the [MIT License](LICENSE.md).
 
+# VERSIONES
+**Version 0.1 [2025-03-21 14:08]**
+***Ajustes de cambio de video***
+
 ---
 
 Made with ❤️ by [Juan Jaramillo](https://juanjaramillo.tech)
