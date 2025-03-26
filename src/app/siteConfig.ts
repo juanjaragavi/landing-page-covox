@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "COVOX AI | Agentes Conversacionales de IA Hiper Realistas",
-  url: "https://covox.ai",
+  url: "https://covox.io",
   description:
     "Automatiza conversaciones, agenda citas y cierra más ventas con nuestra plataforma SaaS de IA conversacional. Agentes de IA disponibles 24/7.",
   baseLinks: {

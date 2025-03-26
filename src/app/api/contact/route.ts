@@ -87,7 +87,7 @@ export async function POST(request: NextRequest) {
 
     // Construct email
     const mailOptions = {
-      from: process.env.EMAIL_USER || "noreply@covox.ai",
+      from: process.env.EMAIL_USER || "noreply@covox.io",
       to: process.env.DESTINATION_EMAIL || "camilo@zione.shop",
       subject: `COVOX AI - Formulario de Contacto - ${reasonText}`,
       html: `
