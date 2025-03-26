@@ -2,17 +2,9 @@
 
 import { RiArrowUpLine } from "@remixicon/react";
 import { useEffect, useState } from "react";
-import TagManager from "react-gtm-module";
 import { Button } from "../Button";
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false)
-
-  const tagManagerArgs = {
-    gtmId: "G-RD33RKF5HM", // Reemplaza con tu ID de GTM
-  };
-  useEffect(() => {
-    TagManager.initialize(tagManagerArgs);
-  }, []);
   // Show button when page is scrolled down
   useEffect(() => {
     const toggleVisibility = () => {
