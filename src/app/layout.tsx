@@ -121,6 +121,15 @@ export default function RootLayout({
             html.dark { color-scheme: dark !important; }
           }
         `}</style>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD33RKF5HM"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-RD33RKF5HM');
+        </script>
       </head>
       <body
         className={`${GeistSans.className} min-h-[100dvh] overflow-x-hidden scroll-auto bg-gray-900 antialiased selection:bg-[#77FF00] selection:text-gray-800`}
