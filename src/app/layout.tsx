@@ -9,7 +9,7 @@ const Footer = lazy(() => import("@/components/ui/Footer"))
 const BackToTop = lazy(() => import("@/components/ui/BackToTop"))
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://covox.ai"),
+  metadataBase: new URL("https://covox.io"),
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "COVOX AI",
-      url: "https://covox.ai",
+      url: "https://covox.io",
     },
   ],
   creator: "COVOX AI",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   category: "Tecnología de IA",
   applicationName: "COVOX AI",
   alternates: {
-    canonical: "https://covox.ai",
+    canonical: "https://covox.io",
     languages: {
-      "es-ES": "https://covox.ai",
+      "es-ES": "https://covox.io",
     },
   },
   openGraph: {
@@ -121,15 +121,6 @@ export default function RootLayout({
             html.dark { color-scheme: dark !important; }
           }
         `}</style>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD33RKF5HM"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-RD33RKF5HM');
-        </script>
       </head>
       <body
         className={`${GeistSans.className} min-h-[100dvh] overflow-x-hidden scroll-auto bg-gray-900 antialiased selection:bg-[#77FF00] selection:text-gray-800`}

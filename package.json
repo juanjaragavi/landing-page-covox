@@ -26,6 +26,7 @@
     "nodemailer": "^6.10.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "react-gtm-module": "^2.0.11",
     "remark-gfm": "^4.0.1",
     "tailwind-merge": "^2.6.0",
     "tailwind-variants": "^0.3.1"
