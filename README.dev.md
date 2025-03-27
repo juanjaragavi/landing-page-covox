@@ -74,3 +74,4 @@ This project uses **pnpm** exclusively as its package manager. Please do not use
 - The project maintains a `pnpm-lock.yaml` file for dependency locking
 - Do not commit a `package-lock.json` or `yarn.lock` file
 - Node.js version 18.0.0 or higher is required as specified in the project configuration
+sudo pnpm run build
