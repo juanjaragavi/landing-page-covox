@@ -7,7 +7,7 @@ export async function GET() {
     // In Next.js Edge Runtime, we need to use a different approach to access public files
     // The path should be relative to the domain root, not the file system
     const logoData = await fetch(
-      new URL("/images/logo-header.webp", "https://covox.io"),
+      new URL("/images/logo-header.webp", "https://covox.ai"),
     ).then((res) => res.arrayBuffer())
     const logoBase64 = Buffer.from(logoData).toString("base64")
     const logoDataUrl = `data:image/webp;base64,${logoBase64}`
@@ -97,7 +97,7 @@ export async function GET() {
               color: "rgba(255, 255, 255, 0.8)",
             }}
           >
-            covox.io
+            covox.ai
           </div>
         </div>
       ),

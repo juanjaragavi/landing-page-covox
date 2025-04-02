@@ -1,6 +1,25 @@
 "use client"
 
-import { FormEvent, useRef, useState } from "react"
+import { usePathname } from "next/navigation"
+import { ChangeEvent, FormEvent, useRef, useState } from "react"
+import { defaultCountry } from "../../lib/countryData"
+import { CountrySelector } from "./CountrySelector"
+
+// Helper function to extract simplified page slug from the path
+function getSimplifiedPageSlug(path: string | null): string {
+  if (!path || path === "/") return "home"
+
+  // Remove leading slash and get first segment
+  const cleanPath = path.replace(/^\/+/, "").split("/")[0]
+
+  // Only return valid slugs we care about
+  if (cleanPath === "agendavisitas" || cleanPath === "cobranzas") {
+    return cleanPath
+  }
+
+  // Default to home for any other pages
+  return "home"
+}
 
 export function CallToAction() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -9,6 +28,21 @@ export function CallToAction() {
     message: string
   }>({ type: null, message: "" })
   const formRef = useRef<HTMLFormElement>(null)
+  const pathname = usePathname()
+  const [selectedCountryCode, setSelectedCountryCode] = useState<string>(
+    defaultCountry.dialCode,
+  )
+  const [phoneNumber, setPhoneNumber] = useState("")
+
+  // Handle country selection
+  const handleCountryChange = (dialCode: string) => {
+    setSelectedCountryCode(dialCode)
+  }
+
+  // Handle phone number input
+  const handlePhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setPhoneNumber(e.target.value)
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -17,18 +51,45 @@ export function CallToAction() {
 
     try {
       const formData = new FormData(event.currentTarget)
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        body: formData,
+
+      // Create an object from FormData to send as JSON
+      const formDataObj: Record<string, string> = {}
+      formData.forEach((value, key) => {
+        // Skip the original phone input as we'll format it with country code
+        if (key !== "phoneNumber") {
+          formDataObj[key] = value.toString()
+        }
       })
 
-      const data = await response.json()
+      // Format phone with country code for Make.com (integer format)
+      formDataObj.phone =
+        `${selectedCountryCode.replace("+", "")}${phoneNumber}`.trim()
+
+      // Add source information
+      formDataObj.source = "formulario_landing_page_call_to_action"
+
+      // Add simplified page slug
+      const pageSlug = getSimplifiedPageSlug(pathname)
+      formDataObj.page = pageSlug
+
+      // Send to Make.com webhook
+      const response = await fetch(
+        "https://hook.us2.make.com/15d2nl66cm26l2k33dy68qtvbdvcoxn4",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formDataObj),
+        },
+      )
 
       if (!response.ok) {
-        throw new Error(data.error || "Error al enviar el formulario")
+        const errorText = await response.text()
+        throw new Error(errorText || "Error al enviar el formulario")
       }
 
-      // Success
+      // Success - no need to parse JSON as Make.com may not return JSON
       setFormStatus({
         type: "success",
         message:
@@ -37,6 +98,7 @@ export function CallToAction() {
 
       // Reset the form
       formRef.current?.reset()
+      setPhoneNumber("")
     } catch (error) {
       console.error("Error al enviar el formulario:", error)
       setFormStatus({
@@ -84,16 +146,29 @@ export function CallToAction() {
             )}
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="space-y-6">
-                <div>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Nombre"
-                    aria-label="Nombre"
-                    className="block w-full rounded-md border-gray-700 bg-gray-800 px-2 py-1 text-white shadow-sm placeholder:font-medium placeholder:text-[#77FF00]/80 focus:border-[#77FF00] focus:ring-[#77FF00]"
-                    required
-                  />
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Nombre"
+                      aria-label="Nombre"
+                      className="block w-full rounded-md border-gray-700 bg-gray-800 px-2 py-1 text-white shadow-sm placeholder:font-medium placeholder:text-[#77FF00]/80 focus:border-[#77FF00] focus:ring-[#77FF00]"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Apellido"
+                      aria-label="Apellido"
+                      className="block w-full rounded-md border-gray-700 bg-gray-800 px-2 py-1 text-white shadow-sm placeholder:font-medium placeholder:text-[#77FF00]/80 focus:border-[#77FF00] focus:ring-[#77FF00]"
+                      required
+                    />
+                  </div>
                 </div>
                 <div>
                   <input
@@ -106,16 +181,26 @@ export function CallToAction() {
                     required
                   />
                 </div>
-                <div>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Teléfono"
-                    aria-label="Teléfono"
-                    className="block w-full rounded-md border-gray-700 bg-gray-800 px-2 py-1 text-white shadow-sm placeholder:font-medium placeholder:text-[#77FF00]/80 focus:border-[#77FF00] focus:ring-[#77FF00]"
-                    required
-                  />
+                <div className="grid grid-cols-6 gap-2">
+                  <div className="col-span-2">
+                    <CountrySelector
+                      onChange={handleCountryChange}
+                      className="h-full"
+                    />
+                  </div>
+                  <div className="col-span-4">
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      value={phoneNumber}
+                      onChange={handlePhoneChange}
+                      placeholder="Número de teléfono"
+                      aria-label="Número de teléfono"
+                      className="block h-full w-full rounded-md border-gray-700 bg-gray-800 px-2 py-1 text-white shadow-sm placeholder:font-medium placeholder:text-[#77FF00]/80 focus:border-[#77FF00] focus:ring-[#77FF00]"
+                      required
+                    />
+                  </div>
                 </div>
               </div>
               <div className="space-y-6">
@@ -130,11 +215,9 @@ export function CallToAction() {
                     <option value="" className="font-medium text-[#77FF00]/80">
                       Motivo de Contacto
                     </option>
-                    <option value="demo">Solicitar Demo</option>
-                    <option value="support">Soporte Técnico</option>
-                    <option value="sales">Consultas Comerciales</option>
-                    <option value="work">Trabaja con Nosotros</option>
-                    <option value="other">Otro</option>
+                    <option value="demo">Quiero Solicitar una Demo</option>
+                    <option value="call">Quiero una Llamada de Prueba</option>
+                    <option value="sales">Tengo una Consulta Comercial</option>
                   </select>
                 </div>
                 <div>

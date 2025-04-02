@@ -1,0 +1,13 @@
+fix: Improve URL routing, middleware, and metadata handling
+
+    - Updated middleware.ts to properly handle all blog-style URLs with and without the /mx prefix.
+    - Added direct path mappings for blog post routes.
+    - Improved path detection logic for clean URLs in local and Vercel environments.
+    - Resolved 404 errors on specific blog pages.
+    - Created dedicated metadata.ts files for blog pages following Next.js best practices.
+    - Removed generateMetadata functions from page components.
+    - Improved SEO with consistent metadata structure.
+    - Simplified components by separating content and metadata concerns.
+    - Implemented more robust route matching patterns.
+    - Added support for both WordPress integration URLs and native Next.js routes.
+    - Enhanced error handling with better fallback mechanisms.

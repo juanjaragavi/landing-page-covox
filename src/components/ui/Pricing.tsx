@@ -136,10 +136,10 @@ export default function Pricing() {
               <motion.span
                 className="text-sm"
                 animate={{
-                  color: isAnnual ? "#77FF00" : "#d1d5db",
+                  color: isAnnual ? "#4ade80" : "#d1d5db",
                 }}
               >
-                Anual <span className="text-[#77FF00]">20% descuento</span>
+                Anual <span className="text-green-400">20% descuento</span>
               </motion.span>
             </div>
           </div>
@@ -153,11 +153,11 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className={`relative rounded-2xl bg-white/5 px-4 py-8 backdrop-blur-sm ${
-                plan.popular ? "ring-2 ring-[#77FF00]" : "ring-1 ring-white/10"
+                plan.popular ? "ring-2 ring-green-500" : "ring-1 ring-white/10"
               }`}
             >
               {plan.popular && (
-                <span className="absolute -top-5 left-1/2 w-11/12 -translate-x-1/2 rounded-full bg-[#77FF00] p-0 px-2 py-1 text-center text-sm font-semibold text-black">
+                <span className="absolute -top-5 left-1/2 w-11/12 -translate-x-1/2 rounded-full bg-green-500 p-0 px-2 py-1 text-center text-sm font-semibold text-black">
                   Más Popular
                 </span>
               )}
@@ -204,7 +204,7 @@ export default function Pricing() {
                   </div>
                 )}
                 {plan.pricePerMinute && (
-                  <div className="mt-3 text-center text-sm text-[#77FF00]">
+                  <div className="mt-3 text-center text-sm text-green-400">
                     Precio por minuto: {plan.pricePerMinute}
                   </div>
                 )}
@@ -213,7 +213,7 @@ export default function Pricing() {
               <ul className="mb-8 space-y-4">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start">
-                    <IconCheck className="mr-3 size-6 shrink-0 text-[#77FF00]" />
+                    <IconCheck className="mr-3 size-6 shrink-0 text-green-400" />
                     <span className="text-sm leading-tight text-gray-300">
                       {feature}
                     </span>
@@ -241,7 +241,7 @@ export default function Pricing() {
                   title={`Comenzar con nuestro plan ${plan.name}`}
                   rel="noopener noreferrer"
                 >
-                  <button className="w-full rounded-lg bg-[#77FF00] px-4 py-2 text-center font-semibold text-black transition-colors hover:bg-green-600">
+                  <button className="w-full rounded-lg bg-green-500 px-4 py-2 text-center font-semibold text-black transition-colors hover:bg-green-600">
                     {plan.cta}
                   </button>
                 </Link>

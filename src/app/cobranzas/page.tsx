@@ -1,7 +1,7 @@
 import AIVsHumans from "@/components/ui/AIVsHumans"
-import { AnimatedStatsSection } from "@/components/ui/AnimatedStatsSection"
 import { BrandCarousel } from "@/components/ui/BrandCarousel"
 import { CallToAction } from "@/components/ui/CallToAction"
+import { CobranzasStatsSection } from "@/components/ui/CobranzasStatsSection"
 import { ComoFunciona } from "@/components/ui/ComoFunciona/ComoFunciona"
 import FAQ from "@/components/ui/FAQ"
 import FeatureDivider from "@/components/ui/FeatureDivider"
@@ -10,7 +10,7 @@ import Pricing from "@/components/ui/Pricing"
 import { StatsSectionCTA } from "@/components/ui/StatsSectionCTA"
 import Testimonial from "@/components/ui/Testimonial"
 import { Video } from "@/components/ui/Video"
-import { HomeHero } from "@/components/wrappers/HomeHero"
+import { CobranzasHero } from "@/components/wrappers/CobranzasHero"
 {
   /*import { CasosDeUso } from "@/components/ui/CasosDeUso"*/
 }
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main id="top" className="relative mx-auto flex flex-col overflow-x-hidden">
       <section className="pt-28">
-        <HomeHero />
+        <CobranzasHero />
       </section>
       <section className="mt-20 px-4 xl:px-0">
         <LaSolucion />
@@ -28,7 +28,7 @@ export default function Home() {
         <ComoFunciona />
       </section>
       <section className="mt-16">
-        <AnimatedStatsSection />
+        <CobranzasStatsSection />
         <StatsSectionCTA />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />

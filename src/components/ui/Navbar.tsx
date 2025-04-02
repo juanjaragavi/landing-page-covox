@@ -123,7 +123,7 @@ export default function NavBar() {
               variant="secondary"
               className="text-md h-10 bg-[#77FF00] font-semibold"
             >
-              Empieza gratis
+              Crea tu Cuenta
             </Button>
           </div>
           <Button
