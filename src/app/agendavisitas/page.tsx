@@ -1,5 +1,5 @@
 import AIVsHumans from "@/components/ui/AIVsHumans"
-import { AgendaVisitasStatsSection } from "@/components/ui/AgendaVisitasStatsSection"
+import { AgendaVisitasStatsSection } from "@/components/ui/AgendaVisitasStatsSection" // Use AgendaVisitas specific stats
 import { BrandCarousel } from "@/components/ui/BrandCarousel"
 import { CallToAction } from "@/components/ui/CallToAction"
 import { ComoFunciona } from "@/components/ui/ComoFunciona/ComoFunciona"
@@ -10,27 +10,36 @@ import Pricing from "@/components/ui/Pricing"
 import { StatsSectionCTA } from "@/components/ui/StatsSectionCTA"
 import Testimonial from "@/components/ui/Testimonial"
 import { Video } from "@/components/ui/Video"
-import { AgendaVisitasHero } from "@/components/wrappers/AgendaVisitasHero"
+import { AgendaVisitasHero } from "@/components/wrappers/AgendaVisitasHero" // Use AgendaVisitas specific hero
 
-export default function Home() {
+export default function AgendaVisitasPage() {
+  // Changed function name for clarity
   return (
     <main id="top" className="relative mx-auto flex flex-col overflow-x-hidden">
+      {/* Structure replicated from src/app/page.tsx */}
       <section className="pt-28">
         <AgendaVisitasHero />
       </section>
-      <section className="mt-20 px-4 xl:px-0">
+      <section className="mt-12">
+        {/* Replaced AnimatedStatsSection with AgendaVisitasStatsSection */}
+        <AgendaVisitasStatsSection />
+      </section>
+      <section className="mt-12 px-4 xl:px-0">
         <LaSolucion />
       </section>
-      <section className="mt-32 px-4 xl:px-0">
+      <FeatureDivider className="my-16 max-w-6xl" />
+      <section className="mt-12 mb-16 px-4 xl:px-0">
+        <CallToAction />
+      </section>
+      <section className="mt-24 px-4 xl:px-0">
         <ComoFunciona />
       </section>
-      <section className="mt-16">
-        <AgendaVisitasStatsSection />
-        <StatsSectionCTA />
-      </section>
-      <FeatureDivider className="my-16 max-w-6xl" />
       <section className="my-12 px-4 xl:px-0">
         <AIVsHumans />
+      </section>
+      <FeatureDivider className="my-16 max-w-6xl" />
+      <section className="my-12">
+        <StatsSectionCTA />
       </section>
       <section className="mb-12 px-4 xl:px-0">
         <BrandCarousel />
@@ -48,8 +57,10 @@ export default function Home() {
       <section className="mt-8 px-4 xl:px-0">
         <Video />
       </section>
-      <section className="mt-12 mb-16 px-4 xl:px-0">
-        <CallToAction />
+      <FeatureDivider className="my-16 max-w-6xl" />
+      {/* Duplicated StatsSectionCTA as in src/app/page.tsx */}
+      <section className="my-12">
+        <StatsSectionCTA />
       </section>
     </main>
   )

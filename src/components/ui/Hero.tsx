@@ -2,7 +2,8 @@
 
 import { RiPlayFill } from "@remixicon/react"
 import { usePathname } from "next/navigation"
-import React, { ChangeEvent, FormEvent, useRef, useState } from "react"
+// Removed duplicate React import, ChangeEvent etc are implicitly imported via React namespace usually or directly if needed
+import { ChangeEvent, FormEvent, useRef, useState } from "react"
 import { defaultCountry } from "../../lib/countryData"
 import { FadeContainer, FadeDiv, FadeSpan } from "../Fade"
 import { ScaleContainer, ScaleDiv } from "../Scale"
@@ -25,16 +26,19 @@ function getSimplifiedPageSlug(path: string | null): string {
   return "home"
 }
 
+// Removed duplicate React import line
+import { ReactNode } from "react" // Import ReactNode
+
 export interface HeroProps {
   title?: string
-  description?: string
-  boldParts?: string[] // Array of text patterns that should be bold in the description
+  description?: ReactNode // Changed type from string to ReactNode
+  // boldParts prop is no longer needed as styling will be passed via JSX
 }
 
 export function Hero({
   title = "Agentes Conversacionales de IA Hiper Realistas que puedes crear en Minutos 🚀",
   description = "Automatiza conversaciones, agenda citas y cierra más ventas con nuestra plataforma SaaS de IA conversacional.",
-  boldParts = [],
+  // Removed boldParts from destructuring and default props
 }: HeroProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formStatus, setFormStatus] = useState<{
@@ -179,100 +183,9 @@ export function Hero({
                   ))}
                 </h1>
                 {/* Removed md:text-left from p */}
+                {/* Simplified description rendering: directly render the description prop */}
                 <p className="mt-4 max-w-xl text-center text-xl leading-5 font-normal text-balance text-white sm:mt-2 sm:text-xl">
-                  {description.split(".").map((sentence, index) => {
-                    const trimmedSentence = sentence.trim()
-                    if (!trimmedSentence) return null
-
-                    // Create a JSX array to hold our processed content
-                    const jsxElements: React.ReactNode[] = []
-
-                    // Sort boldParts by length (longest first) to avoid partial matches
-                    const sortedBoldParts = [...boldParts].sort(
-                      (a, b) => b.length - a.length,
-                    )
-
-                    // Check if any bold parts exist in this sentence
-                    const hasBoldParts = sortedBoldParts.some((part) =>
-                      trimmedSentence.includes(part),
-                    )
-
-                    // If no bold parts, just return the sentence
-                    if (!hasBoldParts) {
-                      jsxElements.push(trimmedSentence)
-                    } else {
-                      // Handle text with bold parts
-                      let remainingText = trimmedSentence
-                      let currentIndex = 0
-
-                      // Find all instances of bold parts
-                      while (remainingText.length > 0) {
-                        // Find the first occurrence of any bold part
-                        let nextBoldIndex = -1
-                        let boldPartToUse = ""
-
-                        for (const boldPart of sortedBoldParts) {
-                          const index = remainingText.indexOf(boldPart)
-                          if (
-                            index !== -1 &&
-                            (nextBoldIndex === -1 || index < nextBoldIndex)
-                          ) {
-                            nextBoldIndex = index
-                            boldPartToUse = boldPart
-                          }
-                        }
-
-                        if (nextBoldIndex === -1) {
-                          // No more bold parts, add remaining text
-                          jsxElements.push(remainingText)
-                          break
-                        }
-
-                        // Add text before the bold part
-                        if (nextBoldIndex > 0) {
-                          jsxElements.push(
-                            remainingText.substring(0, nextBoldIndex),
-                          )
-                        }
-
-                        // Add the bold part with conditional styling
-                        jsxElements.push(
-                          <strong
-                            key={currentIndex}
-                            className={`font-semibold ${
-                              // Changed font weight
-                              boldPartToUse === "COVOX AI" ||
-                              boldPartToUse === "cerrar negocios"
-                                ? "text-[#77FF00]" // Green for specific phrases
-                                : "text-white" // White for other bold parts
-                            }`}
-                          >
-                            {boldPartToUse}
-                          </strong>,
-                        )
-                        currentIndex++
-
-                        // Update remaining text
-                        remainingText = remainingText.substring(
-                          nextBoldIndex + boldPartToUse.length,
-                        )
-                      }
-                    }
-
-                    return (
-                      <span key={index}>
-                        <FadeSpan>
-                          {jsxElements.map((element, i) => (
-                            <React.Fragment key={i}>{element}</React.Fragment>
-                          ))}
-                        </FadeSpan>
-                        {index < description.split(".").length - 1 &&
-                        trimmedSentence
-                          ? ". "
-                          : ""}
-                      </span>
-                    )
-                  })}
+                  <FadeSpan>{description}</FadeSpan>
                 </p>
                 {/* Made button visible and centered */}
                 <FadeDiv className="mt-6 flex w-full justify-center">
