@@ -21,7 +21,7 @@ export function Video() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/watch?si=JRfbaTu_ukTBoBgE&v=oMWnymTF1KI"
+                src="https://www.youtube.com/embed/oMWnymTF1KI"
                 title="COVOX AI Demo Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

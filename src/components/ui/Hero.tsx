@@ -300,7 +300,7 @@ export function Hero({
                     className="relative z-10 rounded-2xl bg-gray-900/80 p-6 backdrop-blur-sm"
                   >
                     {/* Centered form title */}
-                    <h2 className="mb-4 text-center text-xl font-semibold text-[#FFFFFF] md:text-xl">
+                    <h2 className="mb-4 text-center text-xl leading-tight font-semibold text-[#FFFFFF] md:text-xl">
                       ¿Quieres recibir una llamada de un Agente Virtual?
                     </h2>
 

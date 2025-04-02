@@ -11,9 +11,6 @@ import { StatsSectionCTA } from "@/components/ui/StatsSectionCTA"
 import Testimonial from "@/components/ui/Testimonial"
 import { Video } from "@/components/ui/Video"
 import { HomeHero } from "@/components/wrappers/HomeHero"
-{
-  /*import { CasosDeUso } from "@/components/ui/CasosDeUso"*/
-}
 
 export default function Home() {
   return (
@@ -21,22 +18,25 @@ export default function Home() {
       <section className="pt-28">
         <HomeHero />
       </section>
+      <section className="mt-16">
+        <AnimatedStatsSection />
+      </section>
       <section className="mt-20 px-4 xl:px-0">
         <LaSolucion />
+      </section>
+      <FeatureDivider className="my-16 max-w-6xl" />
+      <section className="mt-12 mb-16 px-4 xl:px-0">
+        <CallToAction />
       </section>
       <section className="mt-32 px-4 xl:px-0">
         <ComoFunciona />
       </section>
-      <section className="mt-16">
-        <AnimatedStatsSection />
-        <StatsSectionCTA />
-      </section>
-      <FeatureDivider className="my-16 max-w-6xl" />
-      {/*<section className="mb-12 px-10 xl:px-0">
-        <CasosDeUso />
-      </section>*/}
       <section className="my-12 px-4 xl:px-0">
         <AIVsHumans />
+      </section>
+      <FeatureDivider className="my-16 max-w-6xl" />
+      <section className="mt-16">
+        <StatsSectionCTA />
       </section>
       <section className="mb-12 px-4 xl:px-0">
         <BrandCarousel />
@@ -54,8 +54,9 @@ export default function Home() {
       <section className="mt-8 px-4 xl:px-0">
         <Video />
       </section>
-      <section className="mt-12 mb-16 px-4 xl:px-0">
-        <CallToAction />
+      <FeatureDivider className="my-16 max-w-6xl" />
+      <section className="mt-16">
+        <StatsSectionCTA />
       </section>
     </main>
   )
