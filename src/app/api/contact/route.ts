@@ -29,22 +29,45 @@ const createTransporter = () => {
     })
   }
 
-  // Emergency fallback - ethereal.email (for testing)
-  console.log("Using emergency ethereal.email transporter")
-  return nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: 587,
-    secure: false,
-    auth: {
-      user: "ethereal.user@ethereal.email", // Replace with your test account or use nodemailer.createTestAccount()
-      pass: "ethereal.password",
-    },
+  // Emergency fallback - create an Ethereal test account dynamically
+  console.log("Creating emergency ethereal.email test account")
+  return new Promise<nodemailer.Transporter>((resolve) => {
+    nodemailer
+      .createTestAccount()
+      .then((testAccount) => {
+        console.log("Created test account:", testAccount.user)
+        const transporter = nodemailer.createTransport({
+          host: "smtp.ethereal.email",
+          port: 587,
+          secure: false,
+          auth: {
+            user: testAccount.user,
+            pass: testAccount.pass,
+          },
+        })
+        resolve(transporter)
+      })
+      .catch((err) => {
+        console.error("Failed to create test account:", err)
+        // Final fallback with no authentication as last resort
+        const fallbackTransport = nodemailer.createTransport({
+          sendmail: true,
+          newline: "unix",
+          path: "/usr/sbin/sendmail",
+        })
+        resolve(fallbackTransport)
+      })
   })
 }
 
 export async function POST(request: NextRequest) {
   // Create a transporter on demand (to handle changes in environment variables)
-  const transporter = createTransporter()
+  const transporterOrPromise = createTransporter()
+  // Handle both synchronous and Promise-based transporters
+  const transporter =
+    transporterOrPromise instanceof Promise
+      ? await transporterOrPromise
+      : transporterOrPromise
 
   try {
     // Get form data
@@ -67,19 +90,13 @@ export async function POST(request: NextRequest) {
     let reasonText = ""
     switch (reason) {
       case "demo":
-        reasonText = "Solicitar Demo"
+        reasonText = "Quiero Solicitar una Demo"
         break
-      case "support":
-        reasonText = "Soporte Técnico"
+      case "call":
+        reasonText = "Quiero una Llamada de Prueba"
         break
       case "sales":
-        reasonText = "Consultas Comerciales"
-        break
-      case "work":
-        reasonText = "Trabaja con Nosotros"
-        break
-      case "other":
-        reasonText = "Otro"
+        reasonText = "Tengo una Consulta Comercial"
         break
       default:
         reasonText = reason
@@ -88,7 +105,7 @@ export async function POST(request: NextRequest) {
     // Construct email
     const mailOptions = {
       from: process.env.EMAIL_USER || "noreply@covox.io",
-      to: process.env.DESTINATION_EMAIL || "camilo@zione.shop",
+      to: process.env.DESTINATION_EMAIL || "camilo@covox.io",
       subject: `COVOX AI - Formulario de Contacto - ${reasonText}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
@@ -127,16 +144,31 @@ export async function POST(request: NextRequest) {
       if (transporterType === "gmail") {
         console.log("Intentando método alternativo de envío...")
         try {
-          // Create a backup transporter
-          const backupTransporter = nodemailer.createTransport({
-            host: "smtp.ethereal.email",
-            port: 587,
-            secure: false,
-            auth: {
-              user: "ethereal.user@ethereal.email",
-              pass: "ethereal.password",
-            },
-          })
+          // Create a backup transporter using Ethereal
+          let backupTransporter
+
+          try {
+            // Create a dynamic Ethereal account
+            const testAccount = await nodemailer.createTestAccount()
+            backupTransporter = nodemailer.createTransport({
+              host: "smtp.ethereal.email",
+              port: 587,
+              secure: false,
+              auth: {
+                user: testAccount.user,
+                pass: testAccount.pass,
+              },
+            })
+            console.log("Created backup Ethereal account:", testAccount.user)
+          } catch (etherealError) {
+            console.error("Error creating Ethereal account:", etherealError)
+            // Final fallback with sendmail as last resort
+            backupTransporter = nodemailer.createTransport({
+              sendmail: true,
+              newline: "unix",
+              path: "/usr/sbin/sendmail",
+            })
+          }
 
           const backupInfo = await backupTransporter.sendMail(mailOptions)
           console.log(

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No pierdas la oportunidad de probar COVOX AI con créditos gratuitos | COVOX AI</title>
+    <meta name="description"
+        content="¡Última oportunidad! Prueba nuestro DEMO de COVOX AI con créditos precargados y automatiza tus llamadas ahora">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #111827;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #0c1015;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 30px 20px;
+            background-color: #222222;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #77FF00;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 30px 0 15px;
+        }
+
+        p {
+            margin: 0 0 15px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #77FF00;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .benefit-container {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .urgency-container {
+            background-color: rgba(119, 255, 0, 0.1);
+            border: 1px solid #77FF00;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .benefits {
+            display: table;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .benefit-row {
+            display: table-row;
+        }
+
+        .icon {
+            display: table-cell;
+            vertical-align: top;
+            width: 24px;
+            padding-right: 10px;
+            color: #77FF00;
+        }
+
+        .text {
+            display: table-cell;
+            vertical-align: top;
+            padding-bottom: 15px;
+        }
+
+        .vs-container {
+            display: table;
+            width: 100%;
+            margin: 25px 0;
+            border-collapse: separate;
+            border-spacing: 10px 0;
+        }
+
+        .vs-column {
+            display: table-cell;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        .vs-header {
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            font-weight: 600;
+        }
+
+        .ai-header {
+            background-color: rgba(119, 255, 0, 0.2);
+            color: #77FF00;
+        }
+
+        .human-header {
+            background-color: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .vs-content {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .button {
+            display: block;
+            background-color: #77FF00;
+            color: #111827;
+            text-decoration: none;
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 30px auto;
+            max-width: 300px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+        }
+
+        .secondary-button {
+            display: block;
+            background-color: transparent;
+            border: 2px solid #77FF00;
+            color: #77FF00;
+            text-decoration: none;
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 15px auto 30px;
+            max-width: 300px;
+            transition: all 0.3s;
+        }
+
+        .secondary-button:hover {
+            background-color: rgba(119, 255, 0, 0.1);
+        }
+
+        .timer-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .timer {
+            display: inline-block;
+            margin: 0 5px;
+            background-color: #1a1a1a;
+            border-radius: 4px;
+            padding: 10px;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .timer-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #77FF00;
+        }
+
+        .timer-label {
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        .testimonial {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-author {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .footer {
+            background-color: #0c1015;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        .social {
+            margin: 15px 0;
+        }
+
+        .social a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #9ca3af;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            margin: 15px 0;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: #77FF00;
+        }
+
+        @media (max-width: 600px) {
+            .vs-container {
+                display: block;
+            }
+
+            .vs-column {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preheader text (hidden in most email clients but displayed in inbox previews) -->
+    <div
+        style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+        ¡Última oportunidad! Prueba gratis COVOX AI con créditos precargados y automatiza tus llamadas ahora
+    </div>
+    <div class="container">
+        <div class="header">
+            <!-- COVOX AI Logo -->
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center" style="color: #77FF00; font-size: 40px;">
+                                    ✱
+                                </td>
+                                <td align="center" style="padding-left: 5px; font-size: 22px; font-weight: 600;">
+                                    COVOX
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content">
+            <h1>No pierdas la <span class="highlight">oportunidad de probar el DEMO</span> con créditos cargados</h1>
+
+            <div class="section">
+                <p>Hola [Nombre],</p>
+                <p>Notamos que aún no has aprovechado nuestra oferta para probar <strong>COVOX AI</strong>. Queremos
+                    recordarte que tienes una <span class="highlight">oportunidad única</span> de revolucionar la manera
+                    en que tu empresa maneja las llamadas.</p>
+            </div>
+
+            <div class="urgency-container">
+                <h2>¡Oferta por tiempo limitado!</h2>
+                <p>Hemos reservado para ti una <strong>cuenta DEMO con créditos precargados</strong> para que puedas
+                    experimentar todos los beneficios de COVOX AI sin costo inicial.</p>
+
+                <div class="timer-container">
+                    <div class="timer">
+                        <div class="timer-value">48</div>
+                        <div class="timer-label">HORAS</div>
+                    </div>
+                    <div class="timer">
+                        <div class="timer-value">:</div>
+                        <div class="timer-label"></div>
+                    </div>
+                    <div class="timer">
+                        <div class="timer-value">00</div>
+                        <div class="timer-label">MINS</div>
+                    </div>
+                    <div class="timer">
+                        <div class="timer-value">:</div>
+                        <div class="timer-label"></div>
+                    </div>
+                    <div class="timer">
+                        <div class="timer-value">00</div>
+                        <div class="timer-label">SEGS</div>
+                    </div>
+                </div>
+
+                <p style="text-align: center; margin-top: 15px;">¡Esta oferta expira pronto!</p>
+            </div>
+
+            <div class="section">
+                <h2>Lo que te estás perdiendo:</h2>
+
+                <div class="benefits">
+                    <div class="benefit-row">
+                        <div class="icon">💰</div>
+                        <div class="text"><strong>500 créditos GRATIS</strong> para realizar tus primeras llamadas
+                            automatizadas</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="icon">🚀</div>
+                        <div class="text"><strong>Configuración guiada por expertos</strong> para asegurar los mejores
+                            resultados</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="icon">⚡</div>
+                        <div class="text"><strong>Respuesta inmediata a tus leads</strong> sin importar la hora o el día
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="icon">📊</div>
+                        <div class="text"><strong>Dashboard completo</strong> con métricas de conversión y rendimiento
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Service Experience Image -->
+                <div style="margin-top: 20px; text-align: center;">
+                    <img src="https://res.cloudinary.com/talentassisto/image/upload/v1743453648/covox-ai-follow-up-email_w0iy0i.webp"
+                        alt="Mujer feliz recibiendo atención excelente a través de COVOX AI"
+                        style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    <p
+                        style="margin-top: 12px; font-style: italic; font-size: 14px; color: #9ca3af; text-align: center;">
+                        Tus clientes experimentarán una atención de calidad 24/7, incluso fuera del horario laboral.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-text">"Desde que implementamos COVOX AI, nuestras conversiones aumentaron un 35%
+                    y redujimos los costos operativos en un 60%. El ROI fue evidente desde el primer mes."</div>
+                <div class="testimonial-author">Carlos Mendoza, Director Comercial - Inmobiliaria Horizonte</div>
+            </div>
+
+            <div class="section">
+                <h2>Comienza en solo 10 minutos</h2>
+                <p>Configurar tu primer agente de IA es sorprendentemente sencillo:</p>
+
+                <div class="benefits">
+                    <div class="benefit-row">
+                        <div class="icon">1️⃣</div>
+                        <div class="text"><strong>Activa tu cuenta DEMO</strong> con los créditos precargados</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="icon">2️⃣</div>
+                        <div class="text"><strong>Carga tu base de datos</strong> de contactos para llamadas</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="icon">3️⃣</div>
+                        <div class="text"><strong>Programa tus primeras llamadas</strong> y observa los resultados</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://covox.io/demo" class="button">ACTIVAR MI DEMO CON CRÉDITOS GRATIS</a>
+            <a href="https://covox.io/agendar-reunion" class="secondary-button">AGENDAR UNA REUNIÓN PERSONAL</a>
+
+            <div class="section">
+                <p>Empresas de distintos sectores como <span class="highlight">inmobiliario, automotriz, logística, y
+                        cobranzas</span> ya están potenciando sus resultados con COVOX AI.</p>
+                <p>No pierdas esta oportunidad de transformar tu estrategia de llamadas.</p>
+                <p>El equipo de COVOX AI</p>
+                <p style="font-size: 14px; opacity: 0.8;">P.D.: Si necesitas ayuda para configurar tu cuenta o tienes
+                    preguntas, responde a este correo y nuestro equipo te asistirá inmediatamente.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>© 2025 COVOX AI. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Darse de baja</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -97,7 +97,7 @@ export async function GET() {
               color: "rgba(255, 255, 255, 0.8)",
             }}
           >
-            covox.io
+            covox.ai
           </div>
         </div>
       ),

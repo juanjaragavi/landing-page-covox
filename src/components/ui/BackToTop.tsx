@@ -1,10 +1,12 @@
 "use client"
 
-import { RiArrowUpLine } from "@remixicon/react";
-import { useEffect, useState } from "react";
-import { Button } from "../Button";
+import { RiArrowUpLine } from "@remixicon/react"
+import { useEffect, useState } from "react"
+import { Button } from "../Button"
+
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false)
+
   // Show button when page is scrolled down
   useEffect(() => {
     const toggleVisibility = () => {
