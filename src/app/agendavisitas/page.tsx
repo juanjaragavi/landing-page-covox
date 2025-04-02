@@ -11,9 +11,6 @@ import { StatsSectionCTA } from "@/components/ui/StatsSectionCTA"
 import Testimonial from "@/components/ui/Testimonial"
 import { Video } from "@/components/ui/Video"
 import { AgendaVisitasHero } from "@/components/wrappers/AgendaVisitasHero"
-{
-  /*import { CasosDeUso } from "@/components/ui/CasosDeUso"*/
-}
 
 export default function Home() {
   return (
@@ -32,9 +29,6 @@ export default function Home() {
         <StatsSectionCTA />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
-      {/*<section className="mb-12 px-10 xl:px-0">
-        <CasosDeUso />
-      </section>*/}
       <section className="my-12 px-4 xl:px-0">
         <AIVsHumans />
       </section>

@@ -97,9 +97,10 @@ export function StatsSectionCTA() {
   return (
     <div className="w-full bg-gray-900/70 py-8 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h3 className="mb-6 text-center text-xl font-semibold text-white md:text-2xl">
-          ➡ Solicita una demo y empieza a llenar tu calendario de citas hoy
-          mismo. 🚀
+        <h3 className="mb-6 text-center text-xl font-semibold text-white md:text-3xl">
+          Solicita una demo y empieza a{" "}
+          <span className="text-[#77FF00]">llenar tu calendario de citas</span>{" "}
+          hoy mismo. 🚀
         </h3>
 
         <div className="relative isolate rounded-xl">

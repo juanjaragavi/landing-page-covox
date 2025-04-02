@@ -139,13 +139,18 @@ export function Hero({
           </ScaleContainer>
         </div>
 
-        {/* Two column layout for larger screens */}
+        {/* Single column centered layout */}
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-8 md:grid-cols-2">
-            {/* Left column - Content */}
-            <div>
-              <FadeContainer className="flex flex-col items-center justify-center md:items-start">
-                <FadeDiv className="mx-auto md:mx-0">
+          {/* Changed grid to flex-col and centered items */}
+          <div className="flex flex-col items-center gap-10 pt-10">
+            {/* Text Content Block */}
+            <div className="w-full max-w-3xl">
+              {" "}
+              {/* Added max-width for text block */}
+              {/* Removed md:items-start to keep content centered */}
+              <FadeContainer className="flex flex-col items-center justify-center">
+                {/* Kept video link centered */}
+                <FadeDiv className="mx-auto">
                   <a
                     aria-label="View latest update the changelog page"
                     href="#video-demo"
@@ -164,7 +169,8 @@ export function Hero({
                     </div>
                   </a>
                 </FadeDiv>
-                <h1 className="mt-10 text-center text-3xl leading-8 font-semibold tracking-tighter text-white sm:mt-10 sm:text-4xl sm:leading-[1.1em] md:text-left">
+                {/* Removed md:text-left from h1 */}
+                <h1 className="mt-10 text-center text-3xl leading-8 font-semibold tracking-tighter text-white sm:mt-10 sm:text-4xl sm:leading-[1.1em]">
                   {title.split(" ").map((word, index) => (
                     <span key={index}>
                       <FadeSpan>{word}</FadeSpan>
@@ -172,7 +178,8 @@ export function Hero({
                     </span>
                   ))}
                 </h1>
-                <p className="mt-4 max-w-xl text-center text-xl leading-5 font-normal text-balance text-white sm:mt-2 sm:text-xl md:text-left">
+                {/* Removed md:text-left from p */}
+                <p className="mt-4 max-w-xl text-center text-xl leading-5 font-normal text-balance text-white sm:mt-2 sm:text-xl">
                   {description.split(".").map((sentence, index) => {
                     const trimmedSentence = sentence.trim()
                     if (!trimmedSentence) return null
@@ -228,11 +235,17 @@ export function Hero({
                           )
                         }
 
-                        // Add the bold part
+                        // Add the bold part with conditional styling
                         jsxElements.push(
                           <strong
                             key={currentIndex}
-                            className="font-extrabold text-[#77FF00]"
+                            className={`font-semibold ${
+                              // Changed font weight
+                              boldPartToUse === "COVOX AI" ||
+                              boldPartToUse === "cerrar negocios"
+                                ? "text-[#77FF00]" // Green for specific phrases
+                                : "text-white" // White for other bold parts
+                            }`}
                           >
                             {boldPartToUse}
                           </strong>,
@@ -261,10 +274,11 @@ export function Hero({
                     )
                   })}
                 </p>
-                <FadeDiv className="hidden w-full md:w-auto">
+                {/* Made button visible and centered */}
+                <FadeDiv className="mt-6 flex w-full justify-center">
                   <a
-                    className="mt-6 flex w-full cursor-pointer flex-row items-center justify-center gap-1 rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-6 py-4 text-lg leading-4 font-semibold tracking-wide whitespace-nowrap text-black shadow-[0_0_0_2px_rgba(0,0,0,0.04),0_0_10px_0_rgba(255,255,255,0.15)] transition-all duration-200 ease-in-out hover:bg-white hover:shadow-white/50 sm:text-xl md:w-auto"
-                    href="https://admin.covox.io/login"
+                    className="flex cursor-pointer flex-row items-center justify-center gap-1 rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-6 py-4 text-lg leading-4 font-semibold tracking-wide whitespace-nowrap text-black shadow-[0_0_0_2px_rgba(0,0,0,0.04),0_0_10px_0_rgba(255,255,255,0.15)] transition-all duration-200 ease-in-out hover:bg-white hover:shadow-white/50 sm:text-xl"
+                    href="https://admin.covox.io/login" // Consider if this link should be dynamic or removed if form is primary CTA
                   >
                     Solicita una Demo GRATUITA
                   </a>
@@ -272,8 +286,11 @@ export function Hero({
               </FadeContainer>
             </div>
 
-            {/* Right column - Form */}
-            <div className="mt-10 md:mt-0">
+            {/* Form Block - Now below text content */}
+            {/* Removed md:mt-0, kept mt-10 */}
+            <div className="mt-10 w-full max-w-md">
+              {" "}
+              {/* Added max-width for form */}
               <FadeDiv className="w-full">
                 <div className="relative isolate w-full rounded-xl">
                   <div className="absolute inset-0 -z-5 rounded-2xl bg-gray-900/80 blur-xl"></div>
@@ -282,7 +299,8 @@ export function Hero({
                     onSubmit={handleSubmit}
                     className="relative z-10 rounded-2xl bg-gray-900/80 p-6 backdrop-blur-sm"
                   >
-                    <h2 className="mb-4 text-center text-xl font-semibold text-[#FFFFFF] md:text-left md:text-xl">
+                    {/* Centered form title */}
+                    <h2 className="mb-4 text-center text-xl leading-tight font-semibold text-[#FFFFFF] md:text-xl">
                       ¿Quieres recibir una llamada de un Agente Virtual?
                     </h2>
 
