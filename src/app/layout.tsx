@@ -9,7 +9,7 @@ const Footer = lazy(() => import("@/components/ui/Footer"))
 const BackToTop = lazy(() => import("@/components/ui/BackToTop"))
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://covox.ai"),
+  metadataBase: new URL("https://covox.io"),
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "COVOX AI",
-      url: "https://covox.ai",
+      url: "https://covox.io",
     },
   ],
   creator: "COVOX AI",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   category: "Tecnología de IA",
   applicationName: "COVOX AI",
   alternates: {
-    canonical: "https://covox.ai",
+    canonical: "https://covox.io",
     languages: {
-      "es-ES": "https://covox.ai",
+      "es-ES": "https://covox.io",
     },
   },
   openGraph: {
