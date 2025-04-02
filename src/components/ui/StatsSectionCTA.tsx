@@ -74,7 +74,7 @@ export function StatsSectionCTA() {
       setFormStatus({
         type: "success",
         message:
-          "Solicitud enviada con éxito. ¡Pronto te llamará un Agente Virtual!",
+          "Solicitud enviada con éxito. ¡Pronto te llamará un Agente de IA!",
       })
 
       // Reset the form

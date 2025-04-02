@@ -107,7 +107,7 @@ export function Hero({
       setFormStatus({
         type: "success",
         message:
-          "¡Solicitud enviada con éxito! Un agente virtual te llamará pronto.",
+          "¡Solicitud enviada con éxito! Un Agente de IA te llamará pronto.",
       })
 
       // Reset the form
@@ -301,7 +301,7 @@ export function Hero({
                   >
                     {/* Centered form title */}
                     <h2 className="mb-4 text-center text-xl leading-tight font-semibold text-[#FFFFFF] md:text-xl">
-                      ¿Quieres recibir una llamada de un Agente Virtual?
+                      ¿Quieres recibir una llamada de un Agente de IA?
                     </h2>
 
                     {formStatus.type && (
@@ -384,7 +384,7 @@ export function Hero({
                       >
                         {isSubmitting
                           ? "Enviando..."
-                          : "Quiero que me llame un Agente Virtual"}
+                          : "Quiero que me llame un Agente de IA"}
                       </button>
                       <p className="mt-2 text-center text-xs text-gray-400">
                         Al hacer clic, aceptas que te contactemos por teléfono
