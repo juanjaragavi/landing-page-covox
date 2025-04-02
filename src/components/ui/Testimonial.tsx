@@ -28,14 +28,15 @@ export default function Testimonial() {
           <blockquote className="relative max-w-xl text-xl leading-relaxed tracking-tight text-white md:text-2xl lg:text-3xl">
             <p className="leading-tight before:absolute before:top-0 before:right-full before:content-['“'] after:text-white after:content-['”']">
               <strong className="font-semibold">
-                He visto cómo esta solución nos ha permitido optimizar la
-                gestión de nuestras interacciones comerciales
+                Desde que implementamos los agentes de IA de Covox para realizar
+                llamadas, nuestros agendamientos aumentaron en más de un 25%.
               </strong>{" "}
               <span className="text-white">
-                mejorando la eficiencia en la atención al cliente y la
-                prospección en la realización de llamadas en frío mediante
-                tecnología de{" "}
-                <strong className="font-semibold">IA avanzada.</strong>
+                Ahora, nuestro equipo puede enfocarse en tareas más
+                estratégicas, mientras la IA se encarga de las llamadas{" "}
+                <strong className="font-semibold">
+                  de manera automatizada.
+                </strong>
               </span>
             </p>
           </blockquote>
