@@ -18,24 +18,24 @@ export default function Home() {
       <section className="pt-28">
         <HomeHero />
       </section>
-      <section className="mt-16">
+      <section className="mt-12">
         <AnimatedStatsSection />
       </section>
-      <section className="mt-20 px-4 xl:px-0">
+      <section className="mt-12 px-4 xl:px-0">
         <LaSolucion />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
       <section className="mt-12 mb-16 px-4 xl:px-0">
         <CallToAction />
       </section>
-      <section className="mt-32 px-4 xl:px-0">
+      <section className="mt-24 px-4 xl:px-0">
         <ComoFunciona />
       </section>
       <section className="my-12 px-4 xl:px-0">
         <AIVsHumans />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <section className="mt-16">
+      <section className="my-12">
         <StatsSectionCTA />
       </section>
       <section className="mb-12 px-4 xl:px-0">
@@ -55,7 +55,7 @@ export default function Home() {
         <Video />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <section className="mt-16">
+      <section className="my-12">
         <StatsSectionCTA />
       </section>
     </main>

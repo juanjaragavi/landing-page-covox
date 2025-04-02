@@ -120,9 +120,9 @@ export function BrandCarousel() {
             {extendedLogos.map((logo, index) => (
               <div
                 key={`${logo}-${index}`}
-                className="relative flex h-32 w-32 shrink-0 items-center justify-center rounded-xl border-2 border-[#77FF00] bg-white p-0.5 backdrop-blur-sm transition-all duration-300 hover:border-[#99FF33] hover:shadow-lg hover:shadow-[#77FF00]/30 sm:h-40 sm:w-40"
+                className="relative flex h-32 w-32 shrink-0 items-center justify-center rounded-xl p-0.5 backdrop-blur-sm transition-all duration-300 hover:border-[#99FF33] hover:shadow-lg hover:shadow-[#77FF00]/30 sm:h-40 sm:w-40"
               >
-                <div className="h-full w-full overflow-hidden rounded-lg bg-white">
+                <div className="h-full w-full overflow-hidden rounded-lg">
                   <Image
                     src={logo}
                     alt={`Client logo ${index % logos.length}`}
