@@ -25,18 +25,17 @@ export default function Testimonial() {
       </div>
       <div className="relative z-20 my-6 p-8 sm:p-14 lg:px-24">
         <div>
-          <blockquote className="relative max-w-xl text-xl leading-relaxed tracking-tight text-white md:text-2xl lg:text-3xl">
-            <p className="leading-tight before:absolute before:top-0 before:right-full before:content-['“'] after:text-white after:content-['”']">
-              <strong className="font-semibold">
-                Desde que implementamos los agentes de IA de Covox para realizar
-                llamadas, nuestros agendamientos aumentaron en más de un 25%.
-              </strong>{" "}
-              <span className="text-white">
+          <blockquote className="relative max-w-xl text-xl leading-tight tracking-tight text-white md:text-2xl lg:text-3xl">
+            <p className="font-light before:absolute before:top-0 before:right-full before:content-['“'] after:text-white after:content-['”']">
+              Desde que implementamos los agentes de IA de Covox para realizar
+              llamadas, nuestros agendamientos{" "}
+              <span className="font-semibold">
+                aumentaron en más de un 25%.
+              </span>{" "}
+              <span className="leading-tight font-light text-white">
                 Ahora, nuestro equipo puede enfocarse en tareas más
                 estratégicas, mientras la IA se encarga de las llamadas{" "}
-                <strong className="font-semibold">
-                  de manera automatizada.
-                </strong>
+                <span className="font-semibold">de manera automatizada.</span>
               </span>
             </p>
           </blockquote>
