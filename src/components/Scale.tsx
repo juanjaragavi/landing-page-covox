@@ -21,7 +21,7 @@ const item = {
     opacity: 1,
     scale: 1,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       stiffness: 150,
       damping: 19,
       mass: 1.2,

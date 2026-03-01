@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "motion/react"
+import { type Variants, motion } from "motion/react"
 import { CovoxAIMark } from "../../../public/CovoxAIMark"
 
 const ChipViz = () => {
@@ -10,14 +10,14 @@ const ChipViz = () => {
   }: {
     scale: number
     delay: number
-  }) => ({
+  }): Variants => ({
     initial: { scale: 1 },
     animate: {
       scale: [1, scale, 1],
       transition: {
         duration: 2,
         times: [0, 0.2, 1],
-        ease: [0.23, 1, 0.32, 1],
+        ease: [0.23, 1, 0.32, 1] as [number, number, number, number],
         repeat: Infinity,
         repeatDelay: 2,
         delay,
