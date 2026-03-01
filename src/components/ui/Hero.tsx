@@ -18,7 +18,11 @@ function getSimplifiedPageSlug(path: string | null): string {
   const cleanPath = path.replace(/^\/+/, "").split("/")[0]
 
   // Only return valid slugs we care about
-  if (cleanPath === "agendavisitas" || cleanPath === "cobranzas") {
+  if (
+    cleanPath === "agendavisitas" ||
+    cleanPath === "cobranzas" ||
+    cleanPath === "multicanal"
+  ) {
     return cleanPath
   }
 
