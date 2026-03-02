@@ -19,10 +19,10 @@ const partnerLogos = [
 ]
 
 export function OfertaEspecialCTA() {
-  const scrollToHero = () => {
-    const heroForm = document.getElementById("top")
-    if (heroForm) {
-      heroForm.scrollIntoView({ behavior: "smooth" })
+  const scrollToDemo = () => {
+    const demoForm = document.getElementById("agenda-demo")
+    if (demoForm) {
+      demoForm.scrollIntoView({ behavior: "smooth" })
     }
   }
 
@@ -80,7 +80,7 @@ export function OfertaEspecialCTA() {
           className="mt-10"
         >
           <button
-            onClick={scrollToHero}
+            onClick={scrollToDemo}
             className="cursor-pointer rounded-lg bg-[#77FF00] px-10 py-4 text-lg font-bold tracking-wide text-gray-900 shadow-lg shadow-[#77FF00]/20 transition-all duration-200 ease-out hover:scale-105 hover:bg-white hover:shadow-[#77FF00]/30 focus:ring-2 focus:ring-[#77FF00] focus:ring-offset-2 focus:ring-offset-gray-900 focus:outline-none active:scale-100"
           >
             AGENDA DEMO

@@ -153,7 +153,7 @@ export function CentralizaChannels() {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <a
-          href="https://admin.covox.io/login"
+          href="#agenda-demo"
           className="rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-8 py-4 text-lg font-semibold text-black shadow transition-all hover:bg-white hover:shadow-white/50"
         >
           AGENDA DEMO

@@ -67,7 +67,7 @@ export function MulticanalHero() {
             {/* CTA */}
             <FadeDiv className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
               <a
-                href="https://admin.covox.io/login"
+                href="#agenda-demo"
                 className="flex cursor-pointer items-center justify-center rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-8 py-4 text-lg leading-4 font-semibold tracking-wide text-black shadow-[0_0_0_2px_rgba(0,0,0,0.04),0_0_10px_0_rgba(255,255,255,0.15)] transition-all duration-200 ease-in-out hover:bg-white hover:shadow-white/50 sm:text-xl"
               >
                 AGENDA DEMO
