@@ -7,6 +7,7 @@ import FAQ from "@/components/ui/FAQ"
 import FeatureDivider from "@/components/ui/FeatureDivider"
 import LaSolucion from "@/components/ui/LaSolucion"
 import { MulticanalStatsSection } from "@/components/ui/MulticanalStatsSection"
+import { OfertaEspecialCTA } from "@/components/ui/OfertaEspecialCTA"
 import { PressSection } from "@/components/ui/PressSection"
 import Pricing from "@/components/ui/Pricing"
 import { StatsSectionCTA } from "@/components/ui/StatsSectionCTA"
@@ -38,6 +39,10 @@ export default function MulticanalPage() {
       {/* 4.5. Press — Forbes recognition + press article screenshots */}
       <section className="px-4 xl:px-0">
         <PressSection />
+      </section>
+      {/* 4.6. Oferta Especial CTA — mirrors Leadsales "AGENDAR DEMO" + partner logos */}
+      <section className="px-4 xl:px-0">
+        <OfertaEspecialCTA />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
       {/* 5. Video demo (mirrors Leadsales "ASÍ FUNCIONA" embedded video) */}
