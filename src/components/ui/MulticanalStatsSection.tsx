@@ -322,7 +322,7 @@ const useCounter = (target: number, duration: number = 2000) => {
 }
 
 export function MulticanalStatsSection() {
-  const count = useCounter(100)
+  const count = useCounter(3)
 
   const listItemVariants = {
     hidden: { opacity: 0, x: -20 },
@@ -384,12 +384,12 @@ export function MulticanalStatsSection() {
                       type: "tween",
                     }}
                   >
-                    {count}% de leads
+                    {count}X más matrículas
                   </motion.span>{" "}
                 </motion.h2>
                 <p className="mt-2 text-xl text-gray-300">
-                  Atendidos automáticamente en todos tus canales, sin perder una
-                  sola oportunidad
+                  Toma el control de tus admisiones y convierte más interesados
+                  en estudiantes con IA 🚀🎓
                 </p>
               </motion.div>
             </div>
@@ -402,26 +402,26 @@ export function MulticanalStatsSection() {
             >
               <div className="absolute -top-3 left-4">
                 <span className="rounded-full bg-[#77FF00] px-3 py-1 text-xs font-bold text-gray-900">
-                  MULTICANAL
+                  ADMISIONES IA
                 </span>
               </div>
               <ul className="mt-3 space-y-4">
                 {[
                   {
                     icon: <ConversationIcon />,
-                    text: "Centraliza conversaciones de WhatsApp, teléfono y redes sociales en un solo lugar",
+                    text: "Centraliza consultas de WhatsApp, llamadas y redes sociales en un solo embudo de admisiones",
                   },
                   {
                     icon: <LeadIcon />,
-                    text: "Captura y atiende el 100% de tus leads automáticamente, 24/7",
+                    text: "Captura y atiende el 100% de interesados automáticamente, 24/7",
                   },
                   {
                     icon: <GrowthIcon />,
-                    text: "Aumenta tus conversiones hasta 10X sin contratar más personal",
+                    text: "Aumenta tus matrículas hasta 3X sin contratar más personal",
                   },
                   {
                     icon: <AutomationIcon />,
-                    text: "Automatiza seguimientos y respuestas en todos los canales simultáneamente",
+                    text: "Automatiza seguimientos en todo el proceso de admisión simultáneamente",
                   },
                 ].map((item, i) => (
                   <motion.li
@@ -469,13 +469,13 @@ export function MulticanalStatsSection() {
               <div className="relative space-y-4">
                 {[
                   {
-                    channel: "WhatsApp",
+                    channel: "WhatsApp Admisiones",
                     messages: "2,450",
                     trend: "+32%",
                     color: "from-green-500/20 to-green-600/10",
                   },
                   {
-                    channel: "Llamadas Telefónicas",
+                    channel: "Llamadas de Seguimiento",
                     messages: "1,830",
                     trend: "+45%",
                     color: "from-blue-500/20 to-blue-600/10",
@@ -507,7 +507,7 @@ export function MulticanalStatsSection() {
                           {channel.messages}
                         </p>
                         <p className="text-xs text-gray-400">
-                          conversaciones/mes
+                          interacciones/mes
                         </p>
                       </div>
                       <motion.span
@@ -538,10 +538,10 @@ export function MulticanalStatsSection() {
                   <LightbulbIcon />
                   <div>
                     <p className="text-sm font-medium text-[#77FF00]">
-                      Los negocios que centralizan sus canales
+                      Las instituciones que automatizan sus admisiones
                     </p>
                     <p className="text-xs text-gray-400">
-                      aumentan su tasa de cierre un 60% en los primeros 90 días
+                      aumentan sus matrículas un 60% en los primeros 90 días
                     </p>
                   </div>
                 </motion.div>

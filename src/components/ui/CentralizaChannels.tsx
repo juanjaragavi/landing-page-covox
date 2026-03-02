@@ -60,18 +60,11 @@ const channels = [
   },
 ]
 
-const benefits = [
-  "Bandeja única para todos tus canales de comunicación",
-  "Asignación automática de leads al agente o equipo correcto",
-  "Historial unificado de cada contacto en todos los canales",
-  "Respuestas instantáneas 24/7 sin importar el canal de contacto",
-]
-
 export function CentralizaChannels() {
   return (
     <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
       {/* Section header */}
-      <div className="mb-12 text-center">
+      <div className="mb-14 text-center">
         <motion.p
           className="text-base font-semibold tracking-tight text-[#77FF00] sm:text-lg"
           initial={{ opacity: 0, y: 10 }}
@@ -88,23 +81,43 @@ export function CentralizaChannels() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Centraliza tus mensajes de{" "}
-          <span className="text-[#77FF00]">
-            WhatsApp, Teléfono y Redes Sociales
-          </span>{" "}
-          en un solo lugar
+          Así funciona
         </motion.h2>
+      </div>
+
+      {/* Two-column layout: description + highlight card */}
+      <div className="mb-14 grid items-center gap-8 md:grid-cols-2">
         <motion.p
-          className="mx-auto mt-4 max-w-2xl text-lg text-gray-400"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          className="text-lg leading-relaxed text-gray-400"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Muchos negocios pierden oportunidades por tener canales desconectados.
-          Con COVOX AI, todos tus canales convergen en una sola plataforma
-          inteligente para que nunca pierdas un solo lead.
+          Con COVOX centraliza y automatiza tus conversaciones de WhatsApp,
+          Facebook e Instagram en un solo lugar, integradas a tu CRM de
+          admisiones y conectadas con llamadas automatizadas con IA de voz
+          hiperrealista.
         </motion.p>
+
+        <motion.div
+          className="rounded-xl border border-[#77FF00]/20 bg-[#77FF00]/5 p-6 backdrop-blur-sm"
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <p className="text-lg font-semibold text-white">
+            ¡Tuvimos el mismo reto en procesos comerciales y de matrícula!
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-gray-400">
+            Muchas instituciones educativas tienen dificultades para gestionar
+            cientos de interesados por múltiples canales. Por eso, creamos una
+            solución con agentes de IA que califican leads, responden, llaman
+            automáticamente, agendan citas y evitan la pérdida de oportunidades
+            de matrícula 🎓🚀
+          </p>
+        </motion.div>
       </div>
 
       {/* Channel cards */}
@@ -131,40 +144,19 @@ export function CentralizaChannels() {
         ))}
       </div>
 
-      {/* Benefits list + CTA */}
+      {/* CTA */}
       <motion.div
-        className="mt-12 flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:justify-between"
+        className="mt-12 flex justify-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {benefits.map((benefit, i) => (
-            <li key={i} className="flex items-start gap-3">
-              <svg
-                className="mt-0.5 h-5 w-5 shrink-0 text-[#77FF00]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2.5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              <span className="text-sm text-gray-300">{benefit}</span>
-            </li>
-          ))}
-        </ul>
-
         <a
           href="https://admin.covox.io/login"
-          className="shrink-0 rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-8 py-4 text-lg font-semibold text-black shadow transition-all hover:bg-white hover:shadow-white/50"
+          className="rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-8 py-4 text-lg font-semibold text-black shadow transition-all hover:bg-white hover:shadow-white/50"
         >
-          Solicita una Demo GRATUITA
+          AGENDA DEMO
         </a>
       </motion.div>
     </div>

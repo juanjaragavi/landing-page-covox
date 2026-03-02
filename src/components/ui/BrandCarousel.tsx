@@ -6,12 +6,15 @@ import { useEffect, useState } from "react"
 
 // Array of logo file names
 const logos = [
-  "/images/logos/logo-black-danta.webp",
-  "/images/logos/logo-dalta.webp",
-  "/images/logos/logo-delta-oil.webp",
-  "/images/logos/logo-leadelt.webp",
-  "/images/logos/logo-tiendorama.webp",
-  "/images/logos/logo-zione.webp",
+  "/images/logos-colegios-multicanal/mariano-moreno.webp",
+  "/images/logos-colegios-multicanal/logo-colegio-george-washington.webp",
+  "/images/logos-colegios-multicanal/logo-esedco.webp",
+  "/images/logos-colegios-multicanal/logo-class-education.webp",
+  "/images/logos-colegios-multicanal/logo-secim.webp",
+  "/images/logos-colegios-multicanal/logo-colombo-americano.webp",
+  "/images/logos-colegios-multicanal/logo-poliempresarial.webp",
+  "/images/logos-colegios-multicanal/logo-eadic-silver.webp",
+  "/images/logos-colegios-multicanal/logo-smile-and-learn.webp",
 ]
 
 // For a seamless infinite carousel, we duplicate some logos
@@ -69,13 +72,14 @@ export function BrandCarousel() {
     <div className="relative mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
       <div className="mb-8 text-center">
         <div className="z-10 w-full pt-6 text-center text-base font-semibold tracking-tight text-[#77FF00] sm:pt-20 sm:text-lg">
-          Conoce a algunos de Nuestros Clientes
+          Con clientes en 4 países
         </div>
         <h2
           id="management-title"
-          className="z-20 mx-auto max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white sm:mb-4 md:text-5xl"
+          className="z-20 mx-auto max-w-[700px] text-center text-xl font-semibold tracking-tight text-balance text-white sm:mb-4 md:text-4xl"
         >
-          Ellos confían en nosotros para la gestión de sus clientes
+          COVOX impulsa procesos de admisiones con IA que convierten más
+          interesados en estudiantes 🚀🎓
         </h2>
       </div>
 
@@ -126,9 +130,9 @@ export function BrandCarousel() {
                   <Image
                     src={logo}
                     alt={`Client logo ${index % logos.length}`}
-                    width={100}
-                    height={100}
-                    className="h-full w-full object-contain p-2"
+                    width={160}
+                    height={160}
+                    className="h-full w-full object-contain p-4"
                     priority={index < 10} // Prioritize loading the first few logos
                   />
                 </div>

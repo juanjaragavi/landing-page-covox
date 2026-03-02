@@ -34,24 +34,33 @@ export function MulticanalHero() {
 
             {/* Headline */}
             <h1 className="mt-8 text-center text-3xl leading-tight font-semibold tracking-tighter text-white sm:text-5xl sm:leading-[1.1em]">
-              <FadeSpan>Centraliza tus Conversaciones de</FadeSpan>{" "}
+              <FadeSpan>
+                Centraliza tus Conversaciones de admisiones de
+              </FadeSpan>{" "}
               <FadeSpan>
                 <span className="text-[#77FF00]">
-                  WhatsApp, Teléfono y Redes Sociales
+                  WhatsApp, Facebook e Instagram en una sola plataforma,
                 </span>
               </FadeSpan>{" "}
-              <FadeSpan>en una sola Plataforma con IA</FadeSpan>
+              <FadeSpan>
+                integradas con llamadas automatizadas con IA de voz
+                hiperrealista
+              </FadeSpan>
             </h1>
 
             {/* Description */}
             <p className="mt-4 max-w-2xl text-center text-lg leading-relaxed text-balance text-gray-300 sm:text-xl">
               <FadeSpan>
-                <span className="font-semibold text-[#77FF00]">COVOX AI</span>{" "}
-                organiza y automatiza las conversaciones de tu negocio con{" "}
-                <span className="font-semibold text-white">
-                  agentes de IA disponibles 24/7
-                </span>
-                , para que crezcas tus ventas sin perder un solo contacto.
+                Ayudamos a{" "}
+                <span className="font-semibold text-[#77FF00]">
+                  universidades, colegios y academias
+                </span>{" "}
+                a organizar sus conversaciones y llamadas en embudos de
+                admisiones con IA para{" "}
+                <span className="font-semibold text-[#77FF00]">
+                  aumentar matrículas en 90 días
+                </span>{" "}
+                🚀🎓
               </FadeSpan>
             </p>
 
@@ -61,18 +70,18 @@ export function MulticanalHero() {
                 href="https://admin.covox.io/login"
                 className="flex cursor-pointer items-center justify-center rounded-xl border-b-[1.5px] border-[#77FF00] bg-[#77FF00] px-8 py-4 text-lg leading-4 font-semibold tracking-wide text-black shadow-[0_0_0_2px_rgba(0,0,0,0.04),0_0_10px_0_rgba(255,255,255,0.15)] transition-all duration-200 ease-in-out hover:bg-white hover:shadow-white/50 sm:text-xl"
               >
-                Solicita una Demo GRATUITA
+                AGENDA DEMO
               </a>
             </FadeDiv>
 
-            {/* Social proof */}
+            {/* Social proof
             <FadeDiv className="mt-6">
               <p className="text-sm text-gray-400">
                 Más de{" "}
                 <span className="font-semibold text-white">100 negocios</span>{" "}
                 en Latinoamérica confían en nosotros
               </p>
-            </FadeDiv>
+            </FadeDiv> */}
           </FadeContainer>
 
           {/* YouTube Video Embed */}
