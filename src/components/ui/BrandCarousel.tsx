@@ -75,7 +75,7 @@ export function BrandCarousel() {
           id="management-title"
           className="z-20 mx-auto max-w-[700px] text-center text-2xl font-semibold tracking-tight text-balance text-white sm:mb-4 md:text-5xl"
         >
-          Elos confían en nosotros para la gestión de sus clientes
+          Ellos confían en nosotros para la gestión de sus clientes
         </h2>
       </div>
 
