@@ -7,6 +7,7 @@ import FAQ from "@/components/ui/FAQ"
 import FeatureDivider from "@/components/ui/FeatureDivider"
 import LaSolucion from "@/components/ui/LaSolucion"
 import { MulticanalStatsSection } from "@/components/ui/MulticanalStatsSection"
+import { PressSection } from "@/components/ui/PressSection"
 import Pricing from "@/components/ui/Pricing"
 import { StatsSectionCTA } from "@/components/ui/StatsSectionCTA"
 import Testimonial from "@/components/ui/Testimonial"
@@ -32,6 +33,11 @@ export default function MulticanalPage() {
       {/* 4. Centraliza — channel cards + benefits (mirrors "Con Leadsales centraliza" section) */}
       <section className="px-4 xl:px-0">
         <CentralizaChannels />
+      </section>
+      <FeatureDivider className="my-16 max-w-6xl" />
+      {/* 4.5. Press — Forbes recognition + press article screenshots */}
+      <section className="px-4 xl:px-0">
+        <PressSection />
       </section>
       <FeatureDivider className="my-16 max-w-6xl" />
       {/* 5. Video demo (mirrors Leadsales "ASÍ FUNCIONA" embedded video) */}

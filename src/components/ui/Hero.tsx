@@ -2,8 +2,7 @@
 
 import { RiPlayFill } from "@remixicon/react"
 import { usePathname } from "next/navigation"
-// Removed duplicate React import, ChangeEvent etc are implicitly imported via React namespace usually or directly if needed
-import { ChangeEvent, FormEvent, useRef, useState } from "react"
+import { ChangeEvent, FormEvent, ReactNode, useRef, useState } from "react"
 import { defaultCountry } from "../../lib/countryData"
 import { FadeContainer, FadeDiv, FadeSpan } from "../Fade"
 import { ScaleContainer, ScaleDiv } from "../Scale"
@@ -29,9 +28,6 @@ function getSimplifiedPageSlug(path: string | null): string {
   // Default to home for any other pages
   return "home"
 }
-
-// Removed duplicate React import line
-import { ReactNode } from "react" // Import ReactNode
 
 export interface HeroProps {
   title?: string

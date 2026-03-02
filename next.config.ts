@@ -12,6 +12,9 @@ const withMDX = createMDX({
 
 const nextConfig: NextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  images: {
+    qualities: [75, 90],
+  },
 }
 
 export default withMDX(nextConfig)

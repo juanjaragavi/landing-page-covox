@@ -164,7 +164,7 @@ export default function RootLayout({
                   h._hjSettings={hjid:5353129,hjsv:6};
                   a=o.getElementsByTagName('head')[0];
                   r=o.createElement('script');r.async=1;
-                  r.src=t+h._hjSettings.hjid+j+_hjSettings.hjsv;
+                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                   a.appendChild(r);
               })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
             `,
