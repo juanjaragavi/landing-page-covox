@@ -4,6 +4,19 @@ import { AnimatePresence, motion } from "motion/react"
 import Image from "next/image"
 import { useCallback, useEffect, useState } from "react"
 
+const newsOutletLogos = [
+  "/images/agencias-de-noticias/logo-notiamerica.webp",
+  "/images/agencias-de-noticias/logo-portafolio.webp",
+  "/images/agencias-de-noticias/logo-redexpertos.webp",
+  "/images/agencias-de-noticias/logo-technocio.webp",
+]
+
+const extendedNewsLogos = [
+  ...newsOutletLogos,
+  ...newsOutletLogos,
+  ...newsOutletLogos,
+]
+
 const pressArticles = [
   {
     src: "/images/articulos-de-prensa/articulo-de-prensa-covox-1.webp",
@@ -21,6 +34,21 @@ const pressArticles = [
 
 export function PressSection() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
+  const [newsPosition, setNewsPosition] = useState(0)
+  const [isNewsPaused, setIsNewsPaused] = useState(false)
+  const newsLogoWidth = 248
+
+  useEffect(() => {
+    if (isNewsPaused) return
+    const interval = setInterval(() => {
+      setNewsPosition((prev) =>
+        prev >= newsOutletLogos.length * newsLogoWidth
+          ? 0
+          : prev + newsLogoWidth,
+      )
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [isNewsPaused])
 
   const closeLightbox = useCallback(() => setLightboxIndex(null), [])
 
@@ -101,6 +129,41 @@ export function PressSection() {
             ventas y admisiones.
           </motion.p>
         </div>
+
+        {/* News outlet logo carousel */}
+        <motion.div
+          className="relative mb-14 overflow-hidden"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          onMouseEnter={() => setIsNewsPaused(true)}
+          onMouseLeave={() => setIsNewsPaused(false)}
+        >
+          <div className="mx-auto max-w-[1050px] overflow-hidden">
+            <motion.div
+              className="flex items-center gap-2 px-4"
+              animate={{ x: -newsPosition }}
+              transition={{ type: "tween", ease: "easeInOut", duration: 0.8 }}
+            >
+              {extendedNewsLogos.map((logo, index) => (
+                <div
+                  key={`${logo}-${index}`}
+                  className="flex h-28 w-60 shrink-0 items-center justify-center"
+                >
+                  <Image
+                    src={logo}
+                    alt={`News outlet ${(index % newsOutletLogos.length) + 1}`}
+                    width={240}
+                    height={112}
+                    className="h-[5.5rem] w-auto object-contain"
+                    priority={index < 8}
+                  />
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </motion.div>
 
         {/* Press article screenshots */}
         <div className="grid gap-6 md:grid-cols-3">

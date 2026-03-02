@@ -5,6 +5,7 @@ import FeatureDivider from "@/components/ui/FeatureDivider"
 import { MulticanalStatsSection } from "@/components/ui/MulticanalStatsSection"
 import { OfertaEspecialCTA } from "@/components/ui/OfertaEspecialCTA"
 import { PressSection } from "@/components/ui/PressSection"
+import { TestimonialesVideos } from "@/components/ui/TestimonialesVideos"
 import { MulticanalHero } from "@/components/wrappers/MulticanalHero"
 
 export default function MulticanalPage() {
@@ -17,6 +18,10 @@ export default function MulticanalPage() {
       {/* 2. Brand carousel — social proof logos (mirrors Leadsales client bar) */}
       <section className="mb-12 px-4 xl:px-0">
         <BrandCarousel />
+      </section>
+      {/* 2.5. Testimoniales — three YouTube video testimonials */}
+      <section className="px-4 xl:px-0">
+        <TestimonialesVideos />
       </section>
       {/* 3. Stats — multi-channel metrics + channel cards (mirrors "Toma el control" section) */}
       <section className="mt-12">

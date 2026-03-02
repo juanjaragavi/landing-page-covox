@@ -11,10 +11,10 @@ const logos = [
   "/images/logos-colegios-multicanal/logo-esedco.webp",
   "/images/logos-colegios-multicanal/logo-class-education.webp",
   "/images/logos-colegios-multicanal/logo-secim.webp",
-  "/images/logos-colegios-multicanal/logo-colombo-americano.webp",
+  "/images/logos-colegios-multicanal/logo-colombo-americano-corrected.webp",
   "/images/logos-colegios-multicanal/logo-poliempresarial.webp",
   "/images/logos-colegios-multicanal/logo-eadic-silver.webp",
-  "/images/logos-colegios-multicanal/logo-smile-and-learn.webp",
+  "/images/logos-colegios-multicanal/logo-smile-and-learn-corrected.webp",
 ]
 
 // For a seamless infinite carousel, we duplicate some logos

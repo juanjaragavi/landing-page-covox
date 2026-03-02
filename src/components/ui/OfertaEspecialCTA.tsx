@@ -1,11 +1,12 @@
 "use client"
 
+import { cx } from "@/lib/utils"
 import { motion } from "motion/react"
 import Image from "next/image"
 
 const partnerLogos = [
   {
-    src: "/images/logos-aceleradoras/logo-google-for-startups.webp",
+    src: "/images/logos-aceleradoras/logo-google-for-startups-corrected.webp",
     alt: "Google for Startups",
     width: 160,
     height: 60,
@@ -111,20 +112,33 @@ export function OfertaEspecialCTA() {
             Respaldados por
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
-            {partnerLogos.map((logo) => (
-              <div
-                key={logo.alt}
-                className="relative flex h-14 w-40 items-center justify-center grayscale transition-all duration-300 hover:grayscale-0"
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={logo.width}
-                  height={logo.height}
-                  className="max-h-12 w-auto object-contain brightness-0 invert transition-all duration-300 hover:brightness-100 hover:invert-0"
-                />
-              </div>
-            ))}
+            {partnerLogos.map((logo) => {
+              const isGoogle = logo.alt === "Google for Startups"
+              return (
+                <div
+                  key={logo.alt}
+                  className={cx(
+                    "relative flex h-20 w-56 items-center justify-center transition-all duration-300",
+                    isGoogle
+                      ? "hover:brightness-0 hover:invert"
+                      : "grayscale hover:grayscale-0",
+                  )}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className={cx(
+                      "max-h-16 w-auto object-contain transition-all duration-300",
+                      isGoogle
+                        ? ""
+                        : "brightness-0 invert hover:brightness-100 hover:invert-0",
+                    )}
+                  />
+                </div>
+              )
+            })}
           </div>
         </motion.div>
       </div>

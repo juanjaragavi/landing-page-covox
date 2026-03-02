@@ -227,75 +227,6 @@ const AutomationIcon = () => (
   </motion.svg>
 )
 
-const LightbulbIcon = () => (
-  <motion.div
-    className="relative"
-    animate={{
-      filter: [
-        "drop-shadow(0 0 0px #77FF00)",
-        "drop-shadow(0 0 8px #77FF00)",
-        "drop-shadow(0 0 0px #77FF00)",
-      ],
-    }}
-    transition={{
-      duration: 2,
-      repeat: Infinity,
-      repeatType: "loop",
-      type: "tween",
-    }}
-  >
-    <motion.svg
-      width="48"
-      height="48"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      animate={{ scale: [1, 1.05, 1] }}
-      transition={{
-        duration: 2,
-        repeat: Infinity,
-        repeatType: "loop",
-        type: "tween",
-      }}
-    >
-      <motion.path
-        d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7z"
-        fill="#77FF00"
-        animate={{ opacity: [0.8, 1, 0.8] }}
-        transition={{ duration: 2, repeat: Infinity, type: "tween" }}
-      />
-      <motion.path
-        d="M9 21v-1h6v1c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1z"
-        fill="#77FF00"
-      />
-      <motion.circle
-        cx="12"
-        cy="7"
-        r="4"
-        fill="white"
-        animate={{ opacity: [0, 0.2, 0] }}
-        transition={{
-          duration: 1.5,
-          repeat: Infinity,
-          repeatType: "loop",
-        }}
-      />
-      <motion.path
-        d="M12 1V3M7 3L8 5M17 3L16 5M20 8H18M6 8H4"
-        stroke="#77FF00"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        animate={{ opacity: [0, 1, 0] }}
-        transition={{
-          duration: 1.5,
-          repeat: Infinity,
-          repeatType: "loop",
-        }}
-      />
-    </motion.svg>
-  </motion.div>
-)
-
 // Counter animation hook
 const useCounter = (target: number, duration: number = 2000) => {
   const [count, setCount] = useState(0)
@@ -347,18 +278,18 @@ export function MulticanalStatsSection() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="grid gap-12 md:grid-cols-2">
-          {/* Left Column - Statistics */}
+        <div className="mx-auto max-w-2xl">
+          {/* Centered Content */}
           <motion.div
-            className="flex flex-col justify-center"
+            className="flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="mb-8 flex items-center">
+            <div className="mb-8 flex flex-col items-center text-center sm:flex-row sm:text-left">
               <MultiChannelIcon />
               <motion.div
-                className="ml-4"
+                className="mt-4 sm:mt-0 sm:ml-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
@@ -395,7 +326,7 @@ export function MulticanalStatsSection() {
             </div>
 
             <motion.div
-              className="relative mt-8 rounded-xl border border-[#77FF00]/30 bg-black/20 p-6 backdrop-blur-sm"
+              className="relative mt-8 w-full rounded-xl border border-[#77FF00]/30 bg-black/20 p-6 backdrop-blur-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.5 }}
@@ -440,113 +371,6 @@ export function MulticanalStatsSection() {
                 ))}
               </ul>
             </motion.div>
-          </motion.div>
-
-          {/* Right Column - Visual */}
-          <motion.div
-            className="flex flex-col items-center justify-center"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-          >
-            <div className="relative w-full max-w-md">
-              {/* Glowing background */}
-              <motion.div
-                className="absolute inset-0 rounded-2xl bg-[#77FF00]/5 blur-xl"
-                animate={{
-                  opacity: [0.3, 0.5, 0.3],
-                  scale: [0.95, 1.05, 0.95],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  type: "tween",
-                }}
-              />
-
-              {/* Channel cards */}
-              <div className="relative space-y-4">
-                {[
-                  {
-                    channel: "WhatsApp Admisiones",
-                    messages: "2,450",
-                    trend: "+32%",
-                    color: "from-green-500/20 to-green-600/10",
-                  },
-                  {
-                    channel: "Llamadas de Seguimiento",
-                    messages: "1,830",
-                    trend: "+45%",
-                    color: "from-blue-500/20 to-blue-600/10",
-                  },
-                  {
-                    channel: "Redes Sociales",
-                    messages: "980",
-                    trend: "+28%",
-                    color: "from-purple-500/20 to-purple-600/10",
-                  },
-                ].map((channel, i) => (
-                  <motion.div
-                    key={channel.channel}
-                    className={`rounded-xl border border-[#77FF00]/20 bg-gradient-to-r ${channel.color} p-4 backdrop-blur-sm`}
-                    initial={{ opacity: 0, x: 30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.5 + i * 0.2, duration: 0.5 }}
-                    whileHover={{
-                      scale: 1.02,
-                      borderColor: "rgba(119, 255, 0, 0.5)",
-                    }}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm font-medium text-gray-400">
-                          {channel.channel}
-                        </p>
-                        <p className="text-2xl font-bold text-white">
-                          {channel.messages}
-                        </p>
-                        <p className="text-xs text-gray-400">
-                          interacciones/mes
-                        </p>
-                      </div>
-                      <motion.span
-                        className="rounded-full bg-[#77FF00]/10 px-3 py-1 text-sm font-semibold text-[#77FF00]"
-                        animate={{
-                          scale: [1, 1.1, 1],
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          delay: i * 0.3,
-                          type: "tween",
-                        }}
-                      >
-                        {channel.trend}
-                      </motion.span>
-                    </div>
-                  </motion.div>
-                ))}
-
-                {/* Insight card */}
-                <motion.div
-                  className="mt-4 flex items-center gap-3 rounded-xl border border-[#77FF00]/30 bg-black/30 p-4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1.2, duration: 0.5 }}
-                >
-                  <LightbulbIcon />
-                  <div>
-                    <p className="text-sm font-medium text-[#77FF00]">
-                      Las instituciones que automatizan sus admisiones
-                    </p>
-                    <p className="text-xs text-gray-400">
-                      aumentan sus matrículas un 60% en los primeros 90 días
-                    </p>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </motion.div>
